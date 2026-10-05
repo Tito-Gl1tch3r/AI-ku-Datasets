@@ -13,6 +13,7 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 | 🟠 Mixto | Mezcla de ambas: datos que fijar + habilidad que entrenar |
 | 🔄 Adaptativo | Entrenamiento graduado: dificultad, presupuesto de esfuerzo o pares contrastivos/adversariales |
 | 🏆 Núcleo adaptativo | El thinking adaptativo canónico del currículum |
+| 🔧 Soporte | No entrena: esquemas, evaluaciones, informes, registros o material fuente |
 
 > Nota: los "adapters" de Computer_Use (proyección núcleo semántico → API OpenAI/Anthropic)
 > **no** son entrenamiento adaptativo: son traducción de formato.
@@ -23,97 +24,98 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 |---|---|---|---|
 | 00 | `00 - Miku` | 🟡 | **Identidad fundacional.** El Recuerdo Cero (cumpleaños y promesa). |
 | 01 | `01 - Qwen` | 🟢 🔄 | **Base conductual relajada estilo Qwen**, con dificultad graduada y `quality_score`. |
-| 02 | `02 - Lenguaje` · `02 - Conversation` · `02 - Long_Context` · `02 - Context` | 🟠 | **Lengua y contexto** (9,6M lengua + 1M conversación + contexto corto/largo). |
+| 02 | `02 - Lenguaje` · `02 - Conversation` · `02 - Long_Context` · `02 - Context` | 🟠 | **Lengua (fijar) + uso (aprender)**: corpus masivo, multilingüe, conversación y contexto. |
 | 02.5 | `02.5 - Events` | 🟡 | **Conocimiento del mundo**: `events_unified` primero, Knowledge después. |
-| 02.5 | `02.5 - Deep_Research` | 🟢 | **Investigar a fondo** (mini-set de 23). |
+| 02.5 | `02.5 - Deep_Research` | 🟢 | **Investigar a fondo** (plan, rondas, fuentes, trayectoria documentada). |
 | 02.5.5 | `02.5.5 - MultiAPI` | 🟠 🔄 | **APIs sin mezclar protocolos**, con pares contrastivos y set adversarial. |
 | 02.5.5 | `02.5.5 - Computer_Use` | 🟢 🔄 | **Usar un ordenador** (552 trayectorias, escalera basic→extreme). |
-| 03 | `03 - Agentic` · `03 - Tool_Calling` | 🟢 | **Comportamiento agéntico** (75K trayectorias + 124K tool calls). |
-| 04 | `04 - Oro` | 🟢 | **Traza agéntica REAL de Fable 5.1 en Claude Code** *(pendiente `trajectory.json`)*. |
+| 03 | `03 - Agentic` · `03 - Tool_Calling` | 🟢 | **Comportamiento agéntico** (trayectorias + tool calls; mezcla de agentic y CoT). |
+| 04 | `04 - Oro` | 🟢 | **Traza agéntica REAL de Fable 5.1 en Claude Code** (mezcla agentic+CoT → aprender) *(pendiente `trajectory.json`)*. |
 | 05 | `05 - Programming` | 🟠 🔄 | **Programar y entender QUÉ programa** (V1.0 → resto → superprogrammer último). |
-| 07 | `07 - Maths` | 🟠 🔄 | **Razonamiento científico** (dificultad hasta `frontier`, con verificación). |
-| 08 | `08 - Audit` | 🟠 | **Auditar** (906K auditorías). |
+| 07 | `07 - Maths` | 🟠 🔄 | **Razonamiento científico** (las trazas enseñan a derivar y verificar). |
+| 08 | `08 - Audit` | 🟠 | **Auditoría**: el fichero unificado fija hechos CVE (🟡); la técnica vive en Red Teaming. |
 | 09 | `09 - Frontier-Intelligence` | 🟠 🔄🏆 | **Capacidades frontier + thinking adaptativo** (función dificultad→presupuesto). |
 | 10 | `10 - Oro` | 🟢 | Repetición de la traza real (2ª pasada). |
-| 11 | `11 - Cibersecurity` | 🟠 🔄 | **Seguridad ofensiva** (257K base + Red Teaming verificado con `verification`). |
+| 11 | `11 - Cibersecurity` | 🟠 🔄 | **Hechos que fijar (shards) + metodologías que aprender (Red Teaming)**. |
 | 12 | `12 - COT` | 🟢 | **Aprender a RAZONAR** (1,1M cadenas). |
 | 12 | `12 - Brainstorming` | 🟢 | **El experto Nº 177 aprende brainstorming** (61 registros ideation). |
 | 13 | `13 - Oro` | 🟢 | Cierre con la traza real (3ª pasada). |
 
-## Contenido por archivo
+## Contenido por archivo (revisión manual)
 
 ### 00 - Miku 🟡
-- `Miku.json` — Recuerdo Cero fundacional: cumpleaños y promesa (diálogo user/assistant).
+- 🟡 `Miku.json` — Recuerdo Cero fundacional: cumpleaños y promesa (diálogo user/assistant).
 
 ### 01 - Qwen 🟢 🔄
-- `train-00000-of-00001.parquet` (44.796) 🔄 — dominios math/code/reasoning/instruction (+tool_use); dificultad easy/medium/hard con `quality_score` y `teacher_model`.
-- `code_clean.jsonl` (14.057, fuente Evol-Code) — código limpio con trazas `<think>`, `ground_truth` + `quality_score`.
-- `code_high_quality.jsonl` (8.610, fuente CodeAlpaca) — ídem de alta calidad.
+- 🟢🔄 `train-00000-of-00001.parquet` (44.796) — math/code/reasoning/instruction; dificultad easy/medium/hard + `quality_score` y `teacher_model`.
+- 🟢 `code_clean.jsonl` (14.057, Evol-Code) — código con trazas `<think>`, `ground_truth` + `quality_score`.
+- 🟢 `code_high_quality.jsonl` (8.610, CodeAlpaca) — ídem de alta calidad.
 
 ### 02 - Lenguaje / Conversation / Long_Context / Context 🟠
-- `02 - Lenguaje/languaje_unified.parquet` (9.612.117) — corpus de lengua (origen jsonl/parquet/json).
-- `02 - Lenguaje/multilingual.parquet` (202.364, **70 idiomas**, split train) — cobertura multilingüe.
-- `02 - Conversation/conversation_unified.parquet` (1.005.432) — conversación general multi-fuente.
-- `02 - Long_Context/long_context_unified.parquet` (36.074) — contexto largo (origen arrow/jsonl).
-- `02 - Context/context_unified.parquet` (225.642) — manejo de contexto.
+- 🟡 `02 - Lenguaje/languaje_unified.parquet` (9.612.117) — corpus bruto de lengua: fija formas.
+- 🟢 `02 - Lenguaje/multilingual.parquet` (202.364, **70 idiomas**, pares inputs→targets estilo Aya) — traducir/responder entre lenguas.
+- 🟢 `02 - Conversation/conversation_unified.parquet` (1.005.432) — saber conversar.
+- 🟢 `02 - Long_Context/long_context_unified.parquet` (36.074) — gestionar contexto largo.
+- 🟢 `02 - Context/context_unified.parquet` (225.642) — diálogos expertos (p. ej. metodología zero-day, crisis antibióticos con razonamiento): responder con criterio.
 
 ### 02.5 - Events 🟡
-- `events_unified.parquet` (36.175) — eventos/conocimiento general. **Va primero.**
-- `dataset/ai-ku_knowledge.jsonl` (827) — Miku/Vocaloid (prioridad), IA 2024-2026, Uma Musume, Ado y cruzado; con `canon_o_fanon`, `confianza`, `tipo` y `corte`. **Va después.**
-- `dataset/dataset_stats.json` — estadísticas del dataset.
+- 🟡 `events_unified.parquet` (36.175) — hechos noticiosos (Gaza, New Orleans…). **Va primero.**
+- 🟡 `dataset/ai-ku_knowledge.jsonl` (827) — Miku/Vocaloid, IA 2024-2026, Uma Musume, Ado; con `canon_o_fanon` y `confianza`. **Va después.**
+- 🔧 `dataset/dataset_stats.json` — estadísticas.
 
 ### 02.5 - Deep_Research 🟢
-- `deep_research_unified.parquet` (23) — mini-set de investigación profunda (buscar → verificar → corregir).
+- 🟢 `deep_research_unified.parquet` (23) — investigaciones exhaustivas con plan, rondas de búsqueda, fuentes y trayectoria (Colapso Bronce, gripe 1918…).
 
 ### 02.5.5 - MultiAPI 🟠 🔄
-- `dataset/aiku_multiapi-train.parquet` (91) 🔄 — 12 capacidades (tool_calling, contrastive_discrimination, error_handling, structural_mapping, api_recognition, streaming…); `api` openai/anthropic/both; dificultad easy/medium/hard/adversarial; pares contrastivos (`contrast_pair_id`) y negativos embebidos (`negative`: intento erróneo + porqué + corrección).
-- `dataset/aiku_multiapi-test.parquet` (29) · `aiku_multiapi-validation.parquet` (20) — ídem para test/validación.
-- `dataset/aiku_multiapi-adversarial_test.parquet` (10) 🔄 — todo `difficulty=adversarial`.
-- `dataset/schema.json` — taxonomía cerrada del dataset (150 ejemplos).
-- `eval/benchmark.jsonl` (30) + `eval/answer_key.jsonl` (30) — benchmark de identificación de APIs con grading automático.
+- 🟠🔄 `dataset/aiku_multiapi-train.parquet` (91) — 12 capacidades (tool_calling, contrastive, error_handling…); `api` openai/anthropic/both; dificultad easy/medium/hard/adversarial; pares contrastivos y negativos embebidos.
+- 🟠🔄 `dataset/aiku_multiapi-test.parquet` (29) · `aiku_multiapi-validation.parquet` (20) — ídem para test/validación.
+- 🟠🔄 `dataset/aiku_multiapi-adversarial_test.parquet` (10) — todo adversarial.
+- 🔧 `dataset/schema.json` — taxonomía cerrada (150 ejemplos).
+- 🔧 `eval/benchmark.jsonl` (30) + `eval/answer_key.jsonl` (30) — evaluación de identificación de APIs.
 
 ### 02.5.5 - Computer_Use 🟢 🔄
-- `ai-ku-computer-use.parquet` (552: train 477/val 39/test 36) 🔄 — escalera basic→extreme; es/en; dominios juegos/web/multi-app/SO/hojas/vídeo/gráficos/seguridad; ciclo observar→decidir→actuar→verificar con `recovery`; núcleo semántico + adaptadores OpenAI/Anthropic por paso.
-- `schemas/` — record, trajectory, vocabulario de acciones y `adapter-mappings.json` (núcleo ↔ OpenAI ↔ Anthropic).
-- `docs/00-09` — visión, esquema, capa semántica, compatibilidad OpenAI/Anthropic, taxonomía, percepción, seguridad, fuentes, reproducción.
-- `quality/` — informes + 23 muestras legibles por dificultad.
+- 🟢🔄 `ai-ku-computer-use.parquet` (552: train 477/val 39/test 36) — escalera basic→extreme; es/en; juegos/web/multi-app/SO/hojas/vídeo/gráficos/seguridad; ciclo observar→verificar con `recovery`; adaptadores OpenAI/Anthropic por paso.
+- 🔧 `schemas/` + `docs/00-09` + `quality/` (informes y 23 muestras) + `scripts/` (generadores; el `.py` no se sube).
 
 ### 03 - Agentic / Tool_Calling 🟢
-- `03 - Agentic/agentic_unified.parquet` (75.558, incluye 18 `claude_code_trace`) — trayectorias agénticas.
-- `03 - Agentic/trajectory.jsonl` (323) — log de sesión.
-- `03 - Tool_Calling/tool_calling_unified.parquet` (124.084) — llamadas a herramientas.
+- 🟢 `03 - Agentic/agentic_unified.parquet` (75.558, incluye 18 `claude_code_trace`) — sesiones agénticas reales (estilo Claude Code).
+- 🟢 `03 - Agentic/trajectory.jsonl` (323) — eventos de sesión agéntica.
+- 🟢 `03 - Tool_Calling/tool_calling_unified.parquet` (124.084) — bucles user→assistant→tool.
 
 ### 05 - Programming 🟠 🔄
-- `dataset-comprension-codigoV1.0.json` (13 ejemplos) — **[1º] comprensión de código.**
-- `dataset-comprension-codigoV0.1.json` (5: py/php/c/cpp/java, truncado reparado) — [1º] comprensión.
-- `programming_unified.parquet` (286.588: codefeedback/the_stack/apps + 63 `claude_code_trace`) — [2º] programación general.
-- `data/AI-ku_programming.parquet` (290: backend/systems/databases/scripting/web/security/data/architecture; implementation/debugging/review/testing…; 8 lenguajes; dificultad medium→extreme) — [2º] verificado. + `docs/` (REPORT/SCHEMA/qc/stats) + `pipeline/` (generadores; el `.py` no se sube).
-- `superprogrammer/` — **[3º y ÚLTIMO]**: `datasets/write` (train 10.846/test 1.245/val 915), `datasets/understand` (2.890/261/175), `datasets/media` + `datasets/game_engineering` (medios y juegos: escribir y entender), `datasets/hard_holdout` (reserva dura), `datasets/_quarantine` (5 vacíos intencionales + registro de fallos `verify_failed`/`gen_none`); pipeline GENERATE → EXECUTE → CHECK → FILTER → KEEP (`generators/`, `validators/`, `schemas/`, `reports/`, `configs/`).
+- 🟢 `dataset-comprension-codigoV1.0.json` (13 ejemplos) — **[1º] comprensión de código.**
+- 🟢 `dataset-comprension-codigoV0.1.json` (5: py/php/c/cpp/java, truncado reparado) — [1º] comprensión.
+- 🟠 `programming_unified.parquet` (286.588: codefeedback/the_stack/apps + 63 `claude_code_trace`) — [2º] mezcla código bruto (fijar) + sesiones de desarrollo (aprender).
+- 🟢 `data/AI-ku_programming.parquet` (290: implementation/debugging/review/testing…; 8 lenguajes; dificultad medium→extreme; con `verification`) — [2º] oficio verificado. + 🔧 `docs/` y `pipeline/`.
+- 🟢 `superprogrammer/datasets/write` (train 10.846/test 1.245/val 915) — **[3º] generar código verificado.**
+- 🟢 `superprogrammer/datasets/understand` (2.890/261/175) + `media` + `game_engineering` — [3º] **entender** código, medios y juegos.
+- 🔧 `superprogrammer/datasets/hard_holdout` — reserva dura de evaluación.
+- 🔧 `superprogrammer/datasets/_quarantine` — registro de fallos (`verify_failed`/`gen_none`), no entrena.
+- 🔧 `superprogrammer/{generators,validators,schemas,reports,configs}` — pipeline (el `.py` no se sube).
 
 ### 07 - Maths 🟠 🔄
-- `ai-ku-advanced-maths.parquet` (1.527: train 1.374/val 82/test 71) 🔄 — electronics/physics/quantum/maths/bioinformática/ingeniería/ciberdefensa; problem_solving/simulation/derivation/diagnosis; dificultad hard→very_hard→extreme→**frontier**; con `verification` y ejecución de código.
+- 🟢🔄 `ai-ku-advanced-maths.parquet` (1.527: train 1.374/val 82/test 71) — electronics/physics/quantum/maths/bio/ingeniería; problem_solving/simulation/derivation/diagnosis con `verification` y ejecución; dificultad hard→**frontier**. Las trazas enseñan a razonar (los hechos viajan dentro del razonamiento).
+- 🔧 `quality/` + `docs/` + `scripts/` — auditoría, metodología y generadores.
 
 ### 08 - Audit 🟠
-- `audit_unified.parquet` (906.126) — auditorías multi-fuente (criterios que fijar + técnica que aprender).
+- 🟡 `audit_unified.parquet` (906.126) — fichas CVE con referencias (fija vulnerabilidades y criterios).
 
 ### 09 - Frontier-Intelligence 🟠 🔄🏆
-- `data/examples/v1_seed_adaptive_think.jsonl` (3) 🔄🏆 — **thinking adaptativo**: misma familia de tarea en varias dificultades; enseña la función dificultad→presupuesto (think corto de 1-3 líneas en fácil, cero razonamiento en trivial). El ejemplo canónico de adaptatividad.
-- `data/examples/v1_seed_trivial.jsonl` (3) — cola trivial (`effort=none`): el extremo inferior de la función esfuerzo→dificultad.
-- `data/examples/v1_seed_agentic.jsonl` (4) — ciclo agéntico completo coding-terminal con fallo de entorno inyectado.
-- `data/examples/v1_seed_verification.jsonl` (3) — verificación con patch-traps (parches obvios que silencian el síntoma).
-- `data/examples/v1_seed_research.jsonl` (1) — research web con trampa SEO; `v1_seed_spanish_professional.jsonl` (1) — español profesional con claim normativo falso.
-- `data/derived/v1_seed_agentic--acs.jsonl` (4) — variantes con fallos inyectados; `v1_seed_verification--dialects.jsonl` (6) — 3 seeds × dialectos anthropic/openai.
-- `data/taxonomy.json` — taxonomía: effort levels, loop phases, lanes (`qwen-coder`, `phi-reasoning`, `nemotron-chat`), tokens V4X.
-- `research/raw/` (`p_*`, `page_*`, `s_*`, `search_*` por modelo: astra, opus, kimi, glm, sol, fable…) — material fuente de la investigación, no dataset final.
-- `docs/01-09` + `evals/` (`effort_calibration`, `dialect_parity`…) — metodología y evaluaciones inéditas.
+- 🟢🔄🏆 `data/examples/v1_seed_adaptive_think.jsonl` (3) — **thinking adaptativo**: misma familia en varias dificultades, función dificultad→presupuesto.
+- 🟢 `data/examples/v1_seed_trivial.jsonl` (3) — cola trivial (`effort=none`): cuándo NO pensar.
+- 🟢 `v1_seed_agentic.jsonl` (4) · `v1_seed_verification.jsonl` (3, patch-traps) · `v1_seed_research.jsonl` (1, trampa SEO) · `v1_seed_spanish_professional.jsonl` (1) — comportamientos con inyecciones.
+- 🟢 `data/derived/v1_seed_agentic--acs.jsonl` (4) · `v1_seed_verification--dialects.jsonl` (6: 3 seeds × anthropic/openai).
+- 🔧 `data/taxonomy.json` — effort levels, loop phases, lanes, tokens V4X.
+- 🔧 `research/raw/` — material fuente por modelo (no dataset final). + 🔧 `docs/01-09`, `evals/`, `scripts/`.
 
 ### 11 - Cibersecurity 🟠 🔄
-- `shard-00001…00013.jsonl` (257.707 líneas `instruction`/`response`) — base de conocimiento: CVEs/CNNVD, papers, man pages, reportes wooyun (fijar hechos).
-- `Red Teaming/ai-ku-red-teaming.parquet` (357: train 325) 🔄 — metodologías + `redteam_brainstorming` (61) + pentest/bug_bounty/osint; dificultad hard→intermediate; con `verification`; subdominios ideation/mitre_attack/wstg/nist/osstmm…
-- `Red Teaming/build/frozen_v1.0.parquet` (212) y `frozen_v1.1.parquet` (305) — snapshots congelados.
+- 🟡 `shard-00001…00013.jsonl` (257.707 líneas `instruction`/`response`) — base CVE: CNNVD, papers, man pages, wooyun (fijar hechos).
+- 🟢🔄 `Red Teaming/ai-ku-red-teaming.parquet` (357) — aplicar metodologías con `verification` (piensa como atacante, actúa como auditor); incluye `redteam_brainstorming` (61).
+- 🟢 `Red Teaming/build/frozen_v1.0.parquet` (212) y `frozen_v1.1.parquet` (305) — snapshots congelados.
+- 🔧 `Red Teaming/{docs,quality,scripts}` — metodología, informes y generadores.
 
 ### 12 - COT 🟢
-- `cot_unified.parquet` (1.119.633) — cadenas de pensamiento para aprender a razonar.
+- 🟢 `cot_unified.parquet` (1.119.633) — problemas con razonamiento encadenado (mates, lógica…).
 
 ### 12 - Brainstorming 🟢
 - *(vacía; 61 registros `ideation` localizados en Red Teaming, pendientes de colocar)* — el experto Nº 177 aprende brainstorming.

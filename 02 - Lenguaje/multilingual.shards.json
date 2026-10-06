@@ -1,0 +1,18 @@
+{
+ "original": "multilingual.parquet",
+ "rows": 202364,
+ "orig_row_groups": 203,
+ "n_shards": 2,
+ "shards": [
+  {
+   "file": "multilingual-shard-00000.parquet",
+   "rows": 101182,
+   "bytes": 63949549
+  },
+  {
+   "file": "multilingual-shard-00001.parquet",
+   "rows": 101182,
+   "bytes": 68046186
+  }
+ ]
+}

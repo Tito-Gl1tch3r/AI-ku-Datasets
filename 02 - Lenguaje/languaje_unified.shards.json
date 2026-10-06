@@ -1,0 +1,328 @@
+{
+ "original": "languaje_unified.parquet",
+ "rows": 9612117,
+ "orig_row_groups": 10,
+ "n_shards": 64,
+ "shards": [
+  {
+   "file": "languaje_unified-shard-00000.parquet",
+   "rows": 262144,
+   "bytes": 14824722
+  },
+  {
+   "file": "languaje_unified-shard-00001.parquet",
+   "rows": 32768,
+   "bytes": 2772270
+  },
+  {
+   "file": "languaje_unified-shard-00002.parquet",
+   "rows": 16384,
+   "bytes": 20770897
+  },
+  {
+   "file": "languaje_unified-shard-00003.parquet",
+   "rows": 8192,
+   "bytes": 9487921
+  },
+  {
+   "file": "languaje_unified-shard-00004.parquet",
+   "rows": 8192,
+   "bytes": 79611629
+  },
+  {
+   "file": "languaje_unified-shard-00005.parquet",
+   "rows": 65536,
+   "bytes": 24415176
+  },
+  {
+   "file": "languaje_unified-shard-00006.parquet",
+   "rows": 8192,
+   "bytes": 14830316
+  },
+  {
+   "file": "languaje_unified-shard-00007.parquet",
+   "rows": 2048,
+   "bytes": 46047852
+  },
+  {
+   "file": "languaje_unified-shard-00008.parquet",
+   "rows": 2048,
+   "bytes": 56227753
+  },
+  {
+   "file": "languaje_unified-shard-00009.parquet",
+   "rows": 2048,
+   "bytes": 68077132
+  },
+  {
+   "file": "languaje_unified-shard-00010.parquet",
+   "rows": 2048,
+   "bytes": 66613671
+  },
+  {
+   "file": "languaje_unified-shard-00011.parquet",
+   "rows": 2048,
+   "bytes": 72727448
+  },
+  {
+   "file": "languaje_unified-shard-00012.parquet",
+   "rows": 2048,
+   "bytes": 29836230
+  },
+  {
+   "file": "languaje_unified-shard-00013.parquet",
+   "rows": 4096,
+   "bytes": 62727547
+  },
+  {
+   "file": "languaje_unified-shard-00014.parquet",
+   "rows": 1024,
+   "bytes": 52314332
+  },
+  {
+   "file": "languaje_unified-shard-00015.parquet",
+   "rows": 1024,
+   "bytes": 35163643
+  },
+  {
+   "file": "languaje_unified-shard-00016.parquet",
+   "rows": 2048,
+   "bytes": 48114582
+  },
+  {
+   "file": "languaje_unified-shard-00017.parquet",
+   "rows": 4096,
+   "bytes": 19644076
+  },
+  {
+   "file": "languaje_unified-shard-00018.parquet",
+   "rows": 2048,
+   "bytes": 57229858
+  },
+  {
+   "file": "languaje_unified-shard-00019.parquet",
+   "rows": 1024,
+   "bytes": 29547696
+  },
+  {
+   "file": "languaje_unified-shard-00020.parquet",
+   "rows": 1024,
+   "bytes": 56734929
+  },
+  {
+   "file": "languaje_unified-shard-00021.parquet",
+   "rows": 2048,
+   "bytes": 54091112
+  },
+  {
+   "file": "languaje_unified-shard-00022.parquet",
+   "rows": 2048,
+   "bytes": 41512782
+  },
+  {
+   "file": "languaje_unified-shard-00023.parquet",
+   "rows": 8192,
+   "bytes": 20311441
+  },
+  {
+   "file": "languaje_unified-shard-00024.parquet",
+   "rows": 16384,
+   "bytes": 41141197
+  },
+  {
+   "file": "languaje_unified-shard-00025.parquet",
+   "rows": 32768,
+   "bytes": 83498459
+  },
+  {
+   "file": "languaje_unified-shard-00026.parquet",
+   "rows": 32768,
+   "bytes": 83246970
+  },
+  {
+   "file": "languaje_unified-shard-00027.parquet",
+   "rows": 2048,
+   "bytes": 47690176
+  },
+  {
+   "file": "languaje_unified-shard-00028.parquet",
+   "rows": 2048,
+   "bytes": 40385879
+  },
+  {
+   "file": "languaje_unified-shard-00029.parquet",
+   "rows": 1024,
+   "bytes": 40787212
+  },
+  {
+   "file": "languaje_unified-shard-00030.parquet",
+   "rows": 256,
+   "bytes": 47000896
+  },
+  {
+   "file": "languaje_unified-shard-00031.parquet",
+   "rows": 256,
+   "bytes": 48439167
+  },
+  {
+   "file": "languaje_unified-shard-00032.parquet",
+   "rows": 256,
+   "bytes": 49743565
+  },
+  {
+   "file": "languaje_unified-shard-00033.parquet",
+   "rows": 256,
+   "bytes": 48338613
+  },
+  {
+   "file": "languaje_unified-shard-00034.parquet",
+   "rows": 256,
+   "bytes": 46508798
+  },
+  {
+   "file": "languaje_unified-shard-00035.parquet",
+   "rows": 256,
+   "bytes": 49167873
+  },
+  {
+   "file": "languaje_unified-shard-00036.parquet",
+   "rows": 256,
+   "bytes": 50109633
+  },
+  {
+   "file": "languaje_unified-shard-00037.parquet",
+   "rows": 256,
+   "bytes": 46408802
+  },
+  {
+   "file": "languaje_unified-shard-00038.parquet",
+   "rows": 256,
+   "bytes": 48448286
+  },
+  {
+   "file": "languaje_unified-shard-00039.parquet",
+   "rows": 256,
+   "bytes": 48124036
+  },
+  {
+   "file": "languaje_unified-shard-00040.parquet",
+   "rows": 512,
+   "bytes": 68348982
+  },
+  {
+   "file": "languaje_unified-shard-00041.parquet",
+   "rows": 4096,
+   "bytes": 64144694
+  },
+  {
+   "file": "languaje_unified-shard-00042.parquet",
+   "rows": 4096,
+   "bytes": 33658090
+  },
+  {
+   "file": "languaje_unified-shard-00043.parquet",
+   "rows": 16384,
+   "bytes": 1823294
+  },
+  {
+   "file": "languaje_unified-shard-00044.parquet",
+   "rows": 32768,
+   "bytes": 9888919
+  },
+  {
+   "file": "languaje_unified-shard-00045.parquet",
+   "rows": 65536,
+   "bytes": 4843490
+  },
+  {
+   "file": "languaje_unified-shard-00046.parquet",
+   "rows": 131072,
+   "bytes": 9584748
+  },
+  {
+   "file": "languaje_unified-shard-00047.parquet",
+   "rows": 262144,
+   "bytes": 19188836
+  },
+  {
+   "file": "languaje_unified-shard-00048.parquet",
+   "rows": 1048576,
+   "bytes": 77093832
+  },
+  {
+   "file": "languaje_unified-shard-00049.parquet",
+   "rows": 1048576,
+   "bytes": 76951003
+  },
+  {
+   "file": "languaje_unified-shard-00050.parquet",
+   "rows": 1048576,
+   "bytes": 76877503
+  },
+  {
+   "file": "languaje_unified-shard-00051.parquet",
+   "rows": 1048576,
+   "bytes": 76900222
+  },
+  {
+   "file": "languaje_unified-shard-00052.parquet",
+   "rows": 524288,
+   "bytes": 38505646
+  },
+  {
+   "file": "languaje_unified-shard-00053.parquet",
+   "rows": 524288,
+   "bytes": 63772957
+  },
+  {
+   "file": "languaje_unified-shard-00054.parquet",
+   "rows": 262144,
+   "bytes": 40212431
+  },
+  {
+   "file": "languaje_unified-shard-00055.parquet",
+   "rows": 262144,
+   "bytes": 48577652
+  },
+  {
+   "file": "languaje_unified-shard-00056.parquet",
+   "rows": 262144,
+   "bytes": 68522785
+  },
+  {
+   "file": "languaje_unified-shard-00057.parquet",
+   "rows": 262144,
+   "bytes": 64718014
+  },
+  {
+   "file": "languaje_unified-shard-00058.parquet",
+   "rows": 262144,
+   "bytes": 61177741
+  },
+  {
+   "file": "languaje_unified-shard-00059.parquet",
+   "rows": 262144,
+   "bytes": 60624721
+  },
+  {
+   "file": "languaje_unified-shard-00060.parquet",
+   "rows": 524288,
+   "bytes": 82751637
+  },
+  {
+   "file": "languaje_unified-shard-00061.parquet",
+   "rows": 524288,
+   "bytes": 44547818
+  },
+  {
+   "file": "languaje_unified-shard-00062.parquet",
+   "rows": 524288,
+   "bytes": 39415556
+  },
+  {
+   "file": "languaje_unified-shard-00063.parquet",
+   "rows": 174933,
+   "bytes": 12257062
+  }
+ ]
+}

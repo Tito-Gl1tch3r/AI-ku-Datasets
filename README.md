@@ -30,7 +30,7 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 | 02.5.5 | `02.5.5 - MultiAPI` | 🟠 🔄 | **APIs sin mezclar protocolos**, con pares contrastivos y set adversarial. |
 | 02.5.5 | `02.5.5 - Computer_Use` | 🟢 🔄 | **Usar un ordenador** (552 trayectorias, escalera basic→extreme). |
 | 03 | `03 - Agentic` · `03 - Tool_Calling` | 🟢 | **Comportamiento agéntico** (trayectorias + tool calls; mezcla de agentic y CoT). |
-| 04 | `04 - Oro` | 🟢 | **Fable 5 en Cursor → traza REAL de Fable 5.1 en Claude Code** (aprender a actuar como Fable; orden interno: cursor primero, traza después). |
+| 04 | `04 - Oro` | 🟢 | **Bloque oro: primero se entrena Fable 5 en Cursor y después Fable 5.1 en Claude Code** (el trajectory es lo último; aprender a actuar como Fable). |
 | 05 | `05 - Programming` | 🟠 🔄 | **Programar y entender QUÉ programa** (V1.0 → resto → superprogrammer último). |
 | 07 | `07 - Maths` | 🟠 🔄 | **Razonamiento científico** (las trazas enseñan a derivar y verificar). |
 | 08 | `08 - Audit` | 🟠 | **Auditoría**: el fichero unificado fija hechos CVE (🟡); la técnica vive en Red Teaming. |
@@ -83,8 +83,9 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 - 🟢 `03 - Tool_Calling/tool_calling_unified.parquet` (124.084) — bucles user→assistant→tool.
 
 ### 04 / 10 / 13 - Oro 🟢
-- 🟢 `train_cursor.jsonl` (244 líneas, 58,8 MB) — **Fable 5 en Cursor**: sesiones reales de agente programador (`prompt` + `messages` + `tools`, system "powered by Fable 5"). **Va primero.**
-- 🟢 `trajectory.jsonl` (323 líneas) — **traza REAL de Fable 5.1 en Claude Code** (eventos user/assistant/system + estado de sesión; mezcla agentic+CoT para imitar, no para fijar). **Va después.** (Es el mismo fichero que vive en `03 - Agentic`: la repetición 03→04→10→13 es la repetición espaciada.)
+**Orden de entrenamiento dentro del bloque: primero Fable 5 en Cursor, después Fable 5.1 en Claude Code (el trajectory es lo último).**
+- 🟢 `train_cursor.jsonl` (244 líneas, 58,8 MB) — **Fable 5 en Cursor**: sesiones reales de agente programador (`prompt` + `messages` + `tools`, system "powered by Fable 5"). **Se entrena primero.**
+- 🟢 `trajectory.jsonl` (323 líneas) — **traza REAL de Fable 5.1 en Claude Code** (eventos user/assistant/system + estado de sesión; mezcla agentic+CoT para imitar, no para fijar). **Se entrena en último lugar.** (Es el mismo fichero que vive en `03 - Agentic`: la repetición 03→04→10→13 es la repetición espaciada.)
 
 ### 05 - Programming 🟠 🔄
 - 🟢 `dataset-comprension-codigoV1.0.json` (13 ejemplos) — **[1º] comprensión de código.**

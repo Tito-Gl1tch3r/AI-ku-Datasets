@@ -1,0 +1,58 @@
+{
+ "original": "audit_unified.parquet",
+ "rows": 906126,
+ "orig_row_groups": 1,
+ "n_shards": 10,
+ "shards": [
+  {
+   "file": "audit_unified-shard-00000.parquet",
+   "rows": 226531,
+   "bytes": 69291683
+  },
+  {
+   "file": "audit_unified-shard-00001.parquet",
+   "rows": 113266,
+   "bytes": 60753229
+  },
+  {
+   "file": "audit_unified-shard-00002.parquet",
+   "rows": 56633,
+   "bytes": 75048511
+  },
+  {
+   "file": "audit_unified-shard-00003.parquet",
+   "rows": 28316,
+   "bytes": 44877891
+  },
+  {
+   "file": "audit_unified-shard-00004.parquet",
+   "rows": 14158,
+   "bytes": 76731068
+  },
+  {
+   "file": "audit_unified-shard-00005.parquet",
+   "rows": 14159,
+   "bytes": 28472130
+  },
+  {
+   "file": "audit_unified-shard-00006.parquet",
+   "rows": 113265,
+   "bytes": 30722291
+  },
+  {
+   "file": "audit_unified-shard-00007.parquet",
+   "rows": 113266,
+   "bytes": 67804648
+  },
+  {
+   "file": "audit_unified-shard-00008.parquet",
+   "rows": 113266,
+   "bytes": 59213597
+  },
+  {
+   "file": "audit_unified-shard-00009.parquet",
+   "rows": 113266,
+   "bytes": 65558974
+  }
+ ]
+}

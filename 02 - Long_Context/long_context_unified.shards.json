@@ -1,0 +1,178 @@
+{
+ "original": "long_context_unified.parquet",
+ "rows": 36074,
+ "orig_row_groups": 1,
+ "n_shards": 34,
+ "shards": [
+  {
+   "file": "long_context_unified-shard-00000.parquet",
+   "rows": 2254,
+   "bytes": 77245084
+  },
+  {
+   "file": "long_context_unified-shard-00001.parquet",
+   "rows": 2255,
+   "bytes": 75913376
+  },
+  {
+   "file": "long_context_unified-shard-00002.parquet",
+   "rows": 2254,
+   "bytes": 74733514
+  },
+  {
+   "file": "long_context_unified-shard-00003.parquet",
+   "rows": 2255,
+   "bytes": 77478506
+  },
+  {
+   "file": "long_context_unified-shard-00004.parquet",
+   "rows": 1127,
+   "bytes": 75006227
+  },
+  {
+   "file": "long_context_unified-shard-00005.parquet",
+   "rows": 563,
+   "bytes": 45616202
+  },
+  {
+   "file": "long_context_unified-shard-00006.parquet",
+   "rows": 282,
+   "bytes": 51350927
+  },
+  {
+   "file": "long_context_unified-shard-00007.parquet",
+   "rows": 282,
+   "bytes": 83165877
+  },
+  {
+   "file": "long_context_unified-shard-00008.parquet",
+   "rows": 140,
+   "bytes": 64713603
+  },
+  {
+   "file": "long_context_unified-shard-00009.parquet",
+   "rows": 70,
+   "bytes": 78977236
+  },
+  {
+   "file": "long_context_unified-shard-00010.parquet",
+   "rows": 8,
+   "bytes": 43773638
+  },
+  {
+   "file": "long_context_unified-shard-00011.parquet",
+   "rows": 9,
+   "bytes": 40419459
+  },
+  {
+   "file": "long_context_unified-shard-00012.parquet",
+   "rows": 9,
+   "bytes": 48330833
+  },
+  {
+   "file": "long_context_unified-shard-00013.parquet",
+   "rows": 9,
+   "bytes": 55130084
+  },
+  {
+   "file": "long_context_unified-shard-00014.parquet",
+   "rows": 18,
+   "bytes": 64657146
+  },
+  {
+   "file": "long_context_unified-shard-00015.parquet",
+   "rows": 9,
+   "bytes": 55806316
+  },
+  {
+   "file": "long_context_unified-shard-00016.parquet",
+   "rows": 9,
+   "bytes": 32642307
+  },
+  {
+   "file": "long_context_unified-shard-00017.parquet",
+   "rows": 17,
+   "bytes": 66751705
+  },
+  {
+   "file": "long_context_unified-shard-00018.parquet",
+   "rows": 18,
+   "bytes": 35674494
+  },
+  {
+   "file": "long_context_unified-shard-00019.parquet",
+   "rows": 35,
+   "bytes": 27963396
+  },
+  {
+   "file": "long_context_unified-shard-00020.parquet",
+   "rows": 71,
+   "bytes": 43282265
+  },
+  {
+   "file": "long_context_unified-shard-00021.parquet",
+   "rows": 141,
+   "bytes": 81444087
+  },
+  {
+   "file": "long_context_unified-shard-00022.parquet",
+   "rows": 141,
+   "bytes": 61400573
+  },
+  {
+   "file": "long_context_unified-shard-00023.parquet",
+   "rows": 141,
+   "bytes": 46427749
+  },
+  {
+   "file": "long_context_unified-shard-00024.parquet",
+   "rows": 282,
+   "bytes": 40948677
+  },
+  {
+   "file": "long_context_unified-shard-00025.parquet",
+   "rows": 1128,
+   "bytes": 32552780
+  },
+  {
+   "file": "long_context_unified-shard-00026.parquet",
+   "rows": 4510,
+   "bytes": 20417627
+  },
+  {
+   "file": "long_context_unified-shard-00027.parquet",
+   "rows": 9018,
+   "bytes": 79359783
+  },
+  {
+   "file": "long_context_unified-shard-00028.parquet",
+   "rows": 2254,
+   "bytes": 74933320
+  },
+  {
+   "file": "long_context_unified-shard-00029.parquet",
+   "rows": 2255,
+   "bytes": 56990870
+  },
+  {
+   "file": "long_context_unified-shard-00030.parquet",
+   "rows": 2255,
+   "bytes": 61558005
+  },
+  {
+   "file": "long_context_unified-shard-00031.parquet",
+   "rows": 563,
+   "bytes": 48887309
+  },
+  {
+   "file": "long_context_unified-shard-00032.parquet",
+   "rows": 564,
+   "bytes": 49018160
+  },
+  {
+   "file": "long_context_unified-shard-00033.parquet",
+   "rows": 1128,
+   "bytes": 61329404
+  }
+ ]
+}

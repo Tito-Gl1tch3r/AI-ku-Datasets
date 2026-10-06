@@ -1,0 +1,178 @@
+{
+ "original": "cot_unified.parquet",
+ "rows": 1119633,
+ "orig_row_groups": 2,
+ "n_shards": 34,
+ "shards": [
+  {
+   "file": "cot_unified-shard-00000.parquet",
+   "rows": 65536,
+   "bytes": 47137005
+  },
+  {
+   "file": "cot_unified-shard-00001.parquet",
+   "rows": 32768,
+   "bytes": 23607076
+  },
+  {
+   "file": "cot_unified-shard-00002.parquet",
+   "rows": 16384,
+   "bytes": 68570258
+  },
+  {
+   "file": "cot_unified-shard-00003.parquet",
+   "rows": 16384,
+   "bytes": 67381108
+  },
+  {
+   "file": "cot_unified-shard-00004.parquet",
+   "rows": 4096,
+   "bytes": 55497943
+  },
+  {
+   "file": "cot_unified-shard-00005.parquet",
+   "rows": 4096,
+   "bytes": 32165984
+  },
+  {
+   "file": "cot_unified-shard-00006.parquet",
+   "rows": 2048,
+   "bytes": 72039995
+  },
+  {
+   "file": "cot_unified-shard-00007.parquet",
+   "rows": 2048,
+   "bytes": 49955374
+  },
+  {
+   "file": "cot_unified-shard-00008.parquet",
+   "rows": 4096,
+   "bytes": 64214008
+  },
+  {
+   "file": "cot_unified-shard-00009.parquet",
+   "rows": 16384,
+   "bytes": 31585514
+  },
+  {
+   "file": "cot_unified-shard-00010.parquet",
+   "rows": 32768,
+   "bytes": 17697956
+  },
+  {
+   "file": "cot_unified-shard-00011.parquet",
+   "rows": 65536,
+   "bytes": 20361776
+  },
+  {
+   "file": "cot_unified-shard-00012.parquet",
+   "rows": 262144,
+   "bytes": 27060397
+  },
+  {
+   "file": "cot_unified-shard-00013.parquet",
+   "rows": 16384,
+   "bytes": 37188843
+  },
+  {
+   "file": "cot_unified-shard-00014.parquet",
+   "rows": 8192,
+   "bytes": 33676067
+  },
+  {
+   "file": "cot_unified-shard-00015.parquet",
+   "rows": 4096,
+   "bytes": 52752603
+  },
+  {
+   "file": "cot_unified-shard-00016.parquet",
+   "rows": 4096,
+   "bytes": 64612348
+  },
+  {
+   "file": "cot_unified-shard-00017.parquet",
+   "rows": 2048,
+   "bytes": 50065076
+  },
+  {
+   "file": "cot_unified-shard-00018.parquet",
+   "rows": 2048,
+   "bytes": 53251726
+  },
+  {
+   "file": "cot_unified-shard-00019.parquet",
+   "rows": 4096,
+   "bytes": 58159911
+  },
+  {
+   "file": "cot_unified-shard-00020.parquet",
+   "rows": 4096,
+   "bytes": 21008401
+  },
+  {
+   "file": "cot_unified-shard-00021.parquet",
+   "rows": 2048,
+   "bytes": 81666472
+  },
+  {
+   "file": "cot_unified-shard-00022.parquet",
+   "rows": 2048,
+   "bytes": 64320763
+  },
+  {
+   "file": "cot_unified-shard-00023.parquet",
+   "rows": 16384,
+   "bytes": 1313678
+  },
+  {
+   "file": "cot_unified-shard-00024.parquet",
+   "rows": 65536,
+   "bytes": 6317
+  },
+  {
+   "file": "cot_unified-shard-00025.parquet",
+   "rows": 131072,
+   "bytes": 24044622
+  },
+  {
+   "file": "cot_unified-shard-00026.parquet",
+   "rows": 262144,
+   "bytes": 8516215
+  },
+  {
+   "file": "cot_unified-shard-00027.parquet",
+   "rows": 35528,
+   "bytes": 500270
+  },
+  {
+   "file": "cot_unified-shard-00028.parquet",
+   "rows": 8882,
+   "bytes": 10838839
+  },
+  {
+   "file": "cot_unified-shard-00029.parquet",
+   "rows": 2220,
+   "bytes": 7915623
+  },
+  {
+   "file": "cot_unified-shard-00030.parquet",
+   "rows": 1110,
+   "bytes": 44236516
+  },
+  {
+   "file": "cot_unified-shard-00031.parquet",
+   "rows": 1111,
+   "bytes": 45210581
+  },
+  {
+   "file": "cot_unified-shard-00032.parquet",
+   "rows": 4441,
+   "bytes": 57044292
+  },
+  {
+   "file": "cot_unified-shard-00033.parquet",
+   "rows": 17765,
+   "bytes": 74013270
+  }
+ ]
+}

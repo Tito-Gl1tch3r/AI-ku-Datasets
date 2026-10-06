@@ -1,0 +1,83 @@
+[
+  {
+    "url": "https://www.anthropic.com/claude-opus-5-5",
+    "name": "Introducing Claude Opus 5.5 - Anthropic",
+    "snippet": "Claude Opus 5.5 leads in agentic coding and knowledge work, and costs 40% less to run than Opus 5 on typical workloads.",
+    "host_name": "www.anthropic.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/ClaudeAI/comments/1wt3baa/sonnet_55_vs_opus_55_the_terminalbench_win_is_max",
+    "name": "Sonnet 5.5 vs Opus 5.5: the Terminal-Bench \"win\" is Max vs",
+    "snippet": "Easy pick. Hard agentic coding and messy debugging: Opus is still meaningfully ahead, around 5 to 8 points on the harder coding benchmarks.",
+    "host_name": "www.reddit.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.lindy.ai/blog/claude-opus-5-5",
+    "name": "Claude Opus 5.5: What's New, Pricing, and What It's Best For",
+    "snippet": "Claude Opus 5.5 beats GPT-6 Astra on most benchmarks in Anthropic's launch table, including Terminal-Bench 4.0 (66.4% vs 57.9%), while Astra ...",
+    "host_name": "www.lindy.ai",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.mindstudio.ai/blog/claude-opus-5-5-release",
+    "name": "Claude Opus 5.5: Benchmarks, Pricing, and Real-World",
+    "snippet": "Opus 5.5 scores higher on most agentic and coding benchmarks, costs about 40% less per task on typical workloads, generates output over 30% ...",
+    "host_name": "www.mindstudio.ai",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.coderabbit.ai/blog/sonnet-5-5-model-review",
+    "name": "Sonnet 5.5 vs Opus 5.5 Code Review Benchmarks | CodeRabbit",
+    "snippet": "Large gains on agentic coding benchmarks. Sonnet 5.5 jumps from 10.3% to 70.6% on Terminal-Bench 4.0, ahead of Opus 5.5, and lands within about ...",
+    "host_name": "www.coderabbit.ai",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.datacamp.com/blog/claude-sonnet-5-5",
+    "name": "Claude Sonnet 5.5: Features, Benchmarks, Pricing, and More",
+    "snippet": "Claude Sonnet 5.5 beats Opus 5.5 on Terminal-Bench 4.0 and runs 30% faster than Sonnet 5. The headline gain is agentic terminal coding, where ...",
+    "host_name": "www.datacamp.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://coursiv.io/blog/claude-opus-5-5",
+    "name": "Claude Opus 5.5: Features, Pricing, Benchmarks, Review",
+    "snippet": "Anthropic reports higher results across agentic coding, computer use, and knowledge-work benchmarks, output more than 30% faster, and 40% lower ...",
+    "host_name": "coursiv.io",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.digitalapplied.com/blog/claude-opus-5-5-launch-pricing-benchmarks-2026",
+    "name": "Claude Opus 5.5: Pricing, Benchmarks and Breaking Changes",
+    "snippet": "Claude Opus 5.5 costs $4/$20 per million tokens, defaults to medium effort and breaks four Opus 5 integrations. What the 40% saving assumes.",
+    "host_name": "www.digitalapplied.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/groups/claudeaicommunity/posts/1391366289697201",
+    "name": "Anthropic Sonnet 5.5 beats Opus 5.5 on agentic coding",
+    "snippet": "Opus 5.5 scored 66.4 So the cheaper model now wins the agentic coding test, and it costs half as much per token as Opus. It's also 30% faster ...",
+    "host_name": "www.facebook.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  }
+]

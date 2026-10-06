@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://arstechnica.com/google/2026/09/google-announces-gemini-4-argon-ai-model-but-you-cant-use-it-yet",
+    "name": "Google announces Gemini 4 Argon AI model, but you can't use",
+    "snippet": "The company claims this new AI offers industry-leading performance in coding, knowledge work, and cybersecurity, but you aren't allowed to use ... Missing:  weaknesses  computer",
+    "host_name": "arstechnica.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.xda-developers.com/google-reveals-gemini-4-argon-but-youre-not-allowed-to-use-it",
+    "name": "Google reveals Gemini 4 Argon, but you're not allowed to use it",
+    "snippet": "Now, it seems Gemini has hit the 'Mythos wall', as Gemini 4 Argon is here, and you are absolutely not allowed to touch it. Not yet, anyway.",
+    "host_name": "www.xda-developers.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.helpnetsecurity.com/2026/10/01/google-gemini-4-argon",
+    "name": "Google says Gemini 4 Argon can find and patch critical",
+    "snippet": "Google says the model found a critical vulnerability exposing sensitive personal information in healthcare software used by hospitals worldwide, ... Missing:  computer  | Show results with:",
+    "host_name": "www.helpnetsecurity.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.business-standard.com/technology/artificial-intelligence/from-coding-to-cyber-defence-what-makes-google-s-gemini-4-argon-different-126100200530_1.html",
+    "name": "From coding to cyber defence: What makes Google's Gemini 4",
+    "snippet": "Google says the longer context helps Gemini 4 Argon handle complex, multi-step tasks by retaining information and decisions across a single ...",
+    "host_name": "www.business-standard.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon",
+    "name": "Gemini 4 Argon: our next era of frontier intelligence - Google Blog",
+    "snippet": "Given the criticality of many of these systems, such large-scale rewrites are undergoing rigorous automated and manual auditing, emulation ... Missing:  weaknesses  | Show results with:",
+    "host_name": "blog.google",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://futurumgroup.com/insights/google-returns-to-the-frontier-with-gemini-4-argon",
+    "name": "Google Returns to the Frontier With Gemini 4 Argon - Futurum",
+    "snippet": "Argon also trails Sonnet 5.5, Opus 5.5, and GPT-6 Astra on Terminal Bench 4, a test of agentic coding in a terminal, although it takes first ... Missing:  criticism  | Show results with:",
+    "host_name": "futurumgroup.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.remio.ai/post/gemini-4-argon-launches-behind-closed-doors-putting-googles-benchmark-lead-on-tr",
+    "name": "Gemini 4 Argon Launches Behind Closed Doors, Putting",
+    "snippet": "Argon did not lead every terminal, code-migration, cyber, or computer-use evaluation. Rivals can emphasize areas where their systems perform ...",
+    "host_name": "www.remio.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.techtarget.com/ai/news/366651339/Gemini-4-Argon-is-late-but-Googles-expertise-may-be-an-advantage",
+    "name": "Gemini 4 Argon is late, but Google's expertise may be an",
+    "snippet": "Google has secured Argon so that the model refuses risky requests less of a unique offering; it has now become a staple for everyone,” said ...",
+    "host_name": "www.techtarget.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

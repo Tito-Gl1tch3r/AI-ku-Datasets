@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://venturebeat.com/technology/openais-gpt-6-1-sol-offers-astra-like-performance-at-1-5th-price-a-new-ultrafast-tier-clocks-at-300-tokens-per-second",
+    "name": "OpenAI's GPT-6.1 Sol offers Astra-like performance at 1/5th",
+    "snippet": "OpenAI's GPT-6.1 Sol offers Astra-like performance at 1/5th price. A new Ultrafast tier clocks at 300 tokens per second. · 300 tokens per second.",
+    "host_name": "venturebeat.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://deploymentsafety.openai.com/gpt-6-1-sol",
+    "name": "Addendum to GPT-6 Astra System Card: GPT-6.1 Sol",
+    "snippet": "GPT‑6.1 Sol achieves length-adjusted scores of 64.2 on HealthBench Professional (+3.4 relative to GPT‑6 Sol), 58.5 on HealthBench (+5.3), 36.2 ...",
+    "host_name": "deploymentsafety.openai.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://artificialanalysis.ai/models/releases/comparisons/gpt-6-1-sol-vs-gpt-6-astra",
+    "name": "GPT-6.1 Sol vs GPT-6 Astra: Release Comparison",
+    "snippet": "For intelligence, GPT-6 Astra scores highest: GPT-6 Astra (Max) at 53, against GPT-6.1 Sol (Max) at 52 for GPT-6.1 Sol. · For output speed, GPT-6.1 Sol is ...",
+    "host_name": "artificialanalysis.ai",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/ClaudeAI/comments/1wtoi3e/open_ais_internal_benchmarks_show_gpt61_sol",
+    "name": "Open AI's internal benchmarks show GPT-6.1 Sol crushing",
+    "snippet": "Open AI's internal benchmarks show GPT-6.1 Sol crushing Opus 5.5, with Anthropic struggling to keep up ... r/ClaudeAI ...",
+    "host_name": "www.reddit.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.datacamp.com/blog/gpt-6-1-sol",
+    "name": "GPT-6.1 Sol: Features, Benchmarks, Pricing, and Access",
+    "snippet": "OpenAI's GPT-6.1 Sol matches GPT-6 Astra on several agentic benchmarks at roughly a fifth of the task cost. Full features, benchmarks ...",
+    "host_name": "www.datacamp.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.lesswrong.com/posts/LqSZZAriGqgsGDQe3/gpt-6-1-sol-nearly-matches-the-no-cot-performance-of-gpt-6",
+    "name": "GPT-6.1 Sol nearly matches the no-CoT performance of GPT-6",
+    "snippet": "Astra performs at least as well as 6.1 Sol on 25 of the 27 benchmarks, and on the two benchmarks where 6.1 Sol is better, the difference is one ...",
+    "host_name": "www.lesswrong.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openrouter.ai/openai/gpt-6.1-sol",
+    "name": "GPT-6.1 Sol - API Pricing & Benchmarks - OpenRouter",
+    "snippet": "GPT-6.1 Sol is an upgrade to GPT-6 Sol from OpenAI, positioned below the flagship GPT-6 Astra in the GPT-6 series.",
+    "host_name": "openrouter.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.vellum.ai/blog/gpt-6-1-sol-benchmarks-explained",
+    "name": "GPT-6.1 Sol Benchmarks Explained - Vellum",
+    "snippet": "GPT-6.1 Sol matches Astra at roughly $1.50/task vs ~$7.70/task for Astra. GPT-6 Astra averages $23.80 per task, reaching the benchmark ceiling ...",
+    "host_name": "www.vellum.ai",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

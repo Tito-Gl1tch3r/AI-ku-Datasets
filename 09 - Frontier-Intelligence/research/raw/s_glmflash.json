@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://openrouter.ai/z-ai/glm-5.3-flash",
+    "name": "Z.ai: GLM 5.3 Flash - API Pricing & Benchmarks - OpenRouter",
+    "snippet": "GLM-5.3-Flash is a native multimodal model from Z.ai. $0.02625 per million input tokens, $0.90 per million output tokens. Avg Output Price $0.4626 /M tokens ( ... Missing:  specs  | Show results with:",
+    "host_name": "openrouter.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://z.ai/blog/glm-5.3-flash",
+    "name": "GLM-5.3-Flash: Frontier Intelligence, Flash Cost - Z.ai",
+    "snippet": "GLM-5.3-Flash pushes the Pareto frontier of the Artificial Analysis Intelligence Index v4.1.1, scoring 57 at just $0.045 per task (discounted) — ...",
+    "host_name": "z.ai",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://llm-stats.com/models/glm-5.3-flash",
+    "name": "GLM-5.3-Flash Benchmarks, Pricing & Context Window",
+    "snippet": "GLM-5.3-Flash is a language model from ZAI, pricing from $0.150/M input, $0.030/M cached input, $0.500/M output. GLM-5.3-Flash starts at $0.150 ... Missing:  specs  | Show results with:",
+    "host_name": "llm-stats.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.datacamp.com/blog/glm-5-3-flash",
+    "name": "GLM-5.3-Flash: Features, Benchmarks, and Pricing | DataCamp",
+    "snippet": "Z.ai's base list price is $0.15 per 1M input tokens and $0.03 per 1M output tokens, with a limited-time promo halving those to $0.075 and $0.015 ...",
+    "host_name": "www.datacamp.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://artificialanalysis.ai/models/glm-5-3-flash",
+    "name": "GLM-5.3-Flash - Intelligence, Performance & Price Analysis",
+    "snippet": "Analysis of Z AI's GLM 5.3 Flash and comparison to other AI models across key metrics including quality, price, performance (tokens per second & time to ...",
+    "host_name": "artificialanalysis.ai",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vyy3k6/glm53flash_frontier_intelligence_flash_cost",
+    "name": "GLM-5.3-Flash: Frontier Intelligence, Flash Cost : r/LocalLLaMA",
+    "snippet": "GLM-5.3-Flash anonymously ・ on Chinese AI chips . model still has 320b parameters. The GLM are all now 5.3/5.3 flash ・ 14 tokenizer probes, ... Missing:  specs  | Show results with:",
+    "host_name": "www.reddit.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://lumadock.com/blog/glm-5-3-flash",
+    "name": "GLM-5.3-Flash explained: Benchmarks, pricing and hardware",
+    "snippet": "On August 26, 2026 Z.ai claimed it, priced the API at $0.15 per million input tokens. sparse MoE with 320B total parameters and 18B active per ...",
+    "host_name": "lumadock.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.eesel.ai/blog/glm-5-3-flash",
+    "name": "GLM-5.3-Flash explained: pricing, benchmarks, and how it works",
+    "snippet": "GLM-5.3-Flash is Z.ai's first natively multimodal GLM-5 model: 320B/18B MoE, 1M context, from $0.075/M tokens. Here's the pricing ...",
+    "host_name": "www.eesel.ai",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

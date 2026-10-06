@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf",
+    "name": "[PDF] Claude Fable 5.1 & Claude Mythos 5.1 System Card - Anthropic",
+    "snippet": "When we reviewed failing transcripts, we found that Fable 5.1 ... The. Troubleshooting variant assesses Claude's ability to detect and fix errors ...",
+    "host_name": "www-cdn.anthropic.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/ClaudeAI/comments/1w6gtgx/fable_vs_fable_51_for_creative_writing",
+    "name": "Fable Vs Fable 5.1 for creative writing : r/ClaudeAI - Reddit",
+    "snippet": "Fable 5.1 misses details and fails to hold context more often than Fable 5 did with my 95,000 word manuscript. Fable 5.1 made mistakes 5 to 10 ... Missing:  limitations  analysis",
+    "host_name": "www.reddit.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.lesswrong.com/posts/m7SZLkkxoeus3eFP8/claude-fable-5-1-and-mythos-5-1-the-system-card",
+    "name": "Claude Fable 5.1 and Mythos 5.1: The System Card - LessWrong",
+    "snippet": "I draw a distinction between 'failure, but understandable and the rate of this should not be zero' versus 'failure, can't happen, every instance ...",
+    "host_name": "www.lesswrong.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://thezvi.substack.com/p/claude-mythos-51-and-fable-51-capabilities",
+    "name": "Claude Mythos 5.1 and Fable 5.1: Capabilities",
+    "snippet": "It built a computer use Mac app for me called Hands in one-shot that other models failed at. - A Claude our writers want to use again. It has ... Missing:  failures  | Show results with:",
+    "host_name": "thezvi.substack.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/groups/claudecommunity/posts/1111810038026327",
+    "name": "How to avoid costly AI project reviews with Fable 5.1 - Facebook",
+    "snippet": "I made one of the biggest mistakes I added $15 to Fable 5.1 and asked it to perform a complete evaluation of my project.",
+    "host_name": "www.facebook.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://snorkel.ai/blog/fable-5-1-vs-opus-5-coding-benchmark",
+    "name": "Fable 5.1 vs Opus 5: Coding Benchmark Results | Snorkel AI",
+    "snippet": "Fable's main failure occurs when valid attempts are lost mid-trajectory rather than finishing incorrectly. Its scored timeout failures overwhelmingly follow ...",
+    "host_name": "snorkel.ai",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://aident.ai/blog/use-claude-fable-5-1-claude-code-safely",
+    "name": "Claude Fable 5.1 in Claude Code: Upgrade and Verify Safely",
+    "snippet": "Good candidates include explaining one failing test, reviewing a narrow diff, or proposing a plan for a documented bug. Use the same prompt and ...",
+    "host_name": "aident.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pub.towardsai.net/does-claude-fable-5-1-check-its-own-work-i-broke-10-repos-to-see-b99aa8faaff6",
+    "name": "Does Claude Fable 5.1 Check its Own Work? I Broke 10 Repos",
+    "snippet": "Fable read the failure, made the edit, reran the suite, and wrote a shorter report. On these ten tasks the extra work bought nothing, since ...",
+    "host_name": "pub.towardsai.net",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

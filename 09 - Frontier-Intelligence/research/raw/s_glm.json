@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://docs.z.ai/guides/llm/glm-5.3",
+    "name": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+    "snippet": "SAO with compaction, which helps these gains hold on long-horizon tasks. GLM-5.3 scores 84.5%, up from GLM-5.2's 77.2% — the best result on the benchmark, ... Missing:  Zhipu  | Show results with:",
+    "host_name": "docs.z.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://z.ai/blog/glm-5.3",
+    "name": "GLM-5.3: Frontier Coding with Emergent Cyber Capabilities - Z.ai",
+    "snippet": "SAO with compaction, GLM-5.3 improves from 4.6 to 28.3. GLM-5.3 scores 84.5%, up from GLM-5.2's 77.2% — the best result on the benchmark, ahead ...",
+    "host_name": "z.ai",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://traictory.com/model/glm-5.3",
+    "name": "GLM-5.3 by Zhipu AI | Specs & Benchmarks | Traictory",
+    "snippet": "Detailed information about GLM-5.3 by Zhipu AI: technical specifications, benchmark results, API pricing, documentation and source code ... Missing:  SAO  critic  trajectory  compaction",
+    "host_name": "traictory.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://codingfleet.com/blog/glm-5-3-vs-glm-5-2-complete-benchmark-comparison",
+    "name": "GLM-5.3 vs GLM-5.2: How Scaled Post-Training Unlocked a",
+    "snippet": "GLM-5.3 takes #1 globally on CyberGym (84.5%), beating closed-source flagships, and more than doubles. SAO with Compaction (State-Action ...",
+    "host_name": "codingfleet.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+    "name": "GLM-5.3 and the spread of advanced cyber capabilities",
+    "snippet": "In this post, we share our analysis of GLM-5.3, the latest AI model developed by Zhipu AI (known outside of China as Z.ai). Like Claude ... Missing:  agentic  SAO  critic  compaction",
+    "host_name": "www.anthropic.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.interconnects.ai/p/glm-53-how-chinese-labs-keep-stride",
+    "name": "GLM-5.3: How Chinese labs keep stride with the frontier",
+    "snippet": "GLM-5.3 is likely a narrower model than Claude Fable or GPT Sol. When GPT-5.2 was released, it had mixed reviews outside of agentic coding. Missing:  SAO  trajectory  compaction",
+    "host_name": "www.interconnects.ai",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dev.to/jamilxt/glm-53-zhipus-open-weight-model-excels-at-coding-and-cyber-1m86",
+    "name": "GLM 5.3: Zhipu's Open-Weight Model Excels at Coding and",
+    "snippet": "Zhipu says GLM 5.3 is 50% better than GLM 5.2 on its in-house coding benchmark and reaches open-source state-of-the-art scores Missing:  agentic  compaction",
+    "host_name": "dev.to",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://the-decoder.com/zhipu-ai-releases-glm-5-3-claims-its-the-strongest-open-weights-coding-model",
+    "name": "Zhipu AI releases GLM-5.3, claims it's the strongest open",
+    "snippet": "GLM-5.3 is the most powerful open-weights coding model, with the biggest jumps in agent-based tasks. it found 2,436 vulnerabilities across 269 ... Missing:  agentic  SAO  trajectory  compaction",
+    "host_name": "the-decoder.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

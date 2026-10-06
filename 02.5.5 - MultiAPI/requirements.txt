@@ -1,0 +1,4 @@
+pyarrow>=14.0
+pandas>=2.0
+# Opcional, para cargar con la librería datasets de Hugging Face:
+# datasets>=2.19

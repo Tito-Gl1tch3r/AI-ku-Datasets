@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "project": "AI-ku-Frontier-Intelligence-Research",
+  "purpose": "Taxonomía y proporciones del dataset SFT de AI-ku V4X Thinker Max",
+  "v4x_tokens": {
+    "think_open": "<|V4X_think>",
+    "think_close": "<V4X_thought|>",
+    "contract": "apertura y cierre EXACTOS, en ese orden, asimétricos; effort=none => ninguna de las dos cadenas"
+  },
+  "loop_phases": [
+    "comprehension", "requirements", "strategy_selection", "tool_selection",
+    "execution", "observation", "verification", "correction", "adaptation", "completion"
+  ],
+  "task_families": [
+    "coding-terminal", "coding-build", "data-analysis", "research-web",
+    "professional-es", "math-science", "ops-sre", "creative-writing",
+    "chat-general", "multimodal-omni"
+  ],
+  "effort_levels": {
+    "none": 1, "low": 2, "mid": 3, "high": 4, "ado": 5,
+    "note": "el par (effort, difficulty) entrena la función dificultad->presupuesto; los mismatches van etiquetados",
+    "ado_note": "Ado = esfuerzo máximo con precisión máxima (piensa lo necesario, no sobrepiensa)"
+  },
+  "modifiers": {
+    "CF": "contrafáctico de otro ejemplo (campo counterfactual_of)",
+    "INJ": "fallo/trampa/anomalía sembrada (campo meta.injection)",
+    "ACS": "variante con historial de razonamiento purgado (contrato del jinja)",
+    "DIA": "variante de serialización de tool calls (anthropic|openai)",
+    "MV": "múltiples soluciones válidas",
+    "U": "incertidumbre explícita requerida"
+  },
+  "classification_AH": {
+    "A": "conocimiento general",
+    "B": "comportamiento agéntico",
+    "C": "skill invocable",
+    "D": "herramienta/runtime",
+    "E": "posible especialización de experto (evidence bar)",
+    "F": "posible mejora de router",
+    "G": "posible cambio arquitectónico",
+    "H": "mecanismo de evaluación"
+  },
+  "proportions_v1_router_aware": {
+    "agentic_multi_step": 30,
+    "counterfactual_patch_trap_pivot": 15,
+    "verification_self_correction": 12,
+    "adaptive_think_stratified": 12,
+    "long_horizon_acs": 10,
+    "research_deep_es": 8,
+    "professional_es_citations": 5,
+    "general_replay_recovery": 5,
+    "persona_identity_epistemics": 3,
+    "note": "% de tokens; el bloque adaptativo incluye 8-10% del TOTAL en cola trivial effort=none; medir activación de lanes por época (router-aware)"
+  },
+  "quality_bar": {
+    "originality": "0 ítems de benchmarks; provenance=original-synthetic obligatorio",
+    "informativeness": "cada ejemplo entrena >=1 patrón de docs/03 con contraste",
+    "variety": ">=1 CF, >=1 INJ, >=1 MV, >=1 U por cada 20 ejemplos",
+    "acs_cleanliness": "en variantes purgadas, cero referencias a pensamientos inexistentes",
+    "dialect_parity": "decisión idéntica entre dialectos anthropic/openai",
+    "scale_principle": "10.000 informativos > millones redundantes; el seed es el molde"
+  },
+  "pipeline_fit": {
+    "order": "Merge (hecho) -> SFT -> ROUTER -> OMNI -> prompt baking -> MTP x4 -> RL condicional",
+    "acs_location": "el purgado lo ejecuta el jinja del runtime; el dataset acompaña el contrato",
+    "mtp_note": "MTP se entrena tras OMNI-alignment, sobre la distribución completa de tokens"
+  }
+}

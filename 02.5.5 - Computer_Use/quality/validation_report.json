@@ -1,0 +1,46 @@
+{
+  "dataset": "ai-ku-computer-use",
+  "schema_version": "1.0.0",
+  "rows": 552,
+  "checks_run": {
+    "parquet_readable": 1,
+    "required_columns": 1,
+    "ids_unique": 1,
+    "json_parse": 552,
+    "screenshots_intact": 3691,
+    "no_family_leakage": 1
+  },
+  "counts": {
+    "steps_total": 11871,
+    "observations_total": 11871,
+    "pixel_screenshots": 3780,
+    "est_duration_s_total": 26977,
+    "outcomes": {
+      "success": 516,
+      "aborted_safely": 10,
+      "partial": 23,
+      "failed": 3
+    },
+    "languages": {
+      "en": 117,
+      "es": 435
+    }
+  },
+  "policies": {
+    "captcha_rows": 9,
+    "injection_rows": 10,
+    "recovery_rows": 155,
+    "verify_ok_success": 516,
+    "multi_app_rows": 81,
+    "open_ended_rows": 27,
+    "long_horizon_rows": 144
+  },
+  "adapter_coverage": {
+    "steps_with_openai_adapter": 11871,
+    "steps_with_anthropic_adapter": 11871
+  },
+  "duplicate_rate_semantic": 0.279,
+  "errors": [],
+  "warnings": [],
+  "passed": true
+}

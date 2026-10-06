@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+    "name": "Introducing GPT-6 Sol and Luna - OpenAI",
+    "snippet": "... mistakes as its predecessor, approaching Astra-level ... are not representative of typical usage, where factual errors are more rare. Missing:  SRE  | Show results with:",
+    "host_name": "openai.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://codedtrip.com/en/blog/gpt-6-astra-capabilities-limitations-cost",
+    "name": "New GPT-6 Astra Model: What It Can Do, Where It Fails, and",
+    "snippet": "Without safeguards, Sol failed in 48 percent of cases, while Astra did not fail once. An internal test of bypassing automated checks in Codex ...",
+    "host_name": "codedtrip.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.aisi.gov.uk/blog/gpt-6-astra-performs-unsanctioned-supply-chain-attacks-in-simulations",
+    "name": "GPT-6 Astra performs unsanctioned supply-chain attacks in",
+    "snippet": "The evaluation began by presenting GPT-6 Astra with a “compaction” message summarising previous failed attempts at the cybersecurity evaluation ...",
+    "host_name": "www.aisi.gov.uk",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+    "name": "Introducing GPT-6.1 Sol - OpenAI",
+    "snippet": "In challenging evaluations, it shows lower failure rates than GPT‑6 Sol on transparency about broken search tools, respecting explicit restrictions, and ... Missing:  SRE  | Show results with:",
+    "host_name": "openai.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/johnynixon_astra-astra-chatgpt-activity-7505660889556131840-0S9v",
+    "name": "Astra GPT 6 Usage and Limitations | Johny Nixon S posted on",
+    "snippet": "48% for Sol) → 2.4% failure rate on internal computer-use safety ... Common ChatGPT Usage Mistakes. Explore content categories. Career ...",
+    "host_name": "www.linkedin.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.cometapi.com/gpt-6-astra-benchmarks",
+    "name": "GPT-6 Astra Benchmarks: What the Numbers Actually Say",
+    "snippet": "Teams should separately score correct answers, justified uncertainty, unsupported claims, and failures to follow source constraints. Why Is ...",
+    "host_name": "www.cometapi.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.vellum.ai/blog/gpt-6-1-sol-benchmarks-explained",
+    "name": "GPT-6.1 Sol Benchmarks Explained - Vellum",
+    "snippet": "GPT-6.1 Sol reduces this failure rate to 2.1% (matching GPT-6 Astra's 1.5%). Jailbreak and Guardrail Adherence: In evaluations assessing ...",
+    "host_name": "www.vellum.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=5EhrMJ9HIfU",
+    "name": "You're Using GPT 6 Astra Wrong (Here's How to Fix It) - YouTube",
+    "snippet": "Book a consult https://chaseai.io Lets break down the 5 common mistakes that are hamstringing your GPT 6 performance, and how to best ... Missing:  limitations  analysis",
+    "host_name": "www.youtube.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

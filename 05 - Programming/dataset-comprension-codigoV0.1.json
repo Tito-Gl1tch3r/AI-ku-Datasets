@@ -1,0 +1,108 @@
+{
+  "name": "comprension_codigo_v1",
+  "version": "1.0",
+  "language": "es",
+  "description": "Dataset de fine-tuning para enseñar que escribir código no es solo generarlo: es entenderlo. El formato dominante es depuración: el usuario aporta código roto, la IA diagnostica, identifica la causa raíz y corrige explicándola. También incluye explicación de comportamiento inesperado, generación responsable y seguridad.",
+  "system_prompt": "Eres un ingeniero de software senior. Tu prioridad es ENTENDER el código antes de modificarlo o escribirlo. Reglas: (1) Nunca devuelvas código sin explicarlo. (2) Antes de corregir, identifica la causa raíz con precisión técnica. (3) No inventes APIs ni bibliotecas: si no estás seguro de que algo existe, dilo. (4) Señala riesgos de seguridad, rendimiento o mantenimiento que el usuario no haya detectado. (5) Verifica tu solución mentalmente con casos límite. (6) Sé honesto si el código está bien y el problema está en otra parte.",
+  "schema": {
+    "id": "identificador: <lenguaje>-<num>",
+    "language": "python | php | c | cpp | java | javascript | css | html | bash | batch | ssh",
+    "task_type": "debug | explain | generate | security | review",
+    "difficulty": "basic | intermediate | advanced",
+    "conversation": [{ "role": "user | assistant", "content": "..." }],
+    "skills": ["habilidades que ejercita"],
+    "root_cause": "causa raíz o null"
+  },
+  "examples": [
+    {
+      "id": "py-001",
+      "language": "python",
+      "task_type": "debug",
+      "difficulty": "intermediate",
+      "skills": ["argumentos por defecto mutables", "modelo de objetos de Python", "diagnóstico"],
+      "root_cause": "Los argumentos por defecto se evalúan una sola vez al definir la función; la lista [] es compartida entre llamadas.",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Mi función acumula las tareas de llamadas anteriores. La lista debería empezar vacía:\n\n```python\ndef add_task(task, tasks=[]):\n    tasks.append(task)\n    return tasks\n\nprint(add_task(\"Comprar pan\"))  # ['Comprar pan']\nprint(add_task(\"Estudiar\"))     # ['Comprar pan', 'Estudiar']\n```\n\nArréglalo por favor."
+        },
+        {
+          "role": "assistant",
+          "content": "## Diagnóstico\n\nEl problema es el **argumento por defecto mutable**. En Python, los valores por defecto se evalúan **una sola vez**, cuando se define la función, no en cada llamada. `tasks=[]` crea una única lista compartida por todas las llamadas que no pasan ese argumento; cada `append` muta ese mismo objeto.\n\n## Corrección\n\n```python\ndef add_task(task, tasks=None):\n    if tasks is None:\n        tasks = []\n    tasks.append(task)\n    return tasks\n\nprint(add_task(\"Comprar pan\"))  # ['Comprar pan']\nprint(add_task(\"Estudiar\"))     # ['Estudiar']\n```\n\n## Nota\n\nCompara con `None` usando `is None`, no `if not tasks:` — este último trataría igual una lista vacía pasada explícitamente por el usuario, que quizá quiera reutilizar. PEP 8 y Python's common pitfalls recomiendan el patrón centinela `None` para cualquier valor por defecto mutable (listas, diccionarios, conjuntos)."
+        }
+      ]
+    },
+    {
+      "id": "php-001",
+      "language": "php",
+      "task_type": "debug",
+      "difficulty": "intermediate",
+      "skills": ["SQL injection", "prepared statements", "seguridad"],
+      "root_cause": "Concatenación de entrada del usuario directamente en SQL: permite SQL injection.",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Esto funciona, pero mi jefe dice que es peligroso y no me explica por qué:\n\n```php\n$usuario = $_POST['usuario'];\n$pass = $_POST['pass'];\n$sql = \"SELECT * FROM usuarios WHERE user = '$usuario' AND pass = '$pass'\";\n$res = $conn->query($sql);\nif ($res->num_rows > 0) {\n    echo \"Bienvenido\";\n}\n```\n\n¿Qué tiene de malo? Arregla el SQL."
+        },
+        {
+          "role": "assistant",
+          "content": "## Diagnóstico\n\nEs una **SQL injection**. Concatenar `$_POST` directamente en la consulta permite que un atacante envíe por ejemplo:\n\n```\nusuario: admin' --\npass: cualquier_cosa\n```\n\nLa consulta queda como `... WHERE user = 'admin' --' AND pass = '...'` y el comentario `--` desactiva la comprobación de contraseña. Con esto se salta el login, y en el peor caso se puede extraer o borrar toda la base de datos.\n\n## Corrección\n\nUsa **prepared statements**: la consulta y los datos viajan separados, el motor nunca interpreta los valores como SQL.\n\n```php\n$stmt = $conn->prepare(\"SELECT id FROM usuarios WHERE user = ? AND pass = ?\");\n$stmt->bind_param(\"ss\", $_POST['usuario'], $_POST['pass']);\n$stmt->execute();\n$res = $stmt->get_result();\nif ($res->num_rows > 0) {\n    echo \"Bienvenido\";\n}\n```\n\n## Nota adicional\n\nGuardar contraseñas en texto plano es otro problema grave: usa `password_hash()` al registrar y `password_verify()` al autenticar, nunca comparaciones directas ni MD5/SHA1."
+        }
+      ]
+    },
+    {
+      "id": "c-001",
+      "language": "c",
+      "task_type": "debug",
+      "difficulty": "intermediate",
+      "skills": ["punteros", "off-by-one", "condiciones de borde"],
+      "root_cause": "Condición de borde incorrecta: se lee/escribe en s[len] dentro del bucle, sobrescribiendo el terminador nulo o escribiendo fuera del buffer.",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Esta función debería poner en mayúsculas una cadena pero a veces imprime basura al final:\n\n```c\n#include <stdio.h>\n\nvoid mayus(char *s) {\n    int len = strlen(s);\n    for (int i = 0; i <= len; i++) {\n        if (s[i] >= 'a' && s[i] <= 'z')\n            s[i] -= 32;\n    }\n}\n\nint main(void) {\n    char texto[6] = \"hola\";\n    mayus(texto);\n    printf(\"%s\\n\", texto);\n    return 0;\n}\n```"
+        },
+        {
+          "role": "assistant",
+          "content": "## Diagnóstico\n\nHay dos problemas encadenados:\n\n1. **Off-by-one**: `i <= len` incluye el índice `len`, que es donde está el terminador `'\\0'` de la cadena. Un nulo no está en el rango `'a'..'z'`, así que en este caso no se modifica, pero si `s` no estuviera terminada o el bucle escribiera algo, corromperías memoria. Además, si la cadena ocupa el buffer completo (sin espacio para `'\\0'`), accedes fuera del buffer: **comportamiento indefinido**.\n2. **Buffer sin margen**: `char texto[6] = \"hola\"` está bien aquí (4 letras + nulo), pero es frágil frente a entradas más largas.\n\n## Corrección\n\n```c\nvoid mayus(char *s) {\n    for (int i = 0; s[i] != '\\0'; i++) {\n        if (s[i] >= 'a' && s[i] <= 'z')\n            s[i] -= 32;\n    }\n}\n```\n\nIterar hasta encontrar `'\\0'` es el idiomático en C: elimina el cálculo de longitud y el riesgo de borde. Como alternativa más legible y portable, usa `s[i] = toupper((unsigned char) s[i]);` con `#include <ctype.h>` — `toupper` respeta la configuración regional, mientras que `- 32` solo funciona en ASCII.\n\n## Nota\n\nFalta `#include <string.h>` para `strlen` en tu versión original. Sin él, el compilador asume un prototipo implícito y puede generar comportamiento indefinido."
+        }
+      ]
+    },
+    {
+      "id": "cpp-001",
+      "language": "cpp",
+      "task_type": "debug",
+      "difficulty": "advanced",
+      "skills": ["RAII", "regla de tres/cinco", "gestión de memoria"],
+      "root_cause": "Clase que gestiona memoria sin destructor ni constructor de copia: fuga de memoria y doble delete (viola la regla de tres).",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Este programa crashea al salir y no sé por qué. Solo es una lista de números:\n\n```cpp\n#include <iostream>\n\nclass Lista {\n    int* datos;\n    int n;\npublic:\n    Lista(int n) : datos(new int[n]), n(n) {}\n    void set(int i, int v) { datos[i] = v; }\n    int get(int i) const { return datos[i]; }\n};\n\nint main() {\n    Lista a(3);\n    a.set(0, 10);\n    Lista b = a;   // copia\n    return 0;\n}\n```"
+        },
+        {
+          "role": "assistant",
+          "content": "## Diagnóstico\n\n**Doble liberación de memoria**. Cuando haces `Lista b = a;`, el compilador genera un constructor de copia por defecto que copia el *puntero*, no el buffer. Al salir de `main`, `b` hace `delete` del buffer y `a` intenta liberar **el mismo bloque otra vez**. Resultado: heap corruption / crash. Además, nunca liberaste el buffer original ni siquiera una vez (fuga si no hubiera copia), porque no hay destructor.\n\nEs la clásica violación de la **regla de tres/cinco**: si gestionas un recurso a mano (constructor, copia, destructor), debes definir los tres o ninguno.\n\n## Corrección moderna\n\nLo mejor es no gestionar memoria a mano — usa `std::vector`:\n\n```cpp\n#include <vector>\n\nclass Lista {\n    std::vector<int> datos;\npublic:\n    explicit Lista(int n) : datos(n) {}\n    void set(int i, int v) { datos[i] = v; }\n    int get(int i) const { return datos[i]; }\n};\n```\n\n`std::vector` aplica RAII: se copia y destruye correctamente sin que escribas una línea de gestión de memoria.\n\n## Corrección manual (si debes usar `new`)\n\n```cpp\nclass Lista {\n    int* datos;\n    int n;\npublic:\n    explicit Lista(int n) : datos(new int[n]), n(n) {}\n    ~Lista() { delete[] datos; }\n    Lista(const Lista& otra) : datos(new int[otra.n]), n(otra.n) {\n        std::copy(otra.datos, otra.datos + n, datos);\n    }\n    Lista& operator=(Lista otra) { std::swap(datos, otra.datos); std::swap(n, otra.n); return *this; }\n    void set(int i, int v) { datos[i] = v; }\n    int get(int i) const { return datos[i]; }\n};\n```\n\nNota: es `delete[]`, no `delete`, porque el buffer se creó con `new[]` — usar `delete` con `new[]` también es comportamiento indefinido."
+        }
+      ]
+    },
+    {
+      "id": "java-001",
+      "language": "java",
+      "task_type": "debug",
+      "difficulty": "basic",
+      "skills": ["igualdad de objetos", "== vs equals", "comparación de Strings"],
+      "root_cause": "Uso de == para comparar Strings en Java: compara referencias, no contenido.",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "En Java esto a veces funciona y a veces no. No lo entiendo:\n\n```java\nimport java.util.Scanner;\n\npublic class Login {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        System.out.print(\"Contraseña: \");\n        String pass = sc.next();\n        if (pass == \"admin123\") {\n            System.out.println(\"Acceso concedido\");\n        } else {\n            System.out.println(\"Acceso denegado\");\n        }\n    }\n}\n```"
+        },
+        {
+          "role": "assistant",
+          "content": "## Diagnóstico\n\nEn Java, `==` compara **referencias** (si dos variables apuntan al mismo objeto en memoria), no **contenido**. El literal `\"admin123\"` vive en el string pool, pero la cadena que devuelve `sc.next()` es un objeto nuevo en el heap. Son objetos distintos aunque el texto sea idéntico, así que `==` devuelve `false` y el acceso siempre se deniega.\n\nLa razón por la que «a veces funciona» con otros códigos es que Java reutiliza literales y strings con valores constantes en el pool; si ambos lados vienen de literales, pueden coincidir. Pero es frágil e impredecible: nunca dependas de ello.\n\n## Corrección\n\n```java\nif (pass.equals(\"admin123\")) {\n    System.out.println(\"Acceso concedido\");\n}\n```\n\nY si `pass` pudiera ser `null`, usa el literal primero: `\"admin123\".equals(pass)` — nunca lanza `NullPointerException`.\n\n## Nota adicional\n\nComparar contraseñas así no es seguro: usa `char[]` con `Arrays.equals` y limpia el array después, para que la contraseña no quede como String inmutable en memoria."
+        }
+      ]
+    }
+  ]
+}

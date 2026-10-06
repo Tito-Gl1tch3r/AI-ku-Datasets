@@ -1,0 +1,153 @@
+{
+  "name": "AI-ku MultiAPI Dataset",
+  "version": "1.0.0",
+  "snapshot_date": "2026-10-04",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "nullable": true,
+      "description": "Identificador estable del ejemplo (prefijo por módulo de capacidad)."
+    },
+    {
+      "name": "split",
+      "type": "string",
+      "nullable": true,
+      "description": "train | validation | test | adversarial_test (asignación determinista)."
+    },
+    {
+      "name": "task_type",
+      "type": "string",
+      "nullable": true,
+      "description": "Capacidad entrenada (taxonomía cerrada en schema.json)."
+    },
+    {
+      "name": "api",
+      "type": "string",
+      "nullable": true,
+      "description": "openai | anthropic | both | unknown (interfaz(es) protagonistas)."
+    },
+    {
+      "name": "api_version_or_snapshot",
+      "type": "string",
+      "nullable": true,
+      "description": "Snapshot de referencia del contrato (ver sources.md)."
+    },
+    {
+      "name": "intent",
+      "type": "string",
+      "nullable": true,
+      "description": "Objetivo del ejemplo en una frase."
+    },
+    {
+      "name": "context",
+      "type": "string",
+      "nullable": true,
+      "description": "Contexto de runtime/escenario presentado al modelo."
+    },
+    {
+      "name": "input",
+      "type": "string",
+      "nullable": true,
+      "description": "Escenario + datos (payloads/eventos/errores) que el modelo debe procesar."
+    },
+    {
+      "name": "expected_behavior",
+      "type": "string",
+      "nullable": true,
+      "description": "Criterios que una respuesta correcta debe cubrir."
+    },
+    {
+      "name": "target",
+      "type": "string",
+      "nullable": true,
+      "description": "Respuesta ideal: análisis estructural + payload/acción correcta + corrección si aplica."
+    },
+    {
+      "name": "difficulty",
+      "type": "string",
+      "nullable": true,
+      "description": "easy | medium | hard | adversarial."
+    },
+    {
+      "name": "source",
+      "type": "string",
+      "nullable": true,
+      "description": "Fuente principal del ejemplo (id de sources.md o aiku-original)."
+    },
+    {
+      "name": "source_type",
+      "type": "string",
+      "nullable": true,
+      "description": "official_docs | secondary_docs | original_examples | synthetic_curated."
+    },
+    {
+      "name": "validation_status",
+      "type": "string",
+      "nullable": true,
+      "description": "validated | needs_review."
+    },
+    {
+      "name": "quality_notes",
+      "type": "string",
+      "nullable": true,
+      "description": "Notas de calidad/limitaciones del ejemplo concreto."
+    },
+    {
+      "name": "skills",
+      "type": "list<item: string>",
+      "nullable": true,
+      "description": "Etiquetas finas de habilidad (multi-label) para filtrado y análisis de cobertura."
+    },
+    {
+      "name": "contrast_pair_id",
+      "type": "string",
+      "nullable": true,
+      "description": "Id del grupo contrastivo (los miembros viajan siempre juntos)."
+    },
+    {
+      "name": "negative",
+      "type": "struct<attempt: string, why_wrong: string, correction: string>",
+      "nullable": true,
+      "description": "Negativo embebido: attempt (respuesta plausible pero incorrecta), why_wrong, correction."
+    }
+  ],
+  "enums": {
+    "split": [
+      "adversarial_test",
+      "test",
+      "train",
+      "validation"
+    ],
+    "task_type": [
+      "agentic_planning",
+      "api_recognition",
+      "contrastive_discrimination",
+      "error_handling",
+      "multimodal",
+      "protocol_repair",
+      "semantic_conversion",
+      "state_management",
+      "streaming",
+      "structural_mapping",
+      "tool_calling",
+      "versioning"
+    ],
+    "api": [
+      "anthropic",
+      "both",
+      "openai",
+      "unknown"
+    ],
+    "difficulty": [
+      "adversarial",
+      "easy",
+      "hard",
+      "medium"
+    ],
+    "source_type": [
+      "original_examples"
+    ]
+  },
+  "total_examples": 150
+}

@@ -1,0 +1,9 @@
+{
+  "summary": {
+    "PASS": 1526,
+    "PASS_TOLERANT": 1,
+    "FAIL": 0
+  },
+  "n_total": 1527,
+  "method": "independent re-execution of every example code, exact output match (numeric tolerance 2e-6 only with identical text skeleton)"
+}

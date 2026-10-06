@@ -1,0 +1,18 @@
+{
+ "original": "tool_calling_unified.parquet",
+ "rows": 124084,
+ "orig_row_groups": 1,
+ "n_shards": 2,
+ "shards": [
+  {
+   "file": "tool_calling_unified-shard-00000.parquet",
+   "rows": 62042,
+   "bytes": 51430001
+  },
+  {
+   "file": "tool_calling_unified-shard-00001.parquet",
+   "rows": 62042,
+   "bytes": 60228164
+  }
+ ]
+}

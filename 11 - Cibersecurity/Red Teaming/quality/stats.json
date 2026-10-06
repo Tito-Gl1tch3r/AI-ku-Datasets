@@ -1,0 +1,66 @@
+{
+  "n_examples": 357,
+  "total_chars": 1095143,
+  "approx_tokens": 273113,
+  "token_method": "chars/4 heuristic (English + code mix)",
+  "avg_chars_per_example": 3067.6,
+  "avg_tokens_per_example": 765.0,
+  "domain_distribution": {
+    "bug_bounty": 12.89,
+    "osint": 9.52,
+    "pentest_methodology": 19.89,
+    "redteam_brainstorming": 17.09,
+    "security_methodologies": 40.62
+  },
+  "difficulty_distribution": {
+    "extreme": 0.0,
+    "frontier": 0.0,
+    "hard": 84.87,
+    "intermediate": 5.04,
+    "very_hard": 10.08
+  },
+  "split_distribution": {
+    "test": 5.04,
+    "train": 91.04,
+    "validation": 3.92
+  },
+  "task_type_distribution": {
+    "data_analysis": 18.21,
+    "derivation": 0.0,
+    "diagnosis": 1.12,
+    "experiment_design": 1.12,
+    "exploration": 19.33,
+    "hardening_review": 1.68,
+    "method_comparison": 4.48,
+    "optimization": 10.64,
+    "problem_solving": 22.13,
+    "result_analysis": 9.8,
+    "simulation": 0.0,
+    "solution_critique": 9.24,
+    "troubleshooting": 2.24
+  },
+  "with_verification": 357,
+  "verification_pct": 100.0,
+  "with_code_execution": 357,
+  "code_pct": 100.0,
+  "error_recovery_examples": 4,
+  "error_recovery_pct": 1.12,
+  "multidisciplinar_tagged": 0,
+  "multidisciplinar_pct": 0.0,
+  "knowledge_types": {
+    "approximation": 12,
+    "derivation": 45,
+    "empirical_evidence": 40,
+    "hypothesis": 61,
+    "known_result": 97,
+    "numerical_result": 102
+  },
+  "families": 56,
+  "dedup_exact_removed": 0,
+  "dedup_policy": "frozen-reference v1.2 (full released artifact frozen in released order; vectorizer fitted on frozen rows; new rows deduped against frozen + earlier new)",
+  "frozen_rows_kept": 305,
+  "dedup_near_removed": 72,
+  "dedup_family_cap_removed": 0,
+  "build_failures": [],
+  "build_seconds": 2.4
+}

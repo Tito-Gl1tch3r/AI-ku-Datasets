@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://openai.com/index/gpt-6-astra",
+    "name": "GPT-6 Astra: A new generation of intelligence - OpenAI",
+    "snippet": "Astra solved 88.0% of tasks in a single attempt and 99.2% within four attempts, compared with 55.9% and 68.7% for GPT‑5.6 Sol, respectively. Beyond benchmarks, ... Missing:  strengths  | Show results with:",
+    "host_name": "openai.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.vellum.ai/blog/gpt-6-astra-benchmarks-explained",
+    "name": "GPT-6 Astra Benchmarks Explained - Vellum",
+    "snippet": "On OpenAI's MRCR v2 8-needle test, Astra scores 100% in the 256K-512K range versus 91.5% for Sol, and holds 96.3% at 512K-1M where Sol manages ... Missing:  strengths  | Show results with:",
+    "host_name": "www.vellum.ai",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.datacamp.com/blog/gpt-6-1-sol",
+    "name": "GPT-6.1 Sol: Features, Benchmarks, Pricing, and Access",
+    "snippet": "OpenAI's GPT-6.1 Sol matches GPT-6 Astra on several agentic benchmarks at roughly a fifth of the task cost. Full features, benchmarks ... Missing:  strengths  | Show results with:",
+    "host_name": "www.datacamp.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://emergent.sh/learn/gpt-6-astra-benchmarks",
+    "name": "GPT-6 Astra Benchmarks: What the Numbers Actually Show",
+    "snippet": "GPT-6 Astra benchmarks are strongest where OpenAI ran the tests: it saturates FrontierMath Tier 4, ARC-AGI-3, and ExploitBench in OpenAI's own ... Missing:  FrontierSWE  | Show results with:",
+    "host_name": "emergent.sh",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/data-science-in-your-pocket/gpt-6-astra-full-analysis-013d7c25f176",
+    "name": "GPT 6 Astra Full Analysis - Medium",
+    "snippet": "Computer Use: Almost Jarvis, Not Quite AGI. Astra also sets a new frontier on computer use, scoring 72.6% on OSWorld 2.0 while taking about ... Missing:  FrontierSWE  | Show results with:",
+    "host_name": "medium.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://venturebeat.com/technology/openais-gpt-6-1-sol-offers-astra-like-performance-at-1-5th-price-a-new-ultrafast-tier-clocks-at-300-tokens-per-second",
+    "name": "OpenAI's GPT-6.1 Sol offers Astra-like performance at 1/5th",
+    "snippet": "OpenAI says GPT-6.1 Sol beats Opus 5.5 by 2.2 percentage points at medium reasoning effort while costing roughly one-third as much, and improves ... Missing:  strengths  science",
+    "host_name": "venturebeat.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://kie.ai/blog/gpt-6-astra-signal-vs-noise",
+    "name": "GPT-6 Astra Release: Benchmarks and Analysis - Kie.ai",
+    "snippet": "GPT-6 Astra reports 98% on FrontierMath Tier 4 and 100% on ExploitBench. Here is what the release confirms and leaves open. Missing:  strengths  | Show results with:",
+    "host_name": "kie.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://finance.biggo.com/news/14792e0b-7c7f-44aa-b061-3454401f7052",
+    "name": "OpenAI's GPT-6 Astra Tops Coding Benchmarks but Trails",
+    "snippet": "OpenAI's GPT-6 Astra, released September 3, 2026, leads independent coding benchmarks on token efficiency, using roughly 70% fewer tokens ... Missing:  FrontierSWE  | Show results with:",
+    "host_name": "finance.biggo.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+    "name": "Introducing GPT-6.1 Sol - OpenAI",
+    "snippet": "We're introducing GPT‑6.1 Sol, an upgrade to GPT‑6 Sol that nearly matches GPT‑6 Astra's intelligence on agentic coding, computer use, and professional work ... Missing:  strengths  FrontierSWE",
+    "host_name": "openai.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/singularity/comments/1w6f9xo/gpt_6_astra_benchmarks",
+    "name": "Gpt 6 astra benchmarks : r/singularity - Reddit",
+    "snippet": "\"The standout is its 98.6% score on ARC-AGI-3. OpenAI ran Astra with a Responses API harness that retains reasoning between turns and uses ... Missing:  FrontierSWE  | Show results with:",
+    "host_name": "www.reddit.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

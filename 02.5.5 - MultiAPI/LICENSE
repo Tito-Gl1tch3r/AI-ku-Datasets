@@ -1,0 +1,18 @@
+Creative Commons Attribution 4.0 International (CC-BY-4.0)
+
+Copyright (c) 2026 AI-ku MultiAPI Dataset contributors
+
+El dataset, la documentación y los scripts de este repositorio se ofrecen bajo la
+licencia Creative Commons Atribución 4.0 Internacional.
+
+Resumen legible por humanos (no sustituye a la licencia completa):
+- Permitido: compartir y adaptar el material para cualquier propósito, incluso comercial,
+  atribuyendo la autoría y señalando si se hicieron cambios.
+- Obligatorio: atribución razonable (enlazando este repositorio), indicación de cambios y
+  enlace a la licencia.
+
+Licencia legal completa: https://creativecommons.org/licenses/by/4.0/legalcode.es
+
+Nota sobre fuentes: los hechos de las APIs provienen de la documentación pública de OpenAI y
+Anthropic (ver sources.md); la documentación se usó como referencia de hechos funcionales y
+no se copió al dataset. Los payloads y textos son de autoría original.

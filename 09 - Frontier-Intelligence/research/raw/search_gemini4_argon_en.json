@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://www.engadget.com/2274263/google-gemini-4-model-argon",
+    "name": "Google's first Gemini 4 model is 'Argon' - Engadget",
+    "snippet": "Google trained Gemini 4 Argon to be highly capable in knowledge work, cybersecurity defense and creative writing.",
+    "host_name": "www.engadget.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/Google/status/2105388148729553195",
+    "name": "Google on X: \"Gemini 4 Argon is rolling out to an initial cohort of",
+    "snippet": "It shows significant improvements across benchmarks, setting a new state of the art for real-world long-horizon software engineering tasks.",
+    "host_name": "x.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/wallstreetbets/comments/1wufipz/google_rolls_out_gemini_4_argon_its_most_advanced",
+    "name": "Google rolls out Gemini 4 Argon, its most advanced AI model",
+    "snippet": "Gemini 4 Argon is Alphabet's most advanced model yet, with major coding, cybersecurity, and complex professional work improvements. Open.",
+    "host_name": "www.reddit.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.vals.ai/models/google_gemini-4-argon",
+    "name": "Gemini 4 Argon Benchmarks, Cost and Capabilities | Vals AI",
+    "snippet": "The model has a 1M-token context window and 262k max output tokens. Evaluations were run with reasoning effort set to “high” and temperature ...",
+    "host_name": "www.vals.ai",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.cnbc.com/2026/10/01/google-gemini-4-arrives-as-wall-street-shifts-to-personal-agents.html",
+    "name": "Google Gemini 4 arrives as Wall Street shifts to personal agents",
+    "snippet": "The company unveiled its long-awaited Gemini 4 Argon model on Wednesday, promising major advances in coding, cybersecurity, and complex tasks.",
+    "host_name": "www.cnbc.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://deepmind.google/models/gemini/cyber",
+    "name": "Gemini 4 Argon with cybersecurity defense capabilities",
+    "snippet": "The model is trained to be highly capable at cyber defense, has frontier-level performance in vulnerability detection, and automated patching.",
+    "host_name": "deepmind.google",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://lorphic.com/gemini-4-argon",
+    "name": "Gemini 4 Argon: Google's New Frontier Model Explained (2026)",
+    "snippet": "Gemini 4 Argon is Google's frontier model for coding, enterprise knowledge work, and cyber defense. Full breakdown of features and availability.",
+    "host_name": "lorphic.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  }
+]

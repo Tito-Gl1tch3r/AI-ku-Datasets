@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://www.mindstudio.ai/blog/mimo-v2-6-self-improvement-rl-technique",
+    "name": "How MiMo-V2.6 Grades Its Own Reasoning to Keep Improving",
+    "snippet": "Xiaomi's MiMo-V2.6 uses groupwise agentic grading and distillation to scale RL past binary rewards. Here's how the method works.",
+    "host_name": "www.mindstudio.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://kili-technology.com/blog/data-story-mimo-v2-6-llm-as-a-judge",
+    "name": "MiMo-V2.6: Who Grades the Grader in Xiaomi's RL Run",
+    "snippet": "MiMo-V2.6 makes a strong case that scaling agentic reinforcement learning means scaling the grader. Xiaomi spent real money on it ...",
+    "host_name": "kili-technology.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://sebastianraschka.com/blog/2026/mimo-v2-6-pro-architecture-training-notes.html",
+    "name": "MiMo-V2.6 Pro Architecture and Training Notes",
+    "snippet": "Notes on MiMo-V2.6 Pro's GQA and sliding-window attention, agent training tasks, reward signals, and large RL batches. Missing:  strong  teacher  distillation",
+    "host_name": "sebastianraschka.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://mimo.xiaomi.com/blog/mimo-v2-6-tool-call-repetition",
+    "name": "Diagnosing and Mitigating Tool-Call Repetition in MiMo-V2.6",
+    "snippet": "The table below breaks down the rates for MiMo-V2.6-Flash-RL and MiMo-V2.6-Pro-RL across different agent harnesses. Tool-call repetition rates ...",
+    "host_name": "mimo.xiaomi.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2601.02780v1",
+    "name": "MiMo-V2-Flash Technical Report - arXiv",
+    "snippet": "In this work, we introduce MiMo-V2-Flash, an efficient and cost-effective Large Language Model (LLM) that delivers strong reasoning and agentic ...",
+    "host_name": "arxiv.org",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://venturebeat.com/technology/better-than-deepseek-xiaomis-mimo-v2-6-pro-debuts-as-the-top-open-weights-model-in-the-world-alongside-cheaper-v2-6-flash",
+    "name": "'Better than DeepSeek': Xiaomi's MiMo-V2.6-Pro debuts as the",
+    "snippet": "Xiaomi reported an average 14.5% absolute performance gain across 15 model-benchmark combinations when the harness evolved dynamically, without ...",
+    "host_name": "venturebeat.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/AIGuild/comments/1wnr5ie/xiaomi_says_mimov26pro_is_now_the_highestscoring",
+    "name": "Xiaomi says MiMo-V2.6-Pro is now the highest-scoring open",
+    "snippet": "Xiaomi just released and open-sourced its MiMo-V2.6 series, and the Pro model scored 46.32 on Artificial Analysis' Intelligence Index v4.3 ...",
+    "host_name": "www.reddit.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.mindstudio.ai/blog/mimo-v2-6-pro-rl-release",
+    "name": "MiMo-V2.6-Pro-RL: Xiaomi's 1T-Parameter Agentic Model",
+    "snippet": "Xiaomi's MiMo-V2.6-Pro-RL is a 1T-parameter MoE model trained with large-scale RL. Here's how it compares to Claude Opus 5 and GPT-5.6.",
+    "host_name": "www.mindstudio.ai",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

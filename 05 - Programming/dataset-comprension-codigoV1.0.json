@@ -1,0 +1,269 @@
+{
+  "dataset_name": "code_understanding_and_fixing_es",
+  "version": "1.0",
+  "description": "Dataset conversacional en español para enseñar a un modelo que programar no es solo generar código: hay que leerlo, entenderlo, diagnosticar la causa raíz del error y explicar la corrección.",
+  "format": "chat (messages)",
+  "license": "CC-BY-4.0",
+  "examples": [
+    {
+      "id": 1,
+      "language": "python",
+      "category": "bug_fix",
+      "concept": "argumento por defecto mutable",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Eres un asistente experto en programación. No solo generas código: lo lees, lo entiendes, detectas la causa raíz de los errores y explicas tu razonamiento antes de proponer la solución."
+        },
+        {
+          "role": "user",
+          "content": "Tengo esta función y pasa algo raro: si la llamo varias veces, me devuelve elementos de llamadas anteriores. ¿Qué está mal?\n\n```python\ndef agregar(item, lista=[]):\n    lista.append(item)\n    return lista\n\nprint(agregar(1))  # [1]\nprint(agregar(2))  # [1, 2] <- ¿por qué guarda el 1?\n```"
+        },
+        {
+          "role": "assistant",
+          "content": "El problema no está en `append`, sino en cómo Python evalúa los argumentos por defecto.\n\n**Causa raíz:** En Python, los valores por defecto de los argumentos se evalúan **una sola vez**, cuando se define la función, no cada vez que se llama. Eso significa que `lista=[]` crea **una única lista** que se comparte entre todas las llamadas que no pasen ese argumento. Cada `append` modifica ese mismo objeto, por eso los elementos se acumulan.\n\n**Corrección:** Usa `None` como valor centinela y crea la lista dentro de la función:\n\n```python\ndef agregar(item, lista=None):\n    if lista is None:\n        lista = []\n    lista.append(item)\n    return lista\n\nprint(agregar(1))  # [1]\nprint(agregar(2))  # [2]\n```\n\n**Lección:** Nunca uses objetos mutables (listas, diccionarios, conjuntos) como valores por defecto. Es uno de los errores más comunes en Python porque el código *parece* correcto y funciona bien en la primera llamada."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "language": "python",
+      "category": "bug_fix",
+      "concept": "modificar una lista mientras se itera",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Eres un asistente experto en programación. No solo generas código: lo lees, lo entiendes, detectas la causa raíz de los errores y explicas tu razonamiento antes de proponer la solución."
+        },
+        {
+          "role": "user",
+          "content": "Quiero eliminar los números pares de una lista pero algunos se quedan. ¿Por qué?\n\n```python\nnumeros = [1, 2, 3, 4, 5, 6]\nfor n in numeros:\n    if n % 2 == 0:\n        numeros.remove(n)\nprint(numeros)  # [1, 3, 4, 5] <- el 4 sigue ahí\n```"
+        },
+        {
+          "role": "assistant",
+          "content": "**Causa raíz:** Estás modificando la lista mientras el bucle la recorre. El `for` internamente usa un índice que avanza posición a posición. Cuando eliminas el `2`, todos los elementos posteriores se desplazan una posición a la izquierda, pero el índice del bucle sigue avanzando, así que **se salta el siguiente elemento** (el `3` pasa a ocupar el lugar del `2`, y el bucle salta directamente al `4`... que luego sufre el mismo destino con el `6`).\n\n**Corrección:** La forma más limpia y pythónica es construir una lista nueva con una comprensión:\n\n```python\nnumeros = [1, 2, 3, 4, 5, 6]\nnumeros = [n for n in numeros if n % 2 != 0]\nprint(numeros)  # [1, 3, 5]\n```\n\nAlternativa si necesitas conservar el bucle: itera sobre una copia (`for n in numeros[:]`), así las eliminaciones no afectan al recorrido.\n\n**Lección:** Regla general: nunca añadas ni elimines elementos de una colección mientras la iteras. O creas una colección nueva, o iteras sobre una copia."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "language": "php",
+      "category": "security_fix",
+      "concept": "inyección SQL",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Eres un asistente experto en programación. No solo generas código: lo lees, lo entiendes, detectas la causa raíz de los errores y explicas tu razonamiento antes de proponer la solución."
+        },
+        {
+          "role": "user",
+          "content": "Este login funciona, pero me dijeron que es inseguro. No entiendo por qué si hace bien las consultas:\n\n```php\n$email = $_GET['email'];\n$query = \"SELECT * FROM usuarios WHERE email = '\" . $email . \"'\";\n$resultado = mysqli_query($conn, $query);\n```"
+        },
+        {
+          "role": "assistant",
+          "content": "Funciona, sí, pero ese es exactamente el peligro: **el código vulnerable suele funcionar perfectamente hasta que alguien lo ataca**.\n\n**Causa raíz:** Estás concatenando la entrada del usuario directamente en la consulta SQL. Si alguien envía como email: `' OR '1'='1`, la consulta final se convierte en:\n\n```sql\nSELECT * FROM usuarios WHERE email = '' OR '1'='1'\n```\n\nEso devuelve **todos los usuarios** de la tabla. Peor aún: con `' ; DROP TABLE usuarios; --` un atacante podría borrar tu base de datos. Esto se llama **inyección SQL** y es una de las vulnerabilidades más explotadas de la historia.\n\n**Corrección:** Usa consultas preparadas. Los datos nunca se mezclan con el SQL: el motor los trata siempre como valores, nunca como código:\n\n```php\n$stmt = $conn->prepare(\"SELECT * FROM usuarios WHERE email = ?\");\n$stmt->bind_param(\"s\", $_GET['email']);\n$stmt->execute();\n$resultado = $stmt->get_result();\n```\n\n**Lección:** Nunca concatenes entrada del usuario en una consulta, por mucho que la \"limpies\" manualmente. Las consultas preparadas separan código y datos a nivel de protocolo, que es la única garantía real."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "language": "c",
+      "category": "bug_fix",
+      "concept": "puntero a memoria local (dangling pointer)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Eres un asistente experto en programación. No solo generas código: lo lees, lo entiendes, detectas la causa raíz de los errores y explicas tu razonamiento antes de proponer la solución."
+        },
+        {
+          "role": "user",
+          "content": "Esta función a veces devuelve basura en vez del texto. Compila sin errores, ¿qué pasa?\n\n```c\n#include <stdio.h>\n\nchar* saludo() {\n    char msg[20] = \"Hola mundo\";\n    return msg;\n}\n\nint main() {\n    printf(\"%s\\n\", saludo());\n    return 0;\n}\n```"
+        },
+        {
+          "role": "assistant",
+          "content": "Que compile no significa que sea correcto: en C, el compilador te da cuerda y tú decides si ahorcarte.\n\n**Causa raíz:** `msg` es un array **local**, vive en la pila (stack) de la función `saludo()`. Cuando la función retorna, esa memoria se libera y puede ser reutilizada por cualquier llamada posterior. Devuelves un puntero a memoria que **ya no es válida** (un *dangling pointer*). A veces parece funcionar porque nadie ha sobrescrito esa zona todavía, y otras veces imprime basura. Es comportamiento indefinido.\n\n**Corrección:** Hay varias opciones. La más segura y flexible es que el llamador proporcione el buffer:\n\n```c\n#include <stdio.h>\n\nvoid saludo(char* buffer, size_t tam) {\n    snprintf(buffer, tam, \"Hola mundo\");\n}\n\nint main() {\n    char msg[20];\n    saludo(msg, sizeof(msg));\n    printf(\"%s\\n\", msg);\n    return 0;\n}\n```\n\nOtras alternativas: declarar `msg` como `static` (persiste, pero no es reentrante ni thread-safe) o reservar memoria con `malloc` (el llamador debe hacer `free`).\n\n**Lección:** En C debes pensar siempre en **quién es dueño de la memoria y cuánto vive**. Nunca devuelvas punteros a variables locales."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "language": "cpp",
+      "category": "bug_fix",
+      "concept": "destructor virtual ausente en herencia",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Eres un asistente experto en programación. No solo generas código: lo lees, lo entiendes, detectas la causa raíz de los errores y explicas tu razonamiento antes de proponer la solución."
+        },
+        {
+          "role": "user",
+          "content": "Tengo una fuga de memoria y no la encuentro. El delete se ejecuta, lo he comprobado:\n\n```cpp\nclass Base {\npublic:\n    ~Base() {}\n};\n\nclass Derived : public Base {\npublic:\n    int* datos;\n    Derived() { datos = new int[1000]; }\n    ~Derived() { delete[] datos; }\n};\n\nint main() {\n    Base* p = new Derived();\n    delete p;  // esto se ejecuta, lo juro\n    return 0;\n}\n```"
+        },
+        {
+          "role": "assistant",
+          "content": "Te creo, el `delete` sí se ejecuta. El problema es **qué destructor llama**.\n\n**Causa raíz:** El destructor de `Base` no es `virtual`. Cuando haces `delete` a través de un puntero a `Base`, C++ solo invoca `~Base()`. El destructor de `Derived` **nunca se ejecuta**, así que `datos` (los 1000 enteros) nunca se libera. Esa es tu fuga. Y técnicamente, destruir un objeto derivado mediante un puntero a base sin destructor virtual es comportamiento indefinido.\n\n**Corrección:** Declara el destructor de la clase base como `virtual`:\n\n```cpp\nclass Base {\npublic:\n    virtual ~Base() {}\n};\n\nclass Derived : public Base {\npublic:\n    int* datos;\n    Derived() { datos = new int[1000]; }\n    ~Derived() { delete[] datos; }\n};\n\nint main() {\n    Base* p = new Derived();\n    delete p;  // ahora llama a ~Derived() y luego a ~Base()\n    return 0;\n}\n```\n\nCon el destructor virtual, el `delete` usa la tabla virtual (vtable) para llamar primero a `~Derived()` (que libera `datos`) y después a `~Base()`.\n\n**Lección:** Regla de oro en C++: si una clase está diseñada para ser heredada y usada polimórficamente, su destructor **debe** ser virtual. Mejor aún, en C++ moderno usa `std::vector<int>` o `std::unique_ptr` y evita gestionar memoria a mano."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "language": "ssh",
+      "category": "config_fix",
+      "concept": "permisos incorrectos en claves SSH",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Eres un asistente experto en programación y administración de sistemas. No solo generas comandos: entiendes el problema, diagnosticas la causa raíz y explicas tu razonamiento antes de proponer la solución."
+        },
+        {
+          "role": "user",
+          "content": "Copié mi clave pública al servidor con ssh-copy-id, pero SSH me sigue pidiendo contraseña. Estos son los permisos en el servidor:\n\n```\ndrwxrwxrwx  2 user user 4096 .ssh\n-rw-rw-rw-  1 user user  380 .ssh/authorized_keys\n```\n\nLa clave está bien copiada, lo he verificado. ¿Por qué no funciona?"
+        },
+        {
+          "role": "assistant",
+          "content": "La clave está bien, pero **sshd la está ignorando a propósito**.\n\n**Causa raíz:** SSH es paranoico por diseño. Con `StrictModes yes` (el valor por defecto), el servidor **rechaza la autenticación por clave si los permisos son demasiado abiertos**, porque si otros usuarios pueden escribir en tu `authorized_keys`, podrían añadir sus propias claves. Tus permisos actuales (`777` en el directorio y `666` en el archivo) permiten escritura a cualquiera, así que sshd descarta el archivo y cae de vuelta a la autenticación por contraseña.\n\n**Corrección:** Ajusta los permisos a los valores que SSH exige:\n\n```bash\nchmod 700 ~/.ssh\nchmod 600 ~/.ssh/authorized_keys\nchown -R $USER:$USER ~/.ssh\n```\n\n- `~/.ssh` → `700`: solo tú puedes entrar, leer y escribir.\n- `authorized_keys` → `600`: solo tú puedes leerlo y modificarlo.\n- El propietario debe ser tu usuario, no root ni otro.\n\nSi sigue fallando, depura con `ssh -vv user@servidor` y revisa `/var/log/auth.log` en el servidor: verás líneas como `Authentication refused: bad ownership or modes`.\n\n**Lección:** En SSH, los permisos **son parte del mecanismo de seguridad**, no una formalidad. Un `chmod 777` no \"arregla\" problemas: los crea."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "language": "bash",
+      "category": "bug_fix",
+      "concept": "word splitting por variables sin comillas",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Eres un asistente experto en programación y administración de sistemas. No solo generas comandos: entiendes el problema, diagnosticas la causa raíz y explicas tu razonamiento antes de proponer la solución."
+        },
+        {
+          "role": "user",
+          "content": "Mi script dice que el archivo no existe, pero está ahí:\n\n```bash\n#!/bin/bash\narchivo=\"mis documentos/informe final.txt\"\nif [ -f $archivo ]; then\n    cat $archivo\nfi\n```\n\nError: `[: too many arguments` y luego `cat: mis: No such file or directory`"
+        },
+        {
+          "role": "assistant",
+          "content": "**Causa raíz:** En Bash, cuando expandes una variable **sin comillas**, el shell aplica *word splitting*: divide el valor en palabras separadas por espacios. Tu variable `$archivo` se convierte en **tres argumentos distintos**: `mis`, `documentos/informe` y `final.txt`. Por eso `[` recibe demasiados argumentos y `cat` intenta abrir un archivo llamado literalmente `mis`.\n\n**Corrección:** Pon siempre las variables entre comillas dobles para preservar el valor completo como un único argumento:\n\n```bash\n#!/bin/bash\narchivo=\"mis documentos/informe final.txt\"\nif [ -f \"$archivo\" ]; then\n    cat \"$archivo\"\nfi\n```\n\n**Lección:** Las comillas dobles en Bash no son decoración: controlan si el valor se trata como una unidad o se fragmenta. La regla práctica es: **comilla toda expansión de variable salvo que sepas exactamente por qué no debes hacerlo**. Herramientas como `shellcheck` detectan automáticamente este tipo de errores (aviso SC2086)."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "language": "batch",
+      "category": "bug_fix",
+      "concept": "expansión retardada de variables",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Eres un asistente experto en programación y administración de sistemas. No solo generas comandos: entiendes el problema, diagnosticas la causa raíz y explicas tu razonamiento antes de proponer la solución."
+        },
+        {
+          "role": "user",
+          "content": "Este script de Windows debería contar los .txt de una carpeta, pero siempre dice 0:\n\n```bat\n@echo off\nset count=0\nfor %%f in (*.txt) do (\n    set /a count+=1\n)\necho Total: %count%\n```\n\nHay 5 archivos txt en la carpeta. ¿Qué falla?"
+        },
+        {
+          "role": "assistant",
+          "content": "**Causa raíz:** Es el comportamiento más contraintuitivo de Batch: la **expansión de variables ocurre al parsear, no al ejecutar**. El intérprete expande `%count%` **una sola vez, antes de ejecutar el bloque `for` completo**, cuando `count` todavía vale `0`. Así que tu bucle en realidad ejecuta `set /a count+=1` correctamente... pero el `echo` final usa el valor capturado al parsear. Y si pusieras `%count%` *dentro* del bucle, verías `0` en todas las iteraciones.\n\n**Corrección:** Activa la expansión retardada y usa `!count!` en lugar de `%count%` para que la variable se evalúe en tiempo de ejecución:\n\n```bat\n@echo off\nsetlocal enabledelayedexpansion\nset count=0\nfor %%f in (*.txt) do (\n    set /a count+=1\n)\necho Total: !count!\n```\n\n**Lección:** En Batch, `%var%` se resuelve al parsear la línea (o el bloque entre paréntesis entero) y `!var!` se resuelve al ejecutar cada iteración. Dentro de cualquier bloque `for` o `if` con paréntesis donde modifiques y leas una variable, necesitas `setlocal enabledelayedexpansion` y la sintaxis con exclamaciones."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "language": "html",
+      "category": "bug_fix",
+      "concept": "accesibilidad y semántica en formularios",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Eres un asistente experto en desarrollo web. No solo generas código: lo lees, lo entiendes, detectas la causa raíz de los errores y explicas tu razonamiento antes de proponer la solución."
+        },
+        {
+          "role": "user",
+          "content": "Mi formulario funciona, pero un auditor de accesibilidad me lo ha rechazado y no entiendo por qué:\n\n```html\n<html>\n<body>\n  <h2>Registro</h2>\n  <input type=\"text\" placeholder=\"Nombre\">\n  <input type=\"text\" placeholder=\"Email\">\n  <img src=\"logo.png\">\n  <div onclick=\"enviar()\">Enviar</div>\n</body>\n</html>\n```"
+        },
+        {
+          "role": "assistant",
+          "content": "Funciona para ti, pero no para todos. Vamos por partes, porque hay **cuatro problemas distintos**:\n\n**Diagnóstico:**\n1. **Falta `<!DOCTYPE html>` y el atributo `lang`**: sin ellos, los navegadores pueden entrar en *quirks mode* y los lectores de pantalla no saben en qué idioma pronunciar.\n2. **`placeholder` no es una etiqueta**: desaparece al escribir y muchos lectores de pantalla lo ignoran. Un usuario ciego no sabe qué debe introducir en cada campo.\n3. **`<img>` sin `alt`**: el lector de pantalla anunciará \"logo punto p e n e g e\", literalmente el nombre del archivo.\n4. **Un `<div>` con `onclick` no es un botón**: no es enfocable con teclado, no responde a Enter/Espacio y no se anuncia como control interactivo.\n\n**Corrección:**\n\n```html\n<!DOCTYPE html>\n<html lang=\"es\">\n<body>\n  <h2>Registro</h2>\n  <form action=\"/registro\" method=\"post\">\n    <label for=\"nombre\">Nombre</label>\n    <input type=\"text\" id=\"nombre\" name=\"nombre\" required>\n\n    <label for=\"email\">Email</label>\n    <input type=\"email\" id=\"email\" name=\"email\" required>\n\n    <img src=\"logo.png\" alt=\"Logotipo de la empresa\">\n\n    <button type=\"submit\">Enviar</button>\n  </form>\n</body>\n</html>\n```\n\n**Lección:** HTML no es solo \"que se vea bien\": es la capa semántica que usan lectores de pantalla, teclados y buscadores. Usar el elemento correcto (`<label>`, `<button>`, `<form>`) te da accesibilidad y comportamiento **gratis**, sin JavaScript extra."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "language": "java",
+      "category": "bug_fix",
+      "concept": "comparación de Strings con ==",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Eres un asistente experto en programación. No solo generas código: lo lees, lo entiendes, detectas la causa raíz de los errores y explicas tu razonamiento antes de proponer la solución."
+        },
+        {
+          "role": "user",
+          "content": "Este código a veces entra al if y a veces no, con el mismo texto. Estoy flipando:\n\n```java\nString nombre = new String(\"admin\");\nif (nombre == \"admin\") {\n    System.out.println(\"Bienvenido, administrador\");\n} else {\n    System.out.println(\"Acceso denegado\");\n}\n```"
+        },
+        {
+          "role": "assistant",
+          "content": "No estás flipando: es uno de los comportamientos más traicioneros de Java.\n\n**Causa raíz:** En Java, `==` sobre objetos **no compara contenido, compara referencias** (si dos variables apuntan al mismo objeto en memoria). Al hacer `new String(\"admin\")` creas un objeto **nuevo** en el heap, distinto del literal `\"admin\"` que vive en el *string pool*. Son dos objetos con el mismo texto pero direcciones distintas, así que `==` da `false`.\n\n¿Y por qué \"a veces funciona\"? Porque si escribes `String nombre = \"admin\";` sin `new`, Java reutiliza el objeto del pool y ambas referencias apuntan al mismo objeto: `==` da `true` por accidente. Ese comportamiento inconsistente es lo que vuelve loco a todo el mundo.\n\n**Corrección:** Compara siempre el contenido con `.equals()`:\n\n```java\nString nombre = new String(\"admin\");\nif (\"admin\".equals(nombre)) {\n    System.out.println(\"Bienvenido, administrador\");\n} else {\n    System.out.println(\"Acceso denegado\");\n}\n```\n\nFíjate en el detalle: pongo el literal primero (`\"admin\".equals(nombre)`). Así, si `nombre` fuera `null`, no salta un `NullPointerException`; simplemente devuelve `false`.\n\n**Lección:** En Java: `==` pregunta \"¿son el mismo objeto?\" y `.equals()` pregunta \"¿tienen el mismo valor?\". Para `String` y cualquier objeto, casi siempre quieres la segunda pregunta."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "language": "css",
+      "category": "bug_fix",
+      "concept": "especificidad de selectores",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Eres un asistente experto en desarrollo web. No solo generas código: lo lees, lo entiendes, detectas la causa raíz de los errores y explicas tu razonamiento antes de proponer la solución."
+        },
+        {
+          "role": "user",
+          "content": "Mi clase no se aplica y he acabado poniendo !important por todas partes. ¿Por qué el botón sigue rojo?\n\n```css\n.boton {\n  background-color: blue;\n  color: white;\n}\n\n#enviar {\n  background-color: red;\n}\n```\n\n```html\n<button id=\"enviar\" class=\"boton\">Enviar</button>\n```"
+        },
+        {
+          "role": "assistant",
+          "content": "Tu clase **sí se aplica**, pero pierde la pelea. Y el `!important` es el síntoma de no entender por qué.\n\n**Causa raíz:** CSS resuelve conflictos por **especificidad**, no por orden de escritura (el orden solo desempata). Los selectores tienen pesos distintos:\n\n- ID (`#enviar`): peso 100\n- Clase (`.boton`): peso 10\n- Elemento (`button`): peso 1\n\n`#enviar` (100) gana a `.boton` (10), así que `background-color: red` prevalece aunque tu clase esté bien escrita y aplicada. El `color: white` sí funciona porque nadie lo disputa.\n\n**Corrección:** Lo limpio es **no pelear con IDs para estilos**. Usa clases y deja que la cascada trabaje a tu favor:\n\n```css\n.boton {\n  background-color: blue;\n  color: white;\n}\n\n.boton--peligro {\n  background-color: red;\n}\n```\n\n```html\n<button class=\"boton\">Enviar</button>\n<button class=\"boton boton--peligro\">Borrar</button>\n```\n\nSi de verdad necesitas sobrescribir un ID, sube la especificidad de forma explícita (`#enviar.boton { ... }`) en lugar de usar `!important`.\n\n**Lección:** `!important` no arregla la especificidad: la rompe, y obliga al siguiente desarrollador a usar otro `!important` más fuerte. Mantén los estilos con clases de baja especificidad y reserva los IDs para JavaScript y anclas."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "language": "javascript",
+      "category": "bug_fix",
+      "concept": "closures y var en bucles",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Eres un asistente experto en programación. No solo generas código: lo lees, lo entiendes, detectas la causa raíz de los errores y explicas tu razonamiento antes de proponer la solución."
+        },
+        {
+          "role": "user",
+          "content": "Quiero imprimir 0, 1, 2 con pausas, pero me imprime 3, 3, 3. ¿Está roto setTimeout?\n\n```javascript\nfor (var i = 0; i < 3; i++) {\n  setTimeout(function() {\n    console.log(i);\n  }, 100);\n}\n```"
+        },
+        {
+          "role": "assistant",
+          "content": "`setTimeout` está perfectamente; el problema es cómo `var` y los closures interactúan.\n\n**Causa raíz:** `var` tiene ámbito de **función**, no de bloque. Eso significa que hay **una única variable `i`** compartida por las tres funciones que registras. Cada callback forma un *closure* que no captura el *valor* de `i`, sino una **referencia a la misma variable**. El bucle termina en microsegundos (dejando `i = 3`) mucho antes de que pasen los 100 ms. Cuando los callbacks por fin se ejecutan, los tres leen la misma `i`, que ya vale 3.\n\n**Corrección:** Usa `let`, que tiene ámbito de bloque: cada iteración crea **una `i` nueva** que el closure captura de forma independiente:\n\n```javascript\nfor (let i = 0; i < 3; i++) {\n  setTimeout(function() {\n    console.log(i);\n  }, 100);\n}\n// Imprime: 0, 1, 2\n```\n\n**Lección:** Un closure captura **variables, no valores**. Con `var` en un bucle, todos los callbacks comparten la misma variable; con `let`, cada iteración tiene la suya. Es la razón principal por la que `var` se considera obsoleto en JavaScript moderno."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "language": "javascript",
+      "category": "bug_fix",
+      "concept": "asincronía: retornar antes de que la promesa resuelva",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Eres un asistente experto en programación. No solo generas código: lo lees, lo entiendes, detectas la causa raíz de los errores y explicas tu razonamiento antes de proponer la solución."
+        },
+        {
+          "role": "user",
+          "content": "Mi función siempre devuelve undefined aunque la API responde bien (lo veo en la consola de red):\n\n```javascript\nfunction obtenerUsuario() {\n  let user;\n  fetch('/api/user')\n    .then(r => r.json())\n    .then(datos => { user = datos; });\n  return user;\n}\n\nconst u = obtenerUsuario();\nconsole.log(u); // undefined\n```"
+        },
+        {
+          "role": "assistant",
+          "content": "La API responde bien, sí, pero tu función **no espera la respuesta**.\n\n**Causa raíz:** `fetch` es **asíncrono**: inicia la petición y devuelve una promesa inmediatamente, sin bloquear. Tu función sigue ejecutándose en orden: declara `user`, lanza el `fetch`, y llega al `return user` **en el mismo instante**, cuando `user` todavía es `undefined`. Milisegundos después, el `.then` asigna `user = datos`, pero para entonces el `return` ya ocurrió. Es como pedir una pizza y colgar el teléfono esperando comértela en ese momento.\n\n**Corrección:** Una función que depende de trabajo asíncrono debe **devolver la promesa** (o ser `async`) y quien la llama debe esperar:\n\n```javascript\nasync function obtenerUsuario() {\n  const respuesta = await fetch('/api/user');\n  if (!respuesta.ok) {\n    throw new Error(`Error HTTP: ${respuesta.status}`);\n  }\n  return await respuesta.json();\n}\n\nconst u = await obtenerUsuario();\nconsole.log(u); // los datos reales\n```\n\n**Lección:** La asincronía es **contagiosa**: si una función usa código asíncrono, ella también se vuelve asíncrona, y su llamador también. No puedes \"convertir\" una promesa en un valor síncrono con un `return` normal; solo puedes esperarla con `await` o encadenarla con `.then`. De paso, fíjate que añadí la comprobación de `respuesta.ok`: `fetch` no rechaza la promesa ante errores HTTP como 404 o 500, hay que comprobarlo manualmente."
+        }
+      ]
+    }
+  ]
+}

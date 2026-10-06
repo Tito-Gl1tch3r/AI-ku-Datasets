@@ -1,0 +1,53 @@
+{
+  "code": 200,
+  "data": {
+    "description": "",
+    "html": "",
+    "httpStatus": 200,
+    "httpStatusText": "OK",
+    "metadata": {
+      "Author": "",
+      "CreationDate": "D:20260826211632+08'00'",
+      "Creator": "WPS 演示",
+      "Custom": {
+        "Comments": "",
+        "Company": "",
+        "SourceModified": "D:20260826211632+08'00'"
+      },
+      "EncryptFilterName": null,
+      "IsAcroFormPresent": false,
+      "IsCollectionPresent": false,
+      "IsLinearized": false,
+      "IsSignaturesPresent": false,
+      "IsXFAPresent": false,
+      "Keywords": "",
+      "Language": null,
+      "ModDate": "D:20260826211632+08'00'",
+      "PDFFormatVersion": "1.7",
+      "Producer": "macOS 版本14.5（版号23F79） Quartz PDFContext",
+      "Subject": "",
+      "Title": "",
+      "Trapped": {
+        "name": "False"
+      }
+    },
+    "publishedTime": "Wed, 26 Aug 2026 13:27:53 GMT",
+    "title": "Eight_Worlds_Planetary_Archive.pdf",
+    "url": "https://z.ai/blog/glm-5.3-flash",
+    "usage": {
+      "measuredTokens": 0,
+      "outputTokens": 0,
+      "scaledTokens": 0,
+      "tokens": 0
+    }
+  },
+  "meta": {
+    "usage": {
+      "measuredTokens": 0,
+      "outputTokens": 0,
+      "scaledTokens": 0,
+      "tokens": 0
+    }
+  },
+  "status": 20000
+}

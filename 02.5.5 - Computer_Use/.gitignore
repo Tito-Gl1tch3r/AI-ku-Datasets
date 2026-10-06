@@ -1,0 +1,7 @@
+# secretos y artefactos locales
+.secrets/
+*.token
+__pycache__/
+*.pyc
+.DS_Store
+nohup.out

@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://github.com/MoonshotAI/Kimi-K3",
+    "name": "GitHub - MoonshotAI/Kimi-K3: Open Frontier Intelligence",
+    "snippet": "Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date. It is a 2.8T-parameter model built on Kimi Delta Attention ...",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.kimi.ai/blog/kimi-k3",
+    "name": "Kimi K3 Tech Blog: Open Frontier Intelligence",
+    "snippet": "Kimi K3 demonstrated frontier-level performance across our evaluation suite, consistently outperforming other tested models. The full model weights will be ...",
+    "host_name": "www.kimi.ai",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/AI_Agents/comments/1v81jk6/kimi_k3_is_the_largest_openweight_model_ever",
+    "name": "Kimi K3 is the largest open-weight model ever released. You",
+    "snippet": "Kimi K3 is the largest open-weight model ever released. Genuinely impressive benchmarks, 91.2% on BrowseComp, best published agentic score at ...",
+    "host_name": "www.reddit.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.mindstudio.ai/blog/open-weight-ai-frontier-kimi-k3-agent-stack",
+    "name": "Open-Weight AI Reaches the Frontier: What Kimi K3 Means for",
+    "snippet": "Kimi K3 from Moonshot AI changes that. It's the clearest example yet of an open-weight LLM reaching frontier-level performance on coding ...",
+    "host_name": "www.mindstudio.ai",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.eigent.ai/blog/kimi-k3-open-weight-frontier-model",
+    "name": "Kimi K3: Moonshot AI's 2.8T Open-Weight Model - Eigent AI",
+    "snippet": "Kimi K3 is Moonshot AI's 2.8T-parameter open-weight model with a 1M-token context, top-3 frontier benchmarks, and $3/$15 pricing.",
+    "host_name": "www.eigent.ai",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.gmicloud.ai/en/blog/kimi-k3-open-weights-are-here-the-benchmark-phase-starts-now",
+    "name": "Kimi K3 Open Weights Are Here: What We Learned From Testing",
+    "snippet": "We tested Kimi K3 across reasoning, creative work, long-running agent tasks, and sub-agent orchestration. Here is what we learned.",
+    "host_name": "www.gmicloud.ai",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://kenhuangus.substack.com/p/demystifying-kimi-k3-how-chinas-28t",
+    "name": "The Three Algorithms Behind the #1 Frontend Coding Model",
+    "snippet": "On July 16, 2026, Moonshot AI released Kimi K3, a 2.8-trillion-parameter open-weight sparse Mixture-of-Experts model with a 1-million-token ...",
+    "host_name": "kenhuangus.substack.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2607.24653",
+    "name": "[2607.24653] Kimi K3: Open Frontier Intelligence - arXiv",
+    "snippet": "Extensive evaluations show that Kimi K3 achieves frontier-level performance across long-horizon coding, agentic, knowledge, reasoning, and ...",
+    "host_name": "arxiv.org",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

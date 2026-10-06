@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+    "name": "Introducing Claude Fable 5.1 and Claude Mythos 5.1 - Anthropic",
+    "snippet": "We're introducing Claude Fable 5.1 and Claude Mythos 5.1. They're the world's most advanced models for coding and knowledge work—and their research ... ·",
+    "host_name": "www.anthropic.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.anthropic.com/claude/fable",
+    "name": "Claude Fable - Anthropic",
+    "snippet": "In internal benchmarks, Claude Fable 5.1 solves more of our coding problems than Fable 5 or Opus 5, and achieves state of the art on trading intuition.",
+    "host_name": "www.anthropic.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://caylent.com/blog/claude-fable-5-1-what-changed-from-fable-5-and-what-to-validate",
+    "name": "Claude Fable 5.1: What Changed From Fable 5 and What to",
+    "snippet": "The Terminal-Bench-Science 0.1 benchmark measures an agent's ability to complete scientific computing tasks in a terminal. ... benchmarks run by ... Missing:  capabilities  | Show results with:",
+    "host_name": "caylent.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf",
+    "name": "[PDF] Claude Fable 5.1 & Claude Mythos 5.1 System Card - Anthropic",
+    "snippet": "Models are given shell access and web browsing capabilities in an agentic loop to solve tasks, and performance is measured via. ELO ratings ...",
+    "host_name": "www-cdn.anthropic.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/Anthropic/comments/1w4juwx/introducing_claude_fable_51_and_claude_mythos_51",
+    "name": "Introducing Claude Fable 5.1 and Claude Mythos 5.1 : r/Anthropic",
+    "snippet": "And its research capabilities offer an early glimpse of how AI models will contribute to scientific progress. Across our benchmarks, the model ...",
+    "host_name": "www.reddit.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.datacamp.com/blog/claude-fable-5-1",
+    "name": "Claude Fable 5.1: Features, Benchmarks, and Pricing",
+    "snippet": "Anthropic's Claude Fable 5.1 more than doubles Fable 5 on agentic science benchmarks and cuts cache reads by 75%, all at the same $10 / $50 ...",
+    "host_name": "www.datacamp.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/ClaudeCode/comments/1w4rblg/some_nonobvious_fable_51_swe_findings_from_the",
+    "name": "Some non-obvious Fable 5.1 SWE findings from the 212-page",
+    "snippet": "Fable 5.1 gets 50.9% at medium effort and 50.3% at max, Fable 5.1 is especially strong on tasks with clear, continuous success metrics and ...",
+    "host_name": "www.reddit.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openrouter.ai/anthropic/claude-fable-5.1",
+    "name": "Claude Fable 5.1 - API Pricing & Benchmarks | OpenRouter",
+    "snippet": "Claude Fable 5.1 improves on Claude Fable 5 across the board, with the biggest gains in agentic coding, long-running agentic workflows, and knowledge work: ... Missing:  capabilities  | Show results with:",
+    "host_name": "openrouter.ai",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://benchlm.ai/models/claude-fable-5-1",
+    "name": "Claude Fable 5.1 Benchmarks, Pricing & Speed | BenchLM.ai",
+    "snippet": "Claude Fable 5.1 ranks #3 of 210 at 82.5/100 from 26 source-displayable rows (Supported). See evidence, pricing, context, and runtime.",
+    "host_name": "benchlm.ai",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://thezvi.substack.com/p/claude-mythos-51-and-fable-51-capabilities",
+    "name": "Claude Mythos 5.1 and Fable 5.1: Capabilities",
+    "snippet": "Official Benchmarks. Anthropic shares a ton of benchmarks. Mostly we see modest improvement from Fable 5 or Opus 5 to Fable 5.1, with some ...",
+    "host_name": "thezvi.substack.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

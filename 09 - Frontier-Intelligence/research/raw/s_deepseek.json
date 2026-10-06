@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://www.deepseek.com/en/news/deepseek-v4-1-flash",
+    "name": "Introducing DeepSeek-V4.1-Flash: smarter, faster, more efficient.",
+    "snippet": "New pretraining methods + larger-scale RL post-training deliver benchmark results ahead of flagship models, including DeepSeek-V4-Pro. Missing:  approach  | Show results with:",
+    "host_name": "www.deepseek.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://deepinfra.com/blog/deepseek-v4-pro-model-overview",
+    "name": "DeepSeek V4 Pro: Model Overview, Features & Performance",
+    "snippet": "Agentic real-world tasks: The model leads open-weights models on the GDPval-AA benchmark with a score of 1554, ahead of Kimi K2.6 (1484), GLM-5 ...",
+    "host_name": "deepinfra.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://kili-technology.com/blog/data-story-deepseek-v4",
+    "name": "Data Story: A Deep Dive into Deepseek V4 (Updated May 2026)",
+    "snippet": "V4 introduces agentic data during pre-training, The agent specialist then refines these capabilities through SFT and RL. V4 introduces a new ...",
+    "host_name": "kili-technology.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://benchlm.ai/models/deepseek-v4-pro-0813",
+    "name": "DeepSeek V4 Pro 0813 Benchmarks, Pricing & Speed",
+    "snippet": "DeepSeek V4 Pro 0813 ranks #40 out of 119 eligible models for agentic tool use and computer tasks, with a public category score of 53/100. Missing:  approach  | Show results with:",
+    "host_name": "benchlm.ai",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://redreamality.com/blog/deepseek-v4-benchmarks-guide",
+    "name": "Mapping the DeepSeek V4 Evaluation Suite: A Field Guide to",
+    "snippet": "DeepSeek dropped V4-Pro on April 24, 2026, the technical report packed in roughly sixteen distinct benchmarks across coding, reasoning, ... Missing:  RL  approach",
+    "host_name": "redreamality.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2606.19348v1",
+    "name": "DeepSeek-V4: Towards Highly Efficient Million-Token Context",
+    "snippet": "In the one-million-token context setting, DeepSeek-V4-Pro requires only 27% of single-token inference FLOPs and 10% of KV cache compared with ...",
+    "host_name": "arxiv.org",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://everylocalai.com/model/deepseek-v4-pro",
+    "name": "DeepSeek V4 Pro - #1 Open Agentic Coding Model, MIT (2026)",
+    "snippet": "DeepSeek V4 Pro scores 90.1 on MMLU and 76.8 on HumanEval. It has 1600B parameters with 1,048,576 context - a strong choice for agentic-coding, ...",
+    "host_name": "everylocalai.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wfpwhj/deepseek_v41_flash_beats_astra_on_aas_new",
+    "name": "DeepSeek V4.1 Flash beats Astra on AA's new benchmark",
+    "snippet": "What benchmarks do you usually look at when there is a new model? My main uses are for coding and the topics are robotics/RL. I don't really do ... Missing:  approach  | Show results with:",
+    "host_name": "www.reddit.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

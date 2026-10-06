@@ -111,6 +111,7 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 - 🟢 `v1_seed_agentic.jsonl` (4) · `v1_seed_verification.jsonl` (3, patch-traps) · `v1_seed_research.jsonl` (1, trampa SEO) · `v1_seed_spanish_professional.jsonl` (1) — comportamientos con inyecciones.
 - 🟢 `data/derived/v1_seed_agentic--acs.jsonl` (4) · `v1_seed_verification--dialects.jsonl` (6: 3 seeds × anthropic/openai).
 - 🔧 `data/taxonomy.json` — effort levels, loop phases, lanes, tokens V4X.
+- 🟢🔄🏆 `data/examples/Adaptive.parquet` (1.029) — **razonamiento adaptativo puro**: `thinking_pattern` (de `reflex_no_think` a `iterative_multistep`), `num_thoughts` 0-5, dificultad trivial→expert, con `code_verdict`.
 - 🔧 `research/raw/` — material fuente por modelo (no dataset final). + 🔧 `docs/01-09`, `evals/`, `scripts/`.
 
 ### 11 - Cibersecurity 🟠 🔄
@@ -129,4 +130,5 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 
 - El orden de carpetas es el orden de entrenamiento (con repetición espaciada del oro en 04→10→13).
 - Sub-órdenes internos: `02.5 - Events` (unified → Knowledge), `05 - Programming` (V1.0 → resto → superprogrammer) y bloques de oro (cursor → traza).
+- **Ficheros grandes particionados**: GitHub no acepta ficheros de 100 MB o más, así que los 10 parquet gigantes están partidos en shards `*-shard-NNNNN.parquet` (≤80 MB, mismo esquema) con su manifiesto `*.shards.json` (filas por shard para reensamblar): `languaje_unified` (64), `conversation_unified` (37), `long_context_unified` (34), `cot_unified` (34), `audit_unified` (10), `agentic_unified` (7), `programming_unified` (4), `multilingual`/`events_unified`/`tool_calling_unified` (2 cada uno).
 - Los scripts `merge_*.py` / `update_manifest*.py` son herramientas de construcción: **no se suben**.

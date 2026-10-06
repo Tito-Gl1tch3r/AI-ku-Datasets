@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf",
+    "name": "[PDF] Claude Fable 5.1 & Claude Mythos 5.1 System Card - Anthropic",
+    "snippet": "Claude Fable 5.1 is available for general use, long-horizon agentic and professional knowledge work. improve on long-horizon scientific tasks.",
+    "host_name": "www-cdn.anthropic.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://platform.claude.com/docs/en/models/fable-5-1/whats-new-fable-5-1",
+    "name": "What's new in Claude Fable 5.1",
+    "snippet": "Agentic coding over long sessions, including multi-file features, large refactors and migrations, debugging, and code review across sessions that run for hours. Missing:  autonomy  METR  autonomous",
+    "host_name": "platform.claude.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://local-ai-zone.github.io/blog/claude-fable-5-1-technical-breakdown.html",
+    "name": "Claude Fable 5.1: The Full Technical Breakdown - Local AI Zone",
+    "snippet": "The short guidance for engineers: if you run long-horizon, cache-heavy agentic work (multi-hour coding sessions, deep research, document ... Missing:  METR  autonomous",
+    "host_name": "local-ai-zone.github.io",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://metr.org/time-horizons",
+    "name": "Task-Completion Time Horizons of Frontier AI Models - METR",
+    "snippet": "An 8-hour time horizon does not mean that AIs can do 8 hours of work that a (high-context) human professional can do as part of their day-to-day ...",
+    "host_name": "metr.org",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://af.net/realtime/ai-frontier-models-released-in-september-2026-claude-fable-5-1-gpt-6-astra-gemini-3-8-and-grok-4-7",
+    "name": "Claude Fable 5.1, GPT-6 Astra, Gemini 3.8, and Grok 4.7 | AIFOD",
+    "snippet": "Anthropic's focus on long-horizon reasoning with Claude Fable 5.1 represents a shift toward agentic and autonomous systems, a niche that has ...",
+    "host_name": "af.net",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/cornada_prompting-claude-fable-51-activity-7501082643493650432-1Y8-",
+    "name": "Anthropic's Claude Fable 5.1 Requires Explicit Supervision",
+    "snippet": "Fable 5.1 is presented as a frontier model for work lasting hours, days, or weeks. They call it the 50 percent task completion time horizon: ...",
+    "host_name": "www.linkedin.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://brooksaizd.mataroa.blog/blog/claude-fable-51-what-anthropics-new-flagship-model-means-for-ai-agents-and-your-wallet",
+    "name": "Claude Fable 5.1: What Anthropic's New Flagship Model",
+    "snippet": "Claude Fable 5.1 doubles agentic science benchmarks and cuts agent workload costs by up to 45%. Here's what actually changed — and what it ... Missing:  autonomy  METR  autonomous",
+    "host_name": "brooksaizd.mataroa.blog",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://daruniversity.com/anthropic-launches-claude-fable-5-1-ai-takes-on-long-running-knowledge-work.htm",
+    "name": "Anthropic Launches Claude Fable 5.1: AI Takes on Long",
+    "snippet": "Fable 5.1 is designed to handle complex projects that can take hours, span multiple applications and require the model to plan, use tools, ...",
+    "host_name": "daruniversity.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

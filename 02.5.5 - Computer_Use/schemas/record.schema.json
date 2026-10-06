@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Tito-Gl1tch3r/AI-ku_computer_use/schemas/record.schema.json",
+  "title": "AI-ku Computer Use — registro del dataset (una fila = una trayectoria)",
+  "type": "object",
+  "required": [
+    "id",
+    "schema_version",
+    "split",
+    "platform",
+    "application",
+    "domain",
+    "task_type",
+    "difficulty",
+    "horizon",
+    "objective",
+    "messages",
+    "trajectory",
+    "verification",
+    "recovery",
+    "outcome",
+    "provenance",
+    "tags"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^aku_cu_[0-9]{6}$"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "split": {
+      "enum": [
+        "train",
+        "validation",
+        "test"
+      ]
+    },
+    "platform": {
+      "enum": [
+        "windows_11",
+        "windows_10",
+        "macos_15",
+        "ubuntu_24_04"
+      ]
+    },
+    "application": {
+      "type": "string",
+      "description": "aplicación principal (snake_case)"
+    },
+    "applications_all": {
+      "type": "string",
+      "description": "JSON: lista de todas las aplicaciones usadas"
+    },
+    "domain": {
+      "enum": [
+        "operating_system",
+        "web",
+        "graphics",
+        "documents",
+        "spreadsheets",
+        "presentations",
+        "terminal",
+        "games",
+        "multi_application",
+        "safety_resilience",
+        "video_editing",
+        "3d_modeling",
+        "cad",
+        "business_apps"
+      ]
+    },
+    "task_type": {
+      "enum": [
+        "atomic_action",
+        "guided_edit",
+        "workflow_automation",
+        "data_pipeline",
+        "research_synthesis",
+        "document_production",
+        "creative_graphics",
+        "system_administration",
+        "game_control",
+        "safety_handling",
+        "error_recovery_drill",
+        "open_objective",
+        "video_production",
+        "3d_production",
+        "technical_drawing",
+        "business_process"
+      ]
+    },
+    "difficulty": {
+      "enum": [
+        "basic",
+        "intermediate",
+        "advanced",
+        "very_advanced",
+        "extreme"
+      ]
+    },
+    "horizon": {
+      "enum": [
+        "short",
+        "medium",
+        "long",
+        "very_long",
+        "extreme_long"
+      ],
+      "description": "short<8, medium 8-24, long 25-79, very_long 80-249, extreme_long>=250 pasos"
+    },
+    "n_steps": {
+      "type": "integer",
+      "minimum": 2
+    },
+    "n_screenshots": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "n_observations": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "est_duration_s": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "long_horizon": {
+      "type": "boolean"
+    },
+    "is_multi_app": {
+      "type": "boolean"
+    },
+    "is_open_ended": {
+      "type": "boolean"
+    },
+    "has_recovery": {
+      "type": "boolean"
+    },
+    "has_verification": {
+      "type": "boolean"
+    },
+    "language": {
+      "enum": [
+        "es",
+        "en"
+      ]
+    },
+    "license": {
+      "const": "CC-BY-4.0"
+    },
+    "objective": {
+      "type": "string",
+      "minLength": 10,
+      "description": "objetivo del usuario en lenguaje natural"
+    },
+    "messages": {
+      "type": "string",
+      "description": "JSON: conversación normalizada [{role, content, context_step?}]; turno final del asistente = resumen de cierre"
+    },
+    "trajectory": {
+      "type": "string",
+      "description": "JSON: lista de pasos (ver trajectory.schema.json)"
+    },
+    "verification": {
+      "type": "string",
+      "description": "JSON: {plan, checks[], final_state, overall_passed}"
+    },
+    "recovery": {
+      "type": "string",
+      "description": "JSON: lista de eventos de recuperación {fault, at_step, detected_via, strategy, actions, resolved, lesson}"
+    },
+    "outcome": {
+      "type": "string",
+      "description": "JSON: {status: success|partial|failed|aborted_safely|blocked_by_policy, success, verified, deliverables, notes, faults_injected}"
+    },
+    "provenance": {
+      "type": "string",
+      "description": "JSON: {origin, generator, family_id, seed, license, sources_derived, api_flavors, created_utc, review, sandboxed}"
+    },
+    "tags": {
+      "type": "string",
+      "description": "JSON: lista de etiquetas auditables"
+    }
+  },
+  "notes": "Los campos complejos se almacenan como cadenas JSON UTF-8 para mantener un único formato Parquet auditable; su estructura interna la definen los esquemas trajectory/step y este documento."
+}

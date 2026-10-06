@@ -1,0 +1,16 @@
+DATA LICENSE — Creative Commons Attribution 4.0 International (CC-BY-4.0)
+
+Aplica a: data/, docs/, research/ de este repositorio.
+
+Todos los ejemplos de entrenamiento incluidos son ORIGINALES (provenance:
+original-synthetic). Ninguno reproduce ítems de benchmarks públicos ni salidas
+de modelos de terceros. Las referencias a modelos y benchmarks son nominativas
+y están citadas con fuente, fecha y tipo en docs/09-metodologia-fuentes.md y
+research/fuentes/registro-fuentes.md.
+
+Eres libre de compartir y adaptar este material para cualquier propósito,
+incluido comercial, siempre que atribuyas:
+
+  "AI-ku Frontier Intelligence Research" — https://github.com/<owner>/AI-ku-Frontier-Intelligence-Research
+
+Licencia completa: https://creativecommons.org/licenses/by/4.0/legalcode

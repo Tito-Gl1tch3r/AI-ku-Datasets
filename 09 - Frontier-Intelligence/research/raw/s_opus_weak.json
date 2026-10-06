@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://www.reddit.com/r/ClaudeCode/comments/1wp7sjx/is_it_worth_getting_the_20_plan_for_opus_55_how",
+    "name": "Is it worth getting the $20 plan for Opus 5.5? How are the rate",
+    "snippet": "If you need to use Opus reasoning heavily, the usage limits will be tight; I think you should consider at least 5x the amount. Missing:  weaknesses  | Show results with:",
+    "host_name": "www.reddit.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://thenewstack.io/claude-opus-5-5-vs-opus-5",
+    "name": "Claude Opus 5.5 vs. Opus 5 on reasoning tasks - The New Stack",
+    "snippet": "Anthropic says Opus 5.5 is 40% cheaper and 30% faster than Opus 5. On hard reasoning tests, the savings held up. The speed claim fell short. Missing:  weaknesses  | Show results with:",
+    "host_name": "thenewstack.io",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.anthropic.com/claude-opus-5-5",
+    "name": "Introducing Claude Opus 5.5 - Anthropic",
+    "snippet": "Claude Opus 5.5 leads in agentic coding and knowledge work, and costs 40% less to run than Opus 5 on typical workloads. Missing:  weaknesses  | Show results with:",
+    "host_name": "www.anthropic.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@mehmet.ozel2701/claude-sonnet-5-5-vs-opus-5-5-which-one-should-you-actually-use-2d821cd9cb0b",
+    "name": "Claude Sonnet 5.5 vs Opus 5.5: Cost per Task - Medium",
+    "snippet": "Opus 5.5 costs $4 and $20. The launch post makes two promises. Sonnet 5.5 “costs up to 30% less per task than its predecessor,” Sonnet 5. And on ...",
+    "host_name": "medium.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.endorlabs.com/learn/opus-5-5-6x-cheaper-and-2x-faster-than-fable-5-1-but-memorization-keeps-it-off-the-top-spot",
+    "name": "Opus 5.5: 6x cheaper and 2x faster than Fable 5.1, but only",
+    "snippet": "Claude Code with Opus 5.5 finishes coding tasks in a median of 2.2 minutes for $116 in total, the fastest run on our board and the cheapest ... Missing:  weaknesses  limitations",
+    "host_name": "www.endorlabs.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.finout.io/blog/claude-opus-5.5-pricing-2026-what-anthropics-new-flagship-actually-costs",
+    "name": "Claude Opus 5.5 Pricing 2026: What Anthropic's New Flagship",
+    "snippet": "Quick answer: Claude Opus 5.5 costs $4 per million input tokens and $20 per million output tokens on the standard API, a 20% cut from Opus 5, ... Missing:  weaknesses  | Show results with:",
+    "host_name": "www.finout.io",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://artificialanalysis.ai/models/releases/comparisons/claude-sonnet-5-5-vs-claude-opus-5-5",
+    "name": "Claude Sonnet 5.5 vs Claude Opus 5.5: Release Comparison",
+    "snippet": "For cost per task, Claude Sonnet 5.5 is cheapest: Claude Sonnet 5.5 (Adaptive Reasoning, Low Effort, Default Fallback) at $0.42, against Claude Opus 5.5 ( ... Missing:  weaknesses  limitations",
+    "host_name": "artificialanalysis.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dreasays.substack.com/p/claude-55-is-brilliant-confusing",
+    "name": "Claude 5.5 is brilliant, confusing, and very hungry",
+    "snippet": "Claude Sonnet 5.5 costs $2 per million input tokens and $10 per million output tokens, the same as Sonnet 5 and half the price of Opus 5.5. Missing:  weaknesses  | Show results with:",
+    "host_name": "dreasays.substack.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

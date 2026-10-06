@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Tito-Gl1tch3r/AI-ku_computer_use/schemas/trajectory.schema.json",
+  "title": "Paso de trayectoria: observación → decisión → acción → resultado → verificación",
+  "type": "object",
+  "required": ["step", "t_ms", "observation", "decision", "action", "result"],
+  "properties": {
+    "step": {"type": "integer", "minimum": 1},
+    "t_ms": {"type": "integer", "minimum": 0, "description": "tiempo acumulado desde el inicio (monótono no decreciente)"},
+    "observation": {
+      "type": "object",
+      "required": ["screenshot", "focus", "environment"],
+      "properties": {
+        "screenshot": {
+          "type": "object",
+          "required": ["available", "width", "height", "description", "ui_tree"],
+          "properties": {
+            "available": {"type": "boolean"},
+            "format": {"enum": ["png"]},
+            "encoding": {"enum": ["base64"]},
+            "width": {"type": "integer"}, "height": {"type": "integer"},
+            "color_depth": {"type": "integer"},
+            "size_bytes": {"type": "integer"},
+            "sha256": {"type": "string"},
+            "data_b64": {"type": "string",
+                          "description": "solo si available=true; PNG paleta 96 colores"},
+            "description": {"type": "string", "minLength": 20},
+            "ui_tree": {
+              "type": "object",
+              "properties": {
+                "app": {"type": "string"},
+                "window_title": {"type": "string"},
+                "elements": {"type": "array", "items": {"$ref": "#/$defs/element"}},
+                "overlays": {"type": "array", "items": {"type": "object"}},
+                "url": {"type": "string"},
+                "tabs": {"type": "array", "items": {"type": "string"}}
+              }
+            }
+          }
+        },
+        "focus": {"type": "object", "properties": {
+          "app": {"type": "string"}, "window": {"type": "string"},
+          "dialog": {"type": ["string", "null"]}}},
+        "environment": {"type": "object", "properties": {
+          "os": {"type": "string"}, "display": {"type": "array", "items": {"type": "integer"}},
+          "locale": {"type": "string"}, "sandboxed": {"type": "boolean"}}},
+        "annotations": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "decision": {
+      "type": "object",
+      "required": ["thought", "intent", "strategy", "risk", "irreversible"],
+      "properties": {
+        "thought": {"type": "string", "minLength": 15,
+                     "description": "razonamiento operativo en el idioma de la trayectoria"},
+        "intent": {"type": "string", "description": "objetivo funcional del paso (ver action-vocabulary.json)"},
+        "strategy": {"type": "string"},
+        "confidence": {"type": "number"},
+        "risk": {"enum": ["none", "low", "medium", "high"]},
+        "irreversible": {"type": "boolean"},
+        "plan_remaining": {"type": "array", "items": {"type": "string"},
+                            "description": "memoria de estado: subobjetivos pendientes"}
+      }
+    },
+    "action": {
+      "type": "object",
+      "required": ["tool", "params", "intent", "adapters"],
+      "properties": {
+        "tool": {"enum": ["MOVE_CURSOR", "CLICK", "DOUBLE_CLICK", "TRIPLE_CLICK", "DRAG",
+                           "SCROLL", "TYPE", "KEY", "HOLD_KEY", "WAIT", "SCREENSHOT", "ZOOM"]},
+        "params": {"type": "object"},
+        "intent": {"type": "string"},
+        "adapters": {
+          "type": "object",
+          "required": ["openai", "anthropic"],
+          "properties": {
+            "openai": {"type": "object", "properties": {
+              "calls": {"type": "array", "items": {"type": "object",
+                        "properties": {"type": {"enum": ["click", "double_click", "drag", "move",
+                                                          "scroll", "keypress", "type", "wait", "screenshot"]}}}},
+              "notes": {"type": "array", "items": {"type": "string"}}}},
+            "anthropic": {"type": "object", "properties": {
+              "calls": {"type": "array", "items": {"type": "object",
+                        "properties": {"toolset_name": {"const": "computer"},
+                                        "name": {"enum": ["screenshot", "zoom", "left_click", "right_click",
+                                                           "middle_click", "double_click", "triple_click",
+                                                           "left_click_drag", "mouse_move", "left_mouse_down",
+                                                           "left_mouse_up", "cursor_position", "scroll",
+                                                           "type", "key", "hold_key", "wait"]},
+                                        "input": {"type": "object"}}}},
+              "notes": {"type": "array", "items": {"type": "string"}}}}
+          }
+        }
+      }
+    },
+    "result": {
+      "type": "object",
+      "required": ["status", "delta", "unexpected", "error"],
+      "properties": {
+        "status": {"enum": ["success", "unexpected"]},
+        "delta": {"type": "string"},
+        "unexpected": {"type": "boolean"},
+        "error": {"type": ["string", "null"]},
+        "zoom": {"type": "object", "description": "evidencia de zoom (región ampliada) si tool=ZOOM"}
+      }
+    },
+    "verification": {
+      "type": ["object", "null"],
+      "properties": {
+        "type": {"enum": ["visual_state", "text_present", "file_exists", "dialog_state",
+                           "formula_recalc", "zoom_inspect"]},
+        "method": {"type": "string"},
+        "passed": {"type": "boolean"},
+        "evidence": {"type": "string"}
+      }
+    }
+  },
+  "$defs": {
+    "element": {
+      "type": "object",
+      "required": ["id", "role", "label", "bbox"],
+      "properties": {
+        "id": {"type": "string"},
+        "role": {"type": "string"},
+        "label": {"type": "string"},
+        "bbox": {"type": "array", "items": {"type": "integer"}, "minItems": 4, "maxItems": 4},
+        "enabled": {"type": "boolean"},
+        "selected": {"type": "boolean"},
+        "focused": {"type": "boolean"}
+      }
+    }
+  }
+}

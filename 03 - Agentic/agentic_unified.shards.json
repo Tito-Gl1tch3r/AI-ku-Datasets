@@ -1,0 +1,43 @@
+{
+ "original": "agentic_unified.parquet",
+ "rows": 75558,
+ "orig_row_groups": 1,
+ "n_shards": 7,
+ "shards": [
+  {
+   "file": "agentic_unified-shard-00000.parquet",
+   "rows": 18889,
+   "bytes": 64301133
+  },
+  {
+   "file": "agentic_unified-shard-00001.parquet",
+   "rows": 18890,
+   "bytes": 69895936
+  },
+  {
+   "file": "agentic_unified-shard-00002.parquet",
+   "rows": 18889,
+   "bytes": 66073577
+  },
+  {
+   "file": "agentic_unified-shard-00003.parquet",
+   "rows": 9445,
+   "bytes": 76028610
+  },
+  {
+   "file": "agentic_unified-shard-00004.parquet",
+   "rows": 2361,
+   "bytes": 60681145
+  },
+  {
+   "file": "agentic_unified-shard-00005.parquet",
+   "rows": 2361,
+   "bytes": 52120472
+  },
+  {
+   "file": "agentic_unified-shard-00006.parquet",
+   "rows": 4723,
+   "bytes": 73439869
+  }
+ ]
+}

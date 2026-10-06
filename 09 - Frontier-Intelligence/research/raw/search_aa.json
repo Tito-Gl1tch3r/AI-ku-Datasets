@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://aiweekly.co/alerts/gemini-4-argon-ties-gpt-6-astra-at-53-with-15-hallucination-rate",
+    "name": "Gemini 4 Argon Ties GPT-6 Astra at 53 With 15% Hallucination",
+    "snippet": "Its 15% hallucination rate is the lowest of any model scoring 45+ on the index, versus 51% for GPT-6 Astra and 54% for GPT-6.1 Sol. The current ...",
+    "host_name": "aiweekly.co",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://artificialanalysis.ai/articles/gemini-4-argon-google-top-three-labs",
+    "name": "Gemini 4 Argon: Google is back as one of the top three labs in",
+    "snippet": "it scores 53 on the Artificial Analysis Intelligence Index, with gains driven by lower hallucinations and stronger agentic capabilities.",
+    "host_name": "artificialanalysis.ai",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.threads.com/@soundslikeclickclack/post/Dd8TAu7IF20/gemini-argons-most-interesting-number-isnt-on-googles-chart-artificial-analysis",
+    "name": "Gemini 4 Argon's most interesting number isn't on Google's",
+    "snippet": "Artificial Analysis measured a 15% hallucination rate on its AA-Omniscience test vs 51% for GPT-6 Astra, while tying Astra at 53 on its ...",
+    "host_name": "www.threads.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://beam.ai/agentic-insights/gemini-4-argon-ai-agents",
+    "name": "Gemini 4 Argon for AI Agents: Benchmarks, Price, the Catch",
+    "snippet": "Gemini 4 Argon, announced on 30 September, has a hallucination rate of 15% on the same independent benchmark, the lowest of any model at its ...",
+    "host_name": "beam.ai",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/GeminiAI/comments/1wuntjt/gemini_4_argon_achieves_a_15_hallucination_rate",
+    "name": "Gemini 4 Argon achieves a 15% hallucination rate on Artificial",
+    "snippet": "Gemini 4 Argon achieves a 15% hallucination rate on Artificial Analysis. This explains the 1 MILLION output tokens in a single response",
+    "host_name": "www.reddit.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://artificialanalysis.ai/models/gemini-4-argon",
+    "name": "Gemini 4 Argon (high) - Intelligence, Performance & Price",
+    "snippet": "Gemini 4 Argon (High) scores 53 on the Artificial Analysis Intelligence Index ... Index AA-Omniscience Accuracy AA-Omniscience Hallucination Rate ...",
+    "host_name": "artificialanalysis.ai",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.generativeaipub.com/p/did-google-finally-solve-ai-hallucination",
+    "name": "Did Google Finally Solve AI Hallucination with Gemini 4 Argon?",
+    "snippet": "Hallucinations: Its 15% hallucination rate is the lowest among models scoring at least 45 on the Intelligence Index. It is more willing to admit ...",
+    "host_name": "www.generativeaipub.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=5XTJRU9na3Y",
+    "name": "Gemini 4 Argon - YouTube",
+    "snippet": "A 15% hallucination rate is probably the biggest takeaway here. But my gut says the 1M token output window will be a true game changer for ...",
+    "host_name": "www.youtube.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

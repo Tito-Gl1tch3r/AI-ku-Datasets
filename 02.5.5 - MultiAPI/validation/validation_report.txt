@@ -1,0 +1,13 @@
+AI-ku MultiAPI Dataset — Informe de validación
+Fecha: 2026-10-03
+Ejemplos: 150 | Splits: {'train': 91, 'validation': 20, 'test': 29, 'adversarial_test': 10}
+task_type: {'semantic_conversion': 14, 'contrastive_discrimination': 20, 'error_handling': 16, 'structural_mapping': 12, 'multimodal': 10, 'agentic_planning': 7, 'api_recognition': 12, 'protocol_repair': 10, 'state_management': 8, 'streaming': 13, 'tool_calling': 20, 'versioning': 8}
+api: {'both': 62, 'anthropic': 44, 'openai': 42, 'unknown': 2}
+difficulty: {'medium': 76, 'easy': 14, 'adversarial': 12, 'hard': 48}
+Negativos: 9 struct, 5 contrastivos-mix, 12 adversariales, 5 grupos contrastivos
+Skills únicos: 365
+
+RESULTADO: 0 errores, 1 warnings
+
+== WARNINGS ==
+- [api_consistency] ctr-g2-mix: input: bloque híbrido (posible material de enseñanza)

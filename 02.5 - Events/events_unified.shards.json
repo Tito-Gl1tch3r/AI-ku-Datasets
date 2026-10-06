@@ -1,0 +1,18 @@
+{
+ "original": "events_unified.parquet",
+ "rows": 36175,
+ "orig_row_groups": 1,
+ "n_shards": 2,
+ "shards": [
+  {
+   "file": "events_unified-shard-00000.parquet",
+   "rows": 18087,
+   "bytes": 71115097
+  },
+  {
+   "file": "events_unified-shard-00001.parquet",
+   "rows": 18088,
+   "bytes": 39988663
+  }
+ ]
+}

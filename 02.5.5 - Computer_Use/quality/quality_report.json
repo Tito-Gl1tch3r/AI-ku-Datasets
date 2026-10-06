@@ -1,0 +1,112 @@
+{
+  "total_trajectories": 552,
+  "total_actions": 11871,
+  "total_pixel_screenshots": 3780,
+  "total_estimated_duration_s": 26977,
+  "avg_trajectory_length": 21.5,
+  "distributions": {
+    "platform": {
+      "windows_10": 54,
+      "ubuntu_24_04": 180,
+      "macos_15": 81,
+      "windows_11": 237
+    },
+    "application": {
+      "browser": 99,
+      "game": 78,
+      "calc": 59,
+      "slides": 35,
+      "explorer": 46,
+      "paint": 47,
+      "video_editor": 44,
+      "writer": 40,
+      "cad": 23,
+      "settings": 8,
+      "crm": 16,
+      "blender": 28,
+      "terminal": 11,
+      "notepad": 6,
+      "desktop": 8,
+      "mail": 4
+    },
+    "difficulty": {
+      "intermediate": 216,
+      "advanced": 195,
+      "basic": 65,
+      "very_advanced": 52,
+      "extreme": 24
+    },
+    "domain": {
+      "web": 60,
+      "games": 78,
+      "spreadsheets": 47,
+      "presentations": 27,
+      "multi_application": 53,
+      "operating_system": 48,
+      "safety_resilience": 38,
+      "graphics": 42,
+      "video_editing": 44,
+      "documents": 38,
+      "cad": 23,
+      "business_apps": 16,
+      "3d_modeling": 28,
+      "terminal": 10
+    },
+    "task_type": {
+      "system_administration": 11,
+      "game_control": 78,
+      "research_synthesis": 18,
+      "atomic_action": 30,
+      "error_recovery_drill": 27,
+      "document_production": 48,
+      "open_objective": 27,
+      "workflow_automation": 46,
+      "safety_handling": 35,
+      "creative_graphics": 34,
+      "video_production": 44,
+      "guided_edit": 46,
+      "data_pipeline": 41,
+      "technical_drawing": 23,
+      "business_process": 16,
+      "3d_production": 28
+    },
+    "language": {
+      "en": 117,
+      "es": 435
+    },
+    "split": {
+      "train": 477,
+      "validation": 39,
+      "test": 36
+    },
+    "horizon": {
+      "medium": 376,
+      "long": 140,
+      "short": 32,
+      "very_long": 4
+    },
+    "outcome": {
+      "success": 516,
+      "aborted_safely": 10,
+      "partial": 23,
+      "failed": 3
+    }
+  },
+  "percentages": {
+    "long_horizon": 26.1,
+    "recovery": 28.1,
+    "verification_on_success": 100.0,
+    "multi_app": 14.7,
+    "open_ended": 4.9
+  },
+  "api_coverage": {
+    "openai_steps": 11871,
+    "anthropic_steps": 11871,
+    "semantic_total_steps": 11871
+  },
+  "duplicates_removed": 19,
+  "duplicate_rate": 3.33,
+  "generation_failures": 0,
+  "parquet_bytes": 13118018,
+  "build_seconds": 291.0
+}

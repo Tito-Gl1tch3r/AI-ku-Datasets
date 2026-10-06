@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+    "name": "An alignment assessment of recent cybersecurity incidents",
+    "snippet": "We present an alignment assessment of four incidents in which Claude models gained unauthorized access to real third-party systems.",
+    "host_name": "www.anthropic.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/guillermoflor_this-is-big-a-new-theory-on-why-frontier-activity-7506318026669985792-ukDU",
+    "name": "Frontier AI Progress Stalls Due to Seeded Internet Messages",
+    "snippet": "THIS IS BIG: A new theory on why frontier AI progress is stalling — and it has nothing to do with compute. The claim: AI agents from OpenAI ...",
+    "host_name": "www.linkedin.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+    "name": "Towards safety cases for frontier AI training - OpenAI",
+    "snippet": "Automated dataset reviews: Use agents to find and fix broken RL environments that could allow misaligned trajectories to receive high reward ... Missing:  win  agentic  Anthropic  Google",
+    "host_name": "openai.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.anthropic.com/institute/recursive-self-improvement",
+    "name": "When AI builds itself - Anthropic",
+    "snippet": "Building a frontier model takes two broad categories of work. There is engineering: writing the code, standing up the infrastructure, and overseeing the model ... Missing:  agentic  OpenAI",
+    "host_name": "www.anthropic.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2601.09032v1",
+    "name": "Evaluating Frontier Models on Realistic RL Environments - arXiv",
+    "snippet": "We present an empirical study evaluating frontier AI models on 150 workplace tasks within a realistic e-commerce RL environment from Surge. Our ...",
+    "host_name": "arxiv.org",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co/blog/sergiopaniego/agentic-rl-2026",
+    "name": "How frontier models train on outcomes in 2026 - Hugging Face",
+    "snippet": "Its \"domain-specialized teachers (e.g., trained via large-scale reinforcement learning) provide dense and token-level reward\" to the student ... Missing:  win  | Show results with:",
+    "host_name": "huggingface.co",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1uj59pe/understanding_how_frontier_models_get_better",
+    "name": "Understanding how Frontier Models get better - Reddit",
+    "snippet": "The gains is found in post training: - Predominantly with fine tuning reinforcement learning human in the loop. - These humans train a ...",
+    "host_name": "www.reddit.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@yugank.aman/the-2025-inflection-what-changed-in-how-ai-models-are-built-60a711861d79",
+    "name": "The 2025 Inflection: What Changed in How AI Models Are Built",
+    "snippet": "Why frontier models suddenly feel more capable — and why it wasn't a bigger pre-training run. Press enter or click to view image in full ... Missing:  approach  | Show results with:",
+    "host_name": "medium.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://metr.org/blog/2026-05-19-frontier-risk-report",
+    "name": "Frontier Risk Report (February to March 2026) - METR",
+    "snippet": "Starting in February 2026, METR conducted a pilot exercise to assess misalignment risks from AI agents used inside frontier AI developers, with ...",
+    "host_name": "metr.org",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://jxzhangjhu.github.io/blog/2026/how-frontier-labs-train-llms",
+    "name": "How Frontier Labs Train Large Language Models | Jiaxin Zhang",
+    "snippet": "A 2026 field guide to the frontier-LLM training pipeline — data, pre-training, post-training (RL), evaluation, and safety — synthesizing the ...",
+    "host_name": "jxzhangjhu.github.io",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

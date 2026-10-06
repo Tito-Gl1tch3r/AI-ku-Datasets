@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://huggingface.co/Qwen/Qwen3.8-27B/discussions/114",
+    "name": "Qwen/Qwen3.8-27B · Small MoE models - Hugging Face",
+    "snippet": "Qwen 3.8 27B is insanely smart but it takes a lot of compute to run. It's a great agent in the background for long planning projects, ... Missing:  2026  MiMo  distillation  frontier",
+    "host_name": "huggingface.co",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openrouter.ai/compare/qwen/qwen3.8-27b/xiaomi/mimo-v2.6-flash",
+    "name": "Qwen3.8 27B vs MiMo-V2.6-Flash - AI Model Comparison",
+    "snippet": "Compare Qwen3.8 27B from Qwen and MiMo-V2.6-Flash from Xiaomi on key metrics including benchmarks, price, context length, and other model features. Missing:  MoE  30B  class  distillation  efficient  frontier",
+    "host_name": "openrouter.ai",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLM/comments/1wgi8pd/how_exactly_is_qwen_38_27b_mopping_the_floor",
+    "name": "How exactly is Qwen 3.8 27B mopping the floor  - Reddit",
+    "snippet": "3.8-27b is dense, a more dense model than similar MoE's. That means more work per token, and thus slower per token, but you are getting ... Missing:  MiMo  | Show results with:",
+    "host_name": "www.reddit.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://artificialanalysis.ai/models/comparisons/mimo-v2-6-pro-vs-qwen3-8-27b",
+    "name": "MiMo-V2.6-Pro vs Qwen3.8 27B (xhigh): Model Comparison",
+    "snippet": "Comparison between MiMo-V2.6-Pro and Qwen3.8 27B (xhigh) across intelligence, price, speed, context window and more.",
+    "host_name": "artificialanalysis.ai",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://benchlm.ai/compare/mimo-v2-6-pro-vs-qwen3-omni-30b-a3b-thinking",
+    "name": "MiMo-V2.6-Pro vs Qwen3-Omni-30B-A3B-Thinking - BenchLM.ai",
+    "snippet": "MiMo-V2.6-Pro vs Qwen3-Omni-30B-A3B-Thinking: compare API cost, context, runtime, and specs. No shared benchmark verdict is available.",
+    "host_name": "benchlm.ai",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=AkXuUL_35gI",
+    "name": "Qwen 3.8 27B Could Be the Biggest Local AI Model of 2026",
+    "snippet": "Share your videos with friends, family, and the world. Missing:  small  MoE  30B  class  MiMo  V2.  Flash  distillation  efficient  frontier",
+    "host_name": "www.youtube.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openlm.ai/qwen3.8",
+    "name": "Qwen3.8 | OpenLM.ai",
+    "snippet": "❖ Qwen 2026 Aug 2. We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date.",
+    "host_name": "openlm.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://codersera.com/blog/best-open-source-llm-2026-llama-4-qwen-3-5-deepseek-v4-gemma-4-mistral",
+    "name": "Best Open-Source LLM 2026: Llama 4, DeepSeek V4, Qwen",
+    "snippet": "Qwen3.8-27B (August 14) is the best small dense coder under Apache-2.0, is the strongest tool-calling model in the 30B class. (MiMo, MiniMax, ...",
+    "host_name": "codersera.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

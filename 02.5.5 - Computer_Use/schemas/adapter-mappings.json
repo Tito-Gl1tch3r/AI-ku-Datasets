@@ -1,0 +1,332 @@
+{
+  "openai_responses_computer": {
+    "MOVE_CURSOR": {
+      "calls": [
+        {
+          "type": "move",
+          "x": 640,
+          "y": 360
+        }
+      ],
+      "notes": []
+    },
+    "CLICK": {
+      "calls": [
+        {
+          "type": "click",
+          "button": "right",
+          "x": 612,
+          "y": 388
+        }
+      ],
+      "notes": []
+    },
+    "DOUBLE_CLICK": {
+      "calls": [
+        {
+          "type": "double_click",
+          "x": 612,
+          "y": 388
+        }
+      ],
+      "notes": []
+    },
+    "TRIPLE_CLICK": {
+      "calls": [
+        {
+          "type": "click",
+          "button": "left",
+          "x": 300,
+          "y": 200
+        },
+        {
+          "type": "click",
+          "button": "left",
+          "x": 300,
+          "y": 200
+        },
+        {
+          "type": "click",
+          "button": "left",
+          "x": 300,
+          "y": 200
+        }
+      ],
+      "notes": [
+        "OpenAI no tiene triple_click nativo: se emite triple click secuencial en el mismo computer_call (acciones ordenadas)."
+      ]
+    },
+    "DRAG": {
+      "calls": [
+        {
+          "type": "drag",
+          "path": [
+            {
+              "x": 320,
+              "y": 140
+            },
+            {
+              "x": 900,
+              "y": 300
+            }
+          ]
+        }
+      ],
+      "notes": []
+    },
+    "SCROLL": {
+      "calls": [
+        {
+          "type": "scroll",
+          "scroll_x": 0,
+          "scroll_y": 3,
+          "x": 640,
+          "y": 400
+        }
+      ],
+      "notes": []
+    },
+    "TYPE": {
+      "calls": [
+        {
+          "type": "type",
+          "text": "informe final"
+        }
+      ],
+      "notes": []
+    },
+    "KEY": {
+      "calls": [
+        {
+          "type": "keypress",
+          "keys": [
+            "ctrl",
+            "s"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    "HOLD_KEY": {
+      "calls": [
+        {
+          "type": "keypress",
+          "keys": [
+            "w"
+          ]
+        },
+        {
+          "type": "wait",
+          "time": 1.2
+        }
+      ],
+      "notes": [
+        "OpenAI no soporta mantener tecla (hold_key): se emula pulsando y esperando; para control fino de hold real, el handler del cliente debe implementar keydown/keyup nativo."
+      ]
+    },
+    "WAIT": {
+      "calls": [
+        {
+          "type": "wait",
+          "time": 0.9
+        }
+      ],
+      "notes": []
+    },
+    "SCREENSHOT": {
+      "calls": [
+        {
+          "type": "screenshot"
+        }
+      ],
+      "notes": []
+    },
+    "ZOOM": {
+      "calls": [
+        {
+          "type": "screenshot"
+        }
+      ],
+      "notes": [
+        "OpenAI no tiene zoom nativo: capturar screenshot y recortar la región [100, 80, 500, 260] del lado del cliente antes de devolver la imagen."
+      ]
+    }
+  },
+  "anthropic_computer_toolset_20260801": {
+    "MOVE_CURSOR": {
+      "calls": [
+        {
+          "toolset_name": "computer",
+          "name": "mouse_move",
+          "input": {
+            "coordinate": [
+              640,
+              360
+            ]
+          }
+        }
+      ],
+      "notes": []
+    },
+    "CLICK": {
+      "calls": [
+        {
+          "toolset_name": "computer",
+          "name": "right_click",
+          "input": {
+            "coordinate": [
+              612,
+              388
+            ]
+          }
+        }
+      ],
+      "notes": []
+    },
+    "DOUBLE_CLICK": {
+      "calls": [
+        {
+          "toolset_name": "computer",
+          "name": "double_click",
+          "input": {
+            "coordinate": [
+              612,
+              388
+            ]
+          }
+        }
+      ],
+      "notes": []
+    },
+    "TRIPLE_CLICK": {
+      "calls": [
+        {
+          "toolset_name": "computer",
+          "name": "triple_click",
+          "input": {
+            "coordinate": [
+              300,
+              200
+            ]
+          }
+        }
+      ],
+      "notes": []
+    },
+    "DRAG": {
+      "calls": [
+        {
+          "toolset_name": "computer",
+          "name": "left_click_drag",
+          "input": {
+            "start_coordinate": [
+              320,
+              140
+            ],
+            "coordinate": [
+              900,
+              300
+            ]
+          }
+        }
+      ],
+      "notes": []
+    },
+    "SCROLL": {
+      "calls": [
+        {
+          "toolset_name": "computer",
+          "name": "scroll",
+          "input": {
+            "scroll_direction": "down",
+            "scroll_amount": 3,
+            "coordinate": [
+              640,
+              400
+            ]
+          }
+        }
+      ],
+      "notes": []
+    },
+    "TYPE": {
+      "calls": [
+        {
+          "toolset_name": "computer",
+          "name": "type",
+          "input": {
+            "text": "informe final"
+          }
+        }
+      ],
+      "notes": []
+    },
+    "KEY": {
+      "calls": [
+        {
+          "toolset_name": "computer",
+          "name": "key",
+          "input": {
+            "text": "ctrl+s"
+          }
+        }
+      ],
+      "notes": []
+    },
+    "HOLD_KEY": {
+      "calls": [
+        {
+          "toolset_name": "computer",
+          "name": "hold_key",
+          "input": {
+            "text": "w",
+            "duration": 1.2
+          }
+        }
+      ],
+      "notes": []
+    },
+    "WAIT": {
+      "calls": [
+        {
+          "toolset_name": "computer",
+          "name": "wait",
+          "input": {
+            "duration": 0.9
+          }
+        }
+      ],
+      "notes": []
+    },
+    "SCREENSHOT": {
+      "calls": [
+        {
+          "toolset_name": "computer",
+          "name": "screenshot",
+          "input": {}
+        }
+      ],
+      "notes": []
+    },
+    "ZOOM": {
+      "calls": [
+        {
+          "toolset_name": "computer",
+          "name": "zoom",
+          "input": {
+            "region": [
+              100,
+              80,
+              500,
+              260
+            ],
+            "purpose": "leer texto pequeño"
+          }
+        }
+      ],
+      "notes": [
+        "zoom devuelve la región a resolución completa; usar para texto pequeño o UI densa ilegible en el screenshot completo."
+      ]
+    }
+  }
+}

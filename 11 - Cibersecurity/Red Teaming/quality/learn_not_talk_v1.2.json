@@ -1,0 +1,3226 @@
+{
+  "summary": {
+    "rows": 357,
+    "new_rows": 52,
+    "jargon": 0,
+    "comprehension_pct": 58.0,
+    "scope_roe_pct": 89.1,
+    "stop_cond_pct": 22.4,
+    "evidence_pct": 100.0
+  },
+  "rows": [
+    {
+      "id": "akr-00000",
+      "subdomain": "reporting_evidence",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00001",
+      "subdomain": "reporting_evidence",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00002",
+      "subdomain": "reporting_evidence",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00003",
+      "subdomain": "reporting_evidence",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00004",
+      "subdomain": "reporting_evidence",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00005",
+      "subdomain": "reporting_evidence",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00006",
+      "subdomain": "reporting_evidence",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00007",
+      "subdomain": "reporting_evidence",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00008",
+      "subdomain": "reporting_evidence",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00009",
+      "subdomain": "reporting_evidence",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00010",
+      "subdomain": "reporting_evidence",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00011",
+      "subdomain": "vuln_analysis",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00012",
+      "subdomain": "vuln_analysis",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00013",
+      "subdomain": "vuln_analysis",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00014",
+      "subdomain": "vuln_analysis",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00015",
+      "subdomain": "vuln_analysis",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00016",
+      "subdomain": "vuln_analysis",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00017",
+      "subdomain": "vuln_analysis",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00018",
+      "subdomain": "vuln_analysis",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00019",
+      "subdomain": "vuln_analysis",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00020",
+      "subdomain": "vuln_analysis",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00021",
+      "subdomain": "opsec_tradeoffs",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00022",
+      "subdomain": "opsec_tradeoffs",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00023",
+      "subdomain": "opsec_tradeoffs",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00024",
+      "subdomain": "opsec_tradeoffs",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00025",
+      "subdomain": "opsec_tradeoffs",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00026",
+      "subdomain": "opsec_tradeoffs",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00027",
+      "subdomain": "opsec_tradeoffs",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00028",
+      "subdomain": "opsec_tradeoffs",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00029",
+      "subdomain": "opsec_tradeoffs",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00030",
+      "subdomain": "opsec_tradeoffs",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00031",
+      "subdomain": "recon_passive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00032",
+      "subdomain": "recon_passive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00033",
+      "subdomain": "recon_passive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00034",
+      "subdomain": "recon_passive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00035",
+      "subdomain": "recon_passive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00036",
+      "subdomain": "recon_passive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00037",
+      "subdomain": "recon_passive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00038",
+      "subdomain": "post_exploit_concepts",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00039",
+      "subdomain": "post_exploit_concepts",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00040",
+      "subdomain": "post_exploit_concepts",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00041",
+      "subdomain": "post_exploit_concepts",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00042",
+      "subdomain": "post_exploit_concepts",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00043",
+      "subdomain": "post_exploit_concepts",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00044",
+      "subdomain": "post_exploit_concepts",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00045",
+      "subdomain": "post_exploit_concepts",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00046",
+      "subdomain": "post_exploit_concepts",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00047",
+      "subdomain": "post_exploit_concepts",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00048",
+      "subdomain": "reporting_evidence",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00049",
+      "subdomain": "reporting_evidence",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00050",
+      "subdomain": "reporting_evidence",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00051",
+      "subdomain": "reporting_evidence",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00052",
+      "subdomain": "reporting_evidence",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00053",
+      "subdomain": "reporting_evidence",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00054",
+      "subdomain": "scoping_authorization",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00055",
+      "subdomain": "scoping_authorization",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00056",
+      "subdomain": "scoping_authorization",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00057",
+      "subdomain": "scoping_authorization",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00058",
+      "subdomain": "scoping_authorization",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00059",
+      "subdomain": "scoping_authorization",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00060",
+      "subdomain": "scoping_authorization",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00061",
+      "subdomain": "scoping_authorization",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00062",
+      "subdomain": "scoping_authorization",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00063",
+      "subdomain": "enumeration_active",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00064",
+      "subdomain": "enumeration_active",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00065",
+      "subdomain": "enumeration_active",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00066",
+      "subdomain": "enumeration_active",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00067",
+      "subdomain": "enumeration_active",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00068",
+      "subdomain": "enumeration_active",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00069",
+      "subdomain": "enumeration_active",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00070",
+      "subdomain": "enumeration_active",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00071",
+      "subdomain": "collection_opsec",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00072",
+      "subdomain": "collection_opsec",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00073",
+      "subdomain": "collection_opsec",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00074",
+      "subdomain": "collection_opsec",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00075",
+      "subdomain": "collection_opsec",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00076",
+      "subdomain": "collection_opsec",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00077",
+      "subdomain": "domain_footprinting",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00078",
+      "subdomain": "domain_footprinting",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00079",
+      "subdomain": "domain_footprinting",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00080",
+      "subdomain": "domain_footprinting",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00081",
+      "subdomain": "domain_footprinting",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00082",
+      "subdomain": "domain_footprinting",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00083",
+      "subdomain": "osint_legal_ethics",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00084",
+      "subdomain": "osint_legal_ethics",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00085",
+      "subdomain": "osint_legal_ethics",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00086",
+      "subdomain": "identity_correlation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00087",
+      "subdomain": "identity_correlation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00088",
+      "subdomain": "identity_correlation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00089",
+      "subdomain": "identity_correlation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00090",
+      "subdomain": "identity_correlation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00091",
+      "subdomain": "identity_correlation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00092",
+      "subdomain": "identity_correlation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00093",
+      "subdomain": "identity_correlation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00094",
+      "subdomain": "identity_correlation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00095",
+      "subdomain": "identity_correlation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00096",
+      "subdomain": "data_verification",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00097",
+      "subdomain": "data_verification",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00098",
+      "subdomain": "data_verification",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00099",
+      "subdomain": "data_verification",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00100",
+      "subdomain": "data_verification",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00101",
+      "subdomain": "data_verification",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00102",
+      "subdomain": "data_verification",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00103",
+      "subdomain": "data_verification",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00104",
+      "subdomain": "data_verification",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00105",
+      "subdomain": "asset_recon",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00106",
+      "subdomain": "asset_recon",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00107",
+      "subdomain": "asset_recon",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00108",
+      "subdomain": "asset_recon",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00109",
+      "subdomain": "asset_recon",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00110",
+      "subdomain": "asset_recon",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00111",
+      "subdomain": "asset_recon",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00112",
+      "subdomain": "asset_recon",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00113",
+      "subdomain": "asset_recon",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00114",
+      "subdomain": "vuln_class_triage",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00115",
+      "subdomain": "vuln_class_triage",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00116",
+      "subdomain": "vuln_class_triage",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00117",
+      "subdomain": "vuln_class_triage",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00118",
+      "subdomain": "vuln_class_triage",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00119",
+      "subdomain": "vuln_class_triage",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00120",
+      "subdomain": "vuln_class_triage",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00121",
+      "subdomain": "vuln_class_triage",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00122",
+      "subdomain": "vuln_class_triage",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00123",
+      "subdomain": "vuln_class_triage",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00124",
+      "subdomain": "vuln_class_triage",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00125",
+      "subdomain": "duplicate_avoidance",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00126",
+      "subdomain": "duplicate_avoidance",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00127",
+      "subdomain": "bounty_math",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00128",
+      "subdomain": "bounty_math",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00129",
+      "subdomain": "bounty_math",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00130",
+      "subdomain": "bounty_math",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00131",
+      "subdomain": "bounty_math",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00132",
+      "subdomain": "bounty_math",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00133",
+      "subdomain": "bounty_math",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00134",
+      "subdomain": "bounty_math",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00135",
+      "subdomain": "bounty_math",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00136",
+      "subdomain": "retest_verification",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00137",
+      "subdomain": "retest_verification",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00138",
+      "subdomain": "retest_verification",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00139",
+      "subdomain": "retest_verification",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00140",
+      "subdomain": "retest_verification",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00141",
+      "subdomain": "retest_verification",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00142",
+      "subdomain": "retest_verification",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00143",
+      "subdomain": "retest_verification",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00144",
+      "subdomain": "program_scope_parsing",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00145",
+      "subdomain": "program_scope_parsing",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00146",
+      "subdomain": "program_scope_parsing",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00147",
+      "subdomain": "program_scope_parsing",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00148",
+      "subdomain": "program_scope_parsing",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00149",
+      "subdomain": "program_scope_parsing",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00150",
+      "subdomain": "program_scope_parsing",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00151",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00152",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00153",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00154",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00155",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00156",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00157",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00158",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00159",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00160",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00161",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00162",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00163",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00164",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00165",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00166",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00167",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00168",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00169",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00170",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00171",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00172",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00173",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00174",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00175",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00176",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00177",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00178",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00179",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00180",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00181",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00182",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00183",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00184",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00185",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00186",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00187",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00188",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00189",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00190",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00191",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00192",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00193",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00194",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00195",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00196",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00197",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00198",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00199",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00200",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00201",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00202",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00203",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00204",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00205",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00206",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00207",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00208",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00209",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00210",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00211",
+      "subdomain": "ideation",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00212",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00213",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00214",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00215",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00216",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00217",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00218",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00219",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00220",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00221",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00222",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00223",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00224",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00225",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00226",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00227",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00228",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00229",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00230",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00231",
+      "subdomain": "mitre_attack",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00232",
+      "subdomain": "issaf_framework",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00233",
+      "subdomain": "issaf_framework",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00234",
+      "subdomain": "issaf_framework",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00235",
+      "subdomain": "issaf_framework",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00236",
+      "subdomain": "issaf_framework",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00237",
+      "subdomain": "issaf_framework",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00238",
+      "subdomain": "issaf_framework",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00239",
+      "subdomain": "issaf_framework",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00240",
+      "subdomain": "issaf_framework",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00241",
+      "subdomain": "issaf_framework",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00242",
+      "subdomain": "issaf_framework",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00243",
+      "subdomain": "nist_800_115",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00244",
+      "subdomain": "nist_800_115",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00245",
+      "subdomain": "nist_800_115",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00246",
+      "subdomain": "nist_800_115",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00247",
+      "subdomain": "nist_800_115",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00248",
+      "subdomain": "nist_800_115",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00249",
+      "subdomain": "nist_800_115",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00250",
+      "subdomain": "nist_800_115",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00251",
+      "subdomain": "nist_800_115",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00252",
+      "subdomain": "nist_800_115",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00253",
+      "subdomain": "nist_800_115",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00254",
+      "subdomain": "nist_800_115",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00255",
+      "subdomain": "nist_800_115",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00256",
+      "subdomain": "nist_800_115",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00257",
+      "subdomain": "nist_800_115",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00258",
+      "subdomain": "osstmm_metrics",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00259",
+      "subdomain": "osstmm_metrics",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00260",
+      "subdomain": "osstmm_metrics",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00261",
+      "subdomain": "osstmm_metrics",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00262",
+      "subdomain": "osstmm_metrics",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": false,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00263",
+      "subdomain": "osstmm_metrics",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00264",
+      "subdomain": "osstmm_metrics",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00265",
+      "subdomain": "osstmm_metrics",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00266",
+      "subdomain": "osstmm_metrics",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00267",
+      "subdomain": "osstmm_metrics",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00268",
+      "subdomain": "osstmm_metrics",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00269",
+      "subdomain": "osstmm_metrics",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00270",
+      "subdomain": "osstmm_metrics",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00271",
+      "subdomain": "osstmm_metrics",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00272",
+      "subdomain": "ptes_phases",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00273",
+      "subdomain": "ptes_phases",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00274",
+      "subdomain": "ptes_phases",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00275",
+      "subdomain": "ptes_phases",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00276",
+      "subdomain": "ptes_phases",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00277",
+      "subdomain": "ptes_phases",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00278",
+      "subdomain": "ptes_phases",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00279",
+      "subdomain": "ptes_phases",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00280",
+      "subdomain": "ptes_phases",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00281",
+      "subdomain": "ptes_phases",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00282",
+      "subdomain": "ptes_phases",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00283",
+      "subdomain": "ptes_phases",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00284",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00285",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00286",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00287",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00288",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00289",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00290",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00291",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00292",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00293",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00294",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00295",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00296",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00297",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00298",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00299",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00300",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00301",
+      "subdomain": "wstg_web",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00302",
+      "subdomain": "cross_framework",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00303",
+      "subdomain": "cross_framework",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00304",
+      "subdomain": "cross_framework",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00305",
+      "subdomain": "issaf_framework",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00306",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00307",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00308",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00309",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00310",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00311",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00312",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00313",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00314",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00315",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00316",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00317",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00318",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00319",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00320",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00321",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00322",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00323",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00324",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00325",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": false,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00326",
+      "subdomain": "mrrobot_cognitive",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00327",
+      "subdomain": "opsec_discipline",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00328",
+      "subdomain": "opsec_discipline",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00329",
+      "subdomain": "opsec_discipline",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00330",
+      "subdomain": "opsec_discipline",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00331",
+      "subdomain": "opsec_discipline",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00332",
+      "subdomain": "opsec_discipline",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00333",
+      "subdomain": "opsec_discipline",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00334",
+      "subdomain": "opsec_discipline",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00335",
+      "subdomain": "opsec_discipline",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00336",
+      "subdomain": "opsec_discipline",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00337",
+      "subdomain": "opsec_discipline",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00338",
+      "subdomain": "opsec_discipline",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00339",
+      "subdomain": "opsec_discipline",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00340",
+      "subdomain": "s4vitar_workflow",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00341",
+      "subdomain": "s4vitar_workflow",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00342",
+      "subdomain": "s4vitar_workflow",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00343",
+      "subdomain": "s4vitar_workflow",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00344",
+      "subdomain": "s4vitar_workflow",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00345",
+      "subdomain": "s4vitar_workflow",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00346",
+      "subdomain": "s4vitar_workflow",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00347",
+      "subdomain": "s4vitar_workflow",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00348",
+      "subdomain": "s4vitar_workflow",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00349",
+      "subdomain": "s4vitar_workflow",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00350",
+      "subdomain": "s4vitar_workflow",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00351",
+      "subdomain": "s4vitar_workflow",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00352",
+      "subdomain": "s4vitar_workflow",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00353",
+      "subdomain": "s4vitar_workflow",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00354",
+      "subdomain": "s4vitar_workflow",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": false,
+      "evidence": true
+    },
+    {
+      "id": "akr-00355",
+      "subdomain": "s4vitar_workflow",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    },
+    {
+      "id": "akr-00356",
+      "subdomain": "s4vitar_workflow",
+      "jargon": false,
+      "comprehension": true,
+      "scope_roe": true,
+      "stop_cond": true,
+      "evidence": true
+    }
+  ]
+}

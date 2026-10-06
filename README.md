@@ -30,16 +30,16 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 | 02.5.5 | `02.5.5 - MultiAPI` | 🟠 🔄 | **APIs sin mezclar protocolos**, con pares contrastivos y set adversarial. |
 | 02.5.5 | `02.5.5 - Computer_Use` | 🟢 🔄 | **Usar un ordenador** (552 trayectorias, escalera basic→extreme). |
 | 03 | `03 - Agentic` · `03 - Tool_Calling` | 🟢 | **Comportamiento agéntico** (trayectorias + tool calls; mezcla de agentic y CoT). |
-| 04 | `04 - Oro` | 🟢 | **Traza agéntica REAL de Fable 5.1 en Claude Code** (mezcla agentic+CoT → aprender) *(pendiente `trajectory.json`)*. |
+| 04 | `04 - Oro` | 🟢 | **Fable 5 en Cursor → traza REAL de Fable 5.1 en Claude Code** (aprender a actuar como Fable; orden interno: cursor primero, traza después). |
 | 05 | `05 - Programming` | 🟠 🔄 | **Programar y entender QUÉ programa** (V1.0 → resto → superprogrammer último). |
 | 07 | `07 - Maths` | 🟠 🔄 | **Razonamiento científico** (las trazas enseñan a derivar y verificar). |
 | 08 | `08 - Audit` | 🟠 | **Auditoría**: el fichero unificado fija hechos CVE (🟡); la técnica vive en Red Teaming. |
 | 09 | `09 - Frontier-Intelligence` | 🟠 🔄🏆 | **Capacidades frontier + thinking adaptativo** (función dificultad→presupuesto). |
-| 10 | `10 - Oro` | 🟢 | Repetición de la traza real (2ª pasada). |
+| 10 | `10 - Oro` | 🟢 | Repetición del bloque oro (2ª pasada: cursor → traza). |
 | 11 | `11 - Cibersecurity` | 🟠 🔄 | **Hechos que fijar (shards) + metodologías que aprender (Red Teaming)**. |
 | 12 | `12 - COT` | 🟢 | **Aprender a RAZONAR** (1,1M cadenas). |
 | 12 | `12 - Brainstorming` | 🟢 | **El experto Nº 177 aprende brainstorming** (61 registros ideation). |
-| 13 | `13 - Oro` | 🟢 | Cierre con la traza real (3ª pasada). |
+| 13 | `13 - Oro` | 🟢 | Cierre con el bloque oro (3ª pasada: cursor → traza). |
 
 ## Contenido por archivo (revisión manual)
 
@@ -82,6 +82,10 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 - 🟢 `03 - Agentic/trajectory.jsonl` (323) — eventos de sesión agéntica.
 - 🟢 `03 - Tool_Calling/tool_calling_unified.parquet` (124.084) — bucles user→assistant→tool.
 
+### 04 / 10 / 13 - Oro 🟢
+- 🟢 `train_cursor.jsonl` (244 líneas, 58,8 MB) — **Fable 5 en Cursor**: sesiones reales de agente programador (`prompt` + `messages` + `tools`, system "powered by Fable 5"). **Va primero.**
+- 🟢 `trajectory.jsonl` (323 líneas) — **traza REAL de Fable 5.1 en Claude Code** (eventos user/assistant/system + estado de sesión; mezcla agentic+CoT para imitar, no para fijar). **Va después.** (Es el mismo fichero que vive en `03 - Agentic`: la repetición 03→04→10→13 es la repetición espaciada.)
+
 ### 05 - Programming 🟠 🔄
 - 🟢 `dataset-comprension-codigoV1.0.json` (13 ejemplos) — **[1º] comprensión de código.**
 - 🟢 `dataset-comprension-codigoV0.1.json` (5: py/php/c/cpp/java, truncado reparado) — [1º] comprensión.
@@ -118,11 +122,10 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 - 🟢 `cot_unified.parquet` (1.119.633) — problemas con razonamiento encadenado (mates, lógica…).
 
 ### 12 - Brainstorming 🟢
-- *(vacía; 61 registros `ideation` localizados en Red Teaming, pendientes de colocar)* — el experto Nº 177 aprende brainstorming.
+- 🟢 `data/AI-ku_brainstorming.jsonl` (220 líneas) — razonamiento de pentester/ethical hacker en entornos autorizados: `reasoning_trace` + `alternative_hypotheses` + `verification` + `authorization`. El experto Nº 177 aprende brainstorming. (+ `stats/`, `scripts/`, docs del repo.)
 
 ## Notas del pipeline
 
 - El orden de carpetas es el orden de entrenamiento (con repetición espaciada del oro en 04→10→13).
-- Sub-órdenes internos: `02.5 - Events` (unified → Knowledge) y `05 - Programming` (V1.0 → resto → superprogrammer).
+- Sub-órdenes internos: `02.5 - Events` (unified → Knowledge), `05 - Programming` (V1.0 → resto → superprogrammer) y bloques de oro (cursor → traza).
 - Los scripts `merge_*.py` / `update_manifest*.py` son herramientas de construcción: **no se suben**.
-- Pendientes: `04/10/13 - Oro` (`trajectory.json`) y contenido final de `12 - Brainstorming`.

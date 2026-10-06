@@ -1,0 +1,193 @@
+{
+ "original": "conversation_unified.parquet",
+ "rows": 1005432,
+ "orig_row_groups": 1,
+ "n_shards": 37,
+ "shards": [
+  {
+   "file": "conversation_unified-shard-00000.parquet",
+   "rows": 62839,
+   "bytes": 73653474
+  },
+  {
+   "file": "conversation_unified-shard-00001.parquet",
+   "rows": 62840,
+   "bytes": 75851844
+  },
+  {
+   "file": "conversation_unified-shard-00002.parquet",
+   "rows": 62839,
+   "bytes": 45745270
+  },
+  {
+   "file": "conversation_unified-shard-00003.parquet",
+   "rows": 62840,
+   "bytes": 43255493
+  },
+  {
+   "file": "conversation_unified-shard-00004.parquet",
+   "rows": 15709,
+   "bytes": 50051142
+  },
+  {
+   "file": "conversation_unified-shard-00005.parquet",
+   "rows": 15710,
+   "bytes": 51346682
+  },
+  {
+   "file": "conversation_unified-shard-00006.parquet",
+   "rows": 15710,
+   "bytes": 50584115
+  },
+  {
+   "file": "conversation_unified-shard-00007.parquet",
+   "rows": 15710,
+   "bytes": 50308660
+  },
+  {
+   "file": "conversation_unified-shard-00008.parquet",
+   "rows": 15710,
+   "bytes": 49894160
+  },
+  {
+   "file": "conversation_unified-shard-00009.parquet",
+   "rows": 15710,
+   "bytes": 50809132
+  },
+  {
+   "file": "conversation_unified-shard-00010.parquet",
+   "rows": 31420,
+   "bytes": 63962255
+  },
+  {
+   "file": "conversation_unified-shard-00011.parquet",
+   "rows": 31419,
+   "bytes": 32616362
+  },
+  {
+   "file": "conversation_unified-shard-00012.parquet",
+   "rows": 31420,
+   "bytes": 62768816
+  },
+  {
+   "file": "conversation_unified-shard-00013.parquet",
+   "rows": 31420,
+   "bytes": 81197899
+  },
+  {
+   "file": "conversation_unified-shard-00014.parquet",
+   "rows": 31420,
+   "bytes": 74322030
+  },
+  {
+   "file": "conversation_unified-shard-00015.parquet",
+   "rows": 31419,
+   "bytes": 70583540
+  },
+  {
+   "file": "conversation_unified-shard-00016.parquet",
+   "rows": 31420,
+   "bytes": 70612614
+  },
+  {
+   "file": "conversation_unified-shard-00017.parquet",
+   "rows": 31420,
+   "bytes": 70375380
+  },
+  {
+   "file": "conversation_unified-shard-00018.parquet",
+   "rows": 31420,
+   "bytes": 70211816
+  },
+  {
+   "file": "conversation_unified-shard-00019.parquet",
+   "rows": 31419,
+   "bytes": 70418740
+  },
+  {
+   "file": "conversation_unified-shard-00020.parquet",
+   "rows": 31420,
+   "bytes": 70200378
+  },
+  {
+   "file": "conversation_unified-shard-00021.parquet",
+   "rows": 31420,
+   "bytes": 70312041
+  },
+  {
+   "file": "conversation_unified-shard-00022.parquet",
+   "rows": 15710,
+   "bytes": 38373464
+  },
+  {
+   "file": "conversation_unified-shard-00023.parquet",
+   "rows": 15710,
+   "bytes": 45809030
+  },
+  {
+   "file": "conversation_unified-shard-00024.parquet",
+   "rows": 15709,
+   "bytes": 45492049
+  },
+  {
+   "file": "conversation_unified-shard-00025.parquet",
+   "rows": 15710,
+   "bytes": 45720381
+  },
+  {
+   "file": "conversation_unified-shard-00026.parquet",
+   "rows": 15710,
+   "bytes": 45470484
+  },
+  {
+   "file": "conversation_unified-shard-00027.parquet",
+   "rows": 15710,
+   "bytes": 45436004
+  },
+  {
+   "file": "conversation_unified-shard-00028.parquet",
+   "rows": 15710,
+   "bytes": 45737889
+  },
+  {
+   "file": "conversation_unified-shard-00029.parquet",
+   "rows": 15710,
+   "bytes": 45682588
+  },
+  {
+   "file": "conversation_unified-shard-00030.parquet",
+   "rows": 15710,
+   "bytes": 45610390
+  },
+  {
+   "file": "conversation_unified-shard-00031.parquet",
+   "rows": 15710,
+   "bytes": 45513242
+  },
+  {
+   "file": "conversation_unified-shard-00032.parquet",
+   "rows": 15709,
+   "bytes": 45962676
+  },
+  {
+   "file": "conversation_unified-shard-00033.parquet",
+   "rows": 15710,
+   "bytes": 45599756
+  },
+  {
+   "file": "conversation_unified-shard-00034.parquet",
+   "rows": 15710,
+   "bytes": 45826911
+  },
+  {
+   "file": "conversation_unified-shard-00035.parquet",
+   "rows": 15710,
+   "bytes": 43625201
+  },
+  {
+   "file": "conversation_unified-shard-00036.parquet",
+   "rows": 62840,
+   "bytes": 69954933
+  }
+ ]
+}

@@ -31,7 +31,7 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 | 02.5.5 | `02.5.5 - Computer_Use` | 🟢 🔄 | **Usar un ordenador** (552 trayectorias, escalera basic→extreme). |
 | 03 | `03 - Agentic` · `03 - Tool_Calling` | 🟢 | **Comportamiento agéntico** (trayectorias + tool calls; mezcla de agentic y CoT). |
 | 04 | `04 - Oro` | 🟢 | **Bloque oro: primero se entrena Fable 5 en Cursor y después Fable 5.1 en Claude Code** (el trajectory es lo último; aprender a actuar como Fable). |
-| 05 | `05 - Programming` | 🟠 🔄 | **Programar y entender QUÉ programa** (V1.0 → resto → superprogrammer último). |
+| 05 | `05 - Programming` | 🟠 🔄 | **Programar y entender QUÉ programa** (V1.0 → resto → superprogrammer último — retirado temporalmente, se repondrá versión avanzada). |
 | 07 | `07 - Maths` | 🟠 🔄 | **Razonamiento científico** (las trazas enseñan a derivar y verificar). |
 | 08 | `08 - Audit` | 🟠 | **Auditoría**: el fichero unificado fija hechos CVE (🟡); la técnica vive en Red Teaming. |
 | 09 | `09 - Frontier-Intelligence` | 🟠 🔄🏆 | **Capacidades frontier + thinking adaptativo** (función dificultad→presupuesto). |
@@ -88,6 +88,8 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 - 🟢 `trajectory.jsonl` (323 líneas) — **traza REAL de Fable 5.1 en Claude Code** (eventos user/assistant/system + estado de sesión; mezcla agentic+CoT para imitar, no para fijar). **Se entrena en último lugar.** (Es el mismo fichero que vive en `03 - Agentic`: la repetición 03→04→10→13 es la repetición espaciada.)
 
 ### 05 - Programming 🟠 🔄
+
+> ⚠️ `superprogrammer/` retirado temporalmente del repo (se está haciendo más avanzado); se repondrá en su sitio [3º]. 🟠 🔄
 - 🟢 `dataset-comprension-codigoV1.0.json` (13 ejemplos) — **[1º] comprensión de código.**
 - 🟢 `dataset-comprension-codigoV0.1.json` (5: py/php/c/cpp/java, truncado reparado) — [1º] comprensión.
 - 🟠 `programming_unified.parquet` (286.588: codefeedback/the_stack/apps + 63 `claude_code_trace`) — [2º] mezcla código bruto (fijar) + sesiones de desarrollo (aprender).

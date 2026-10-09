@@ -85,7 +85,7 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 ### 04 / 10 / 13 - Oro 🟢
 **Orden de entrenamiento dentro del bloque: primero Fable 5 en Cursor, después Fable 5.1 en Claude Code (el trajectory es lo último).**
 - 🟢 `train_cursor.jsonl` (244 líneas, 58,8 MB) — **Fable 5 en Cursor**: sesiones reales de agente programador (`prompt` + `messages` + `tools`, system "powered by Fable 5"). **Se entrena primero.**
-- 🟢 `trajectory.jsonl` (323 líneas) — **traza REAL de Fable 5.1 en Claude Code** (eventos user/assistant/system + estado de sesión; mezcla agentic+CoT para imitar, no para fijar). **Se entrena en último lugar.** (Es el mismo fichero que vive en `03 - Agentic`: la repetición 03→04→10→13 es la repetición espaciada.)
+- 🟢 `trajectory.jsonl` (147 turnos normalizados user/assistant/system — ruido de sesión, firmas e identificadores eliminados) — **traza REAL de Fable 5.1 en Claude Code** (mezcla agentic+CoT para imitar, no para fijar; mezcla agentic+CoT para imitar, no para fijar). **Se entrena en último lugar.** (Es el mismo fichero que vive en `03 - Agentic`: la repetición 03→04→10→13 es la repetición espaciada.)
 
 ### 05 - Programming 🟠 🔄
 
@@ -121,7 +121,7 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 - 🔧 `Red Teaming/{docs,quality,scripts}` — metodología, informes y generadores.
 
 ### 12 - COT 🟢
-- 🟢 `cot_unified.parquet` (1.119.633) — problemas con razonamiento encadenado (mates, lógica…).
+- 🟢 `cot_unified` (943.902 filas en 36 shards — filtradas 175.731 vacías) — problemas con razonamiento encadenado (mates, lógica…).
 
 ### 12 - Brainstorming 🟢
 - 🟢 `data/AI-ku_brainstorming.jsonl` (220 líneas) — razonamiento de pentester/ethical hacker en entornos autorizados: `reasoning_trace` + `alternative_hypotheses` + `verification` + `authorization`. El experto Nº 177 aprende brainstorming. (+ `stats/`, `scripts/`, docs del repo.)

@@ -31,7 +31,7 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 | 02.5.5 | `02.5.5 - Computer_Use` | 🟢 🔄 | **Usar un ordenador** (552 trayectorias, escalera basic→extreme). |
 | 03 | `03 - Agentic` · `03 - Tool_Calling` | 🟢 | **Comportamiento agéntico** (trayectorias + tool calls; mezcla de agentic y CoT). |
 | 04 | `04 - Oro` | 🟢 | **Bloque oro: primero se entrena Fable 5 en Cursor y después Fable 5.1 en Claude Code** (el trajectory es lo último; aprender a actuar como Fable). |
-| 05 | `05 - Programming` | 🟠 🔄 | **Programar y entender QUÉ programa** (V1.0 → resto → superprogrammer último — retirado temporalmente, se repondrá versión avanzada). |
+| 05 | `05 - Programming` | 🟠 🔄 | **Programar y entender QUÉ programa** (V1.0 → resto → superprogrammer último: 00 entender → 01 escribir → 02/03 crear como Opus). |
 | 07 | `07 - Maths` | 🟠 🔄 | **Razonamiento científico** (las trazas enseñan a derivar y verificar). |
 | 08 | `08 - Audit` | 🟠 | **Auditoría**: el fichero unificado fija hechos CVE (🟡); la técnica vive en Red Teaming. |
 | 09 | `09 - Frontier-Intelligence` | 🟠 🔄🏆 | **Capacidades frontier + thinking adaptativo** (función dificultad→presupuesto). |
@@ -89,16 +89,16 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 
 ### 05 - Programming 🟠 🔄
 
-> ⚠️ `superprogrammer/` retirado temporalmente del repo (se está haciendo más avanzado); se repondrá en su sitio [3º]. 🟠 🔄
+> Orden interno superprogrammer: **00** entender (3.476) → **01** escribir (13.402) → **02** vídeo generativo + **03** game mixes/modding (3.330); `hard_holdout` (952) nunca entrena (gate de evaluación); replay anti-olvido en cada etapa. 🟠 🔄
 - 🟢 `dataset-comprension-codigoV1.0.json` (13 ejemplos) — **[1º] comprensión de código.**
 - 🟢 `dataset-comprension-codigoV0.1.json` (5: py/php/c/cpp/java, truncado reparado) — [1º] comprensión.
 - 🟠 `programming_unified.parquet` (286.588: codefeedback/the_stack/apps + 63 `claude_code_trace`) — [2º] mezcla código bruto (fijar) + sesiones de desarrollo (aprender).
 - 🟢 `data/AI-ku_programming.parquet` (290: implementation/debugging/review/testing…; 8 lenguajes; dificultad medium→extreme; con `verification`) — [2º] oficio verificado. + 🔧 `docs/` y `pipeline/`.
-- 🟢 `superprogrammer/datasets/write` (train 10.846/test 1.245/val 915) — **[3º] generar código verificado.**
-- 🟢 `superprogrammer/datasets/understand` (2.890/261/175) + `media` + `game_engineering` — [3º] **entender** código, medios y juegos.
-- 🔧 `superprogrammer/datasets/hard_holdout` — reserva dura de evaluación.
+- 🟢 `superprogrammer/datasets/write` (13.402, 14 lenguajes, 74% verificado por ejecución real) — **[01] escribir** código.
+- 🟢 `superprogrammer/datasets/understand` (3.476: explicación, trazas, debugging con traceback real, testing, traducción, seguridad…) — **[00] entender** el código.
+- 🟢 `superprogrammer/datasets/media` (1.307) + `datasets/game_engineering` (2.023) — **[02+03] crear como Opus 5.5** (vídeo generativo determinista, mixes y modding con seguridad en el ground truth).
 - 🔧 `superprogrammer/datasets/_quarantine` — registro de fallos (`verify_failed`/`gen_none`), no entrena.
-- 🔧 `superprogrammer/{generators,validators,schemas,reports,configs}` — pipeline (el `.py` no se sube).
+- 🔧 `superprogrammer/datasets/hard_holdout` (952) — gate de evaluación entre etapas, nunca entrena.`n- 🔧 `superprogrammer/datasets/_quarantine` — registro de fallos, no entrena.`n- 🔧 `superprogrammer/docs/CURRICULUM.md` (+ OPUS_STYLE, ROADMAP) — orden pedagógico con replay anti-olvido; resto de pipeline (el `.py` no se sube).
 
 ### 07 - Maths 🟠 🔄
 - 🟢🔄 `ai-ku-advanced-maths.parquet` (1.527: train 1.374/val 82/test 71) — electronics/physics/quantum/maths/bio/ingeniería; problem_solving/simulation/derivation/diagnosis con `verification` y ejecución; dificultad hard→**frontier**. Las trazas enseñan a razonar (los hechos viajan dentro del razonamiento).

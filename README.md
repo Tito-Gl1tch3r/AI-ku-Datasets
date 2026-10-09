@@ -37,7 +37,7 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 | 09 | `09 - Frontier-Intelligence` | 🟠 🔄🏆 | **Capacidades frontier + thinking adaptativo** (función dificultad→presupuesto). |
 | 10 | `10 - Oro` | 🟢 | Repetición del bloque oro (2ª pasada: cursor → traza). |
 | 11 | `11 - Cibersecurity` | 🟠 🔄 | **Hechos que fijar (shards) + metodologías que aprender (Red Teaming)**. |
-| 12 | `12 - COT` | 🟢 | **Aprender a RAZONAR** (1,1M cadenas). |
+| 12 | `12 - COT` | 🟢 | **Aprender a RAZONAR** (943.902 cadenas útiles, 175.731 vacías filtradas). |
 | 12 | `12 - Brainstorming` | 🟢 | **El experto Nº 177 aprende brainstorming** (61 registros ideation). |
 | 13 | `13 - Oro` | 🟢 | Cierre con el bloque oro (3ª pasada: cursor → traza). |
 

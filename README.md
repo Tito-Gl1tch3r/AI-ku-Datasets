@@ -31,7 +31,7 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 | 02.5.5 | `02.5.5 - Computer_Use` | 🟢 🔄 | **Usar un ordenador** (552 trayectorias, escalera basic→extreme). |
 | 03 | `03 - Agentic` · `03 - Tool_Calling` | 🟢 | **Comportamiento agéntico** (trayectorias + tool calls; mezcla de agentic y CoT). |
 | 04 | `04 - Oro` | 🟢 | **Bloque oro: primero se entrena Fable 5 en Cursor y después Fable 5.1 en Claude Code** (el trajectory es lo último; aprender a actuar como Fable). |
-| 05 | `05 - Programming` | 🟠 🔄 | **Programar y entender QUÉ programa** (V0.1 → base 290 → superprogrammer último: 00 entender → 01 escribir → 02/03 crear como Opus). |
+| 05 | `05 - Programming` | 🟠 🔄 | **Programar y entender QUÉ programa** (V0.1 → base 290 → superprogrammer último — retirado temporalmente, se actualizará). |
 | 07 | `07 - Maths` | 🟠 🔄 | **Razonamiento científico** (las trazas enseñan a derivar y verificar). |
 | 08 | `08 - Audit` | 🟠 | **Auditoría**: el fichero unificado fija hechos CVE (🟡); la técnica vive en Red Teaming. |
 | 09 | `09 - Frontier-Intelligence` | 🟠 🔄🏆 | **Capacidades frontier + thinking adaptativo** (función dificultad→presupuesto). |
@@ -89,7 +89,7 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 
 ### 05 - Programming 🟠 🔄
 
-> Orden interno superprogrammer: **00** entender (3.476) → **01** escribir (13.402) → **02** vídeo generativo + **03** game mixes/modding (3.330); `hard_holdout` (952) nunca entrena (gate de evaluación); replay anti-olvido en cada etapa. 🟠 🔄
+> ⚠️ `superprogrammer/` retirado temporalmente del repo; se actualizará y repondrá en su sitio [3º].
 - 🟢 `dataset-comprension-codigoV0.1.json` (5: py/php/c/cpp/java, truncado reparado) — [1º] comprensión.
 - 🟢 `data/AI-ku_programming.parquet` (290: implementation/debugging/review/testing…; 8 lenguajes; dificultad medium→extreme; con `verification`) — [2º] oficio verificado. + 🔧 `docs/` y `pipeline/`.
 - 🟢 `superprogrammer/datasets/write` (13.402, 14 lenguajes, 74% verificado por ejecución real) — **[01] escribir** código.

@@ -10,6 +10,7 @@ Destino: `11 - Cibersecurity/Red Teaming/hf_offsec/<topico>/`.
 - Gemelos deduplicados por calidad (`recon` sí / `reconnaissance` parcial, `red-team` sí, etc.).
 - Cobertura: **los 30 tópicos** están representados con sus mejores shards.
 - **SIN saneamiento**: ni una línea de contenido ha sido modificada, filtrada por peligrosidad ni limpiada. Solo selección por shard + particionado mecánico por límite de GitHub (ver abajo). Duplicados exactos entre tópicos (~7%) dejados intactos a propósito.
+- Excepción: `bug-bounty/train-00000-of-00001.parquet` descartado ENTERO (shard completo, sin tocar filas) por contener una API key real de terceros (OpenAI `sk-proj-…` viva en un scanner). Publicarla quemaría la clave; el shard era marginal (55% código).
 
 ## Totales
 

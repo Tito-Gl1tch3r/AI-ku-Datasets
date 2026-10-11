@@ -1,0 +1,18 @@
+{
+ "original": "context_unified.parquet",
+ "rows": 225642,
+ "orig_row_groups": 1,
+ "n_shards": 2,
+ "shards": [
+  {
+   "file": "context_unified-shard-00000.parquet",
+   "rows": 112821,
+   "bytes": 51290097
+  },
+  {
+   "file": "context_unified-shard-00001.parquet",
+   "rows": 112821,
+   "bytes": 9031556
+  }
+ ]
+}

@@ -1,0 +1,387 @@
+{
+ "write": {
+  "total": 9834,
+  "pct_verified_executed": 60.1,
+  "pct_verified_static": 36.0,
+  "pct_with_tests": 63.1,
+  "pct_multi_file": 35.8,
+  "pct_synthetic": 100.0,
+  "by_language": {
+   "python": 2766,
+   "html": 1171,
+   "javascript": 1126,
+   "c": 976,
+   "css": 776,
+   "cpp": 739,
+   "typescript": 594,
+   "powershell": 405,
+   "rust": 390,
+   "java": 348,
+   "go": 308,
+   "php": 145,
+   "bash": 68,
+   "sql": 22
+  },
+  "by_difficulty": {
+   "advanced": 4159,
+   "intermediate": 3093,
+   "expert": 1590,
+   "beginner": 992
+  },
+  "by_domain": {
+   "engineering": 3238,
+   "web": 2488,
+   "algorithms": 1801,
+   "systems": 751,
+   "automation": 475,
+   "text_processing": 409,
+   "concurrency": 267,
+   "science_math": 201,
+   "databases": 90,
+   "networking": 56,
+   "data_structures": 47,
+   "security": 11
+  },
+  "by_split": {
+   "train": 7505,
+   "validation": 958,
+   "test": 831,
+   "hard_holdout": 540
+  },
+  "by_size": {
+   "<300c": 762,
+   "300-1200c": 5519,
+   "1200-3000c": 3367,
+   ">3000c": 186
+  },
+  "by_task_type": {}
+ },
+ "understand": {
+  "total": 3524,
+  "pct_verified_executed": 84.0,
+  "pct_verified_static": 0.0,
+  "pct_with_tests": 46.9,
+  "pct_multi_file": 0.0,
+  "pct_synthetic": 100.0,
+  "by_language": {
+   "python": 1818,
+   "cpp": 444,
+   "javascript": 339,
+   "c": 281,
+   "typescript": 201,
+   "sql": 103,
+   "html": 80,
+   "rust": 49,
+   "powershell": 45,
+   "css": 42,
+   "java": 34,
+   "go": 31,
+   "bash": 29,
+   "php": 28
+  },
+  "by_difficulty": {
+   "intermediate": 2333,
+   "advanced": 1045,
+   "expert": 99,
+   "beginner": 47
+  },
+  "by_domain": {
+   "algorithms": 2018,
+   "text_processing": 526,
+   "engineering": 446,
+   "web": 164,
+   "systems": 135,
+   "databases": 103,
+   "automation": 64,
+   "concurrency": 30,
+   "science_math": 16,
+   "security": 13,
+   "data_structures": 9
+  },
+  "by_split": {
+   "train": 2957,
+   "validation": 249,
+   "test": 270,
+   "hard_holdout": 48
+  },
+  "by_size": {
+   "<300c": 982,
+   "300-1200c": 2335,
+   "1200-3000c": 207
+  },
+  "by_task_type": {
+   "debugging": 1140,
+   "explanation": 490,
+   "testing": 475,
+   "trace": 400,
+   "optimization": 285,
+   "comparison": 259,
+   "refactoring": 129,
+   "translation": 97,
+   "architecture": 50,
+   "code_review": 40,
+   "iterative_repair": 37,
+   "language_selection": 33,
+   "mastery_principles": 32,
+   "complexity": 28,
+   "failure_prediction": 14,
+   "evidence_self_audit": 12,
+   "security": 3
+  }
+ },
+ "media_write": {
+  "total": 1365,
+  "pct_verified_executed": 99.3,
+  "pct_verified_static": 0.7,
+  "pct_with_tests": 99.3,
+  "pct_multi_file": 9.4,
+  "pct_synthetic": 100.0,
+  "by_language": {
+   "python": 900,
+   "typescript": 455,
+   "glsl": 10
+  },
+  "by_difficulty": {
+   "advanced": 638,
+   "intermediate": 563,
+   "expert": 115,
+   "beginner": 49
+  },
+  "by_domain": {
+   "engineering": 1365
+  },
+  "by_split": {
+   "train": 1059,
+   "validation": 20,
+   "test": 171,
+   "hard_holdout": 115
+  },
+  "by_size": {
+   "300-1200c": 756,
+   "<300c": 5,
+   "1200-3000c": 328,
+   ">3000c": 276
+  },
+  "by_task_type": {}
+ },
+ "media_understand": {
+  "total": 710,
+  "pct_verified_executed": 54.5,
+  "pct_verified_static": 0.0,
+  "pct_with_tests": 15.1,
+  "pct_multi_file": 0.0,
+  "pct_synthetic": 100.0,
+  "by_language": {
+   "python": 698,
+   "glsl": 10,
+   "typescript": 2
+  },
+  "by_difficulty": {
+   "advanced": 363,
+   "intermediate": 286,
+   "expert": 53,
+   "beginner": 8
+  },
+  "by_domain": {
+   "engineering": 710
+  },
+  "by_split": {
+   "train": 488,
+   "validation": 32,
+   "test": 137,
+   "hard_holdout": 53
+  },
+  "by_size": {
+   "<300c": 227,
+   "300-1200c": 479,
+   "1200-3000c": 4
+  },
+  "by_task_type": {}
+ },
+ "game_write": {
+  "total": 760,
+  "pct_verified_executed": 100.0,
+  "pct_verified_static": 0.0,
+  "pct_with_tests": 100.0,
+  "pct_multi_file": 33.8,
+  "pct_synthetic": 100.0,
+  "by_language": {
+   "python": 760
+  },
+  "by_difficulty": {
+   "advanced": 345,
+   "expert": 242,
+   "intermediate": 173
+  },
+  "by_domain": {
+   "engineering": 475,
+   "systems": 257,
+   "security": 28
+  },
+  "by_split": {
+   "train": 402,
+   "validation": 181,
+   "test": 26,
+   "hard_holdout": 151
+  },
+  "by_size": {
+   "300-1200c": 149,
+   "<300c": 15,
+   "1200-3000c": 596
+  },
+  "by_task_type": {}
+ },
+ "game_understand": {
+  "total": 832,
+  "pct_verified_executed": 92.5,
+  "pct_verified_static": 0.0,
+  "pct_with_tests": 24.6,
+  "pct_multi_file": 0.0,
+  "pct_synthetic": 100.0,
+  "by_language": {
+   "python": 832
+  },
+  "by_difficulty": {
+   "advanced": 542,
+   "intermediate": 218,
+   "expert": 72
+  },
+  "by_domain": {
+   "systems": 566,
+   "engineering": 266
+  },
+  "by_split": {
+   "train": 698,
+   "validation": 15,
+   "test": 112,
+   "hard_holdout": 7
+  },
+  "by_size": {
+   "<300c": 610,
+   "300-1200c": 132,
+   "1200-3000c": 90
+  },
+  "by_task_type": {}
+ },
+ "re_write": {
+  "total": 690,
+  "pct_verified_executed": 100.0,
+  "pct_verified_static": 0.0,
+  "pct_with_tests": 100.0,
+  "pct_multi_file": 0.0,
+  "pct_synthetic": 100.0,
+  "by_language": {
+   "python": 690
+  },
+  "by_difficulty": {
+   "advanced": 321,
+   "intermediate": 189,
+   "expert": 180
+  },
+  "by_domain": {
+   "security": 390,
+   "systems": 300
+  },
+  "by_split": {
+   "train": 535,
+   "validation": 26,
+   "test": 93,
+   "hard_holdout": 36
+  },
+  "by_size": {
+   "<300c": 166,
+   "300-1200c": 467,
+   "1200-3000c": 57
+  },
+  "by_task_type": {}
+ },
+ "re_understand": {
+  "total": 566,
+  "pct_verified_executed": 0.0,
+  "pct_verified_static": 0.0,
+  "pct_with_tests": 0.0,
+  "pct_multi_file": 0.0,
+  "pct_synthetic": 100.0,
+  "by_language": {
+   "python": 566
+  },
+  "by_difficulty": {
+   "advanced": 320,
+   "intermediate": 143,
+   "expert": 103
+  },
+  "by_domain": {
+   "systems": 566
+  },
+  "by_split": {
+   "train": 145,
+   "validation": 143,
+   "test": 175,
+   "hard_holdout": 103
+  },
+  "by_size": {
+   "<300c": 348,
+   "1200-3000c": 218
+  },
+  "by_task_type": {}
+ },
+ "ops_write": {
+  "total": 284,
+  "pct_verified_executed": 100.0,
+  "pct_verified_static": 0.0,
+  "pct_with_tests": 100.0,
+  "pct_multi_file": 71.8,
+  "pct_synthetic": 100.0,
+  "by_language": {
+   "python": 284
+  },
+  "by_difficulty": {
+   "intermediate": 104,
+   "advanced": 91,
+   "expert": 89
+  },
+  "by_domain": {
+   "engineering": 157,
+   "automation": 127
+  },
+  "by_split": {
+   "train": 156,
+   "validation": 46,
+   "test": 38,
+   "hard_holdout": 44
+  },
+  "by_size": {
+   "1200-3000c": 284
+  },
+  "by_task_type": {}
+ },
+ "ops_understand": {
+  "total": 365,
+  "pct_verified_executed": 0.0,
+  "pct_verified_static": 0.0,
+  "pct_with_tests": 0.0,
+  "pct_multi_file": 0.0,
+  "pct_synthetic": 100.0,
+  "by_language": {
+   "python": 365
+  },
+  "by_difficulty": {
+   "advanced": 144,
+   "intermediate": 142,
+   "expert": 79
+  },
+  "by_domain": {
+   "automation": 365
+  },
+  "by_split": {
+   "train": 265,
+   "validation": 33,
+   "test": 42,
+   "hard_holdout": 25
+  },
+  "by_size": {
+   "<300c": 365
+  },
+  "by_task_type": {}
+ }
+}

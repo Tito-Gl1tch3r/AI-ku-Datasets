@@ -1,0 +1,32 @@
+{
+ "AI-ku_superprogrammer_agent_ops|understand": {
+  "dataset": "AI-ku_superprogrammer_agent_ops",
+  "kind": "understand",
+  "staged": 467,
+  "kept": 365,
+  "dupes_removed": 102,
+  "family_capped": 0,
+  "schema_rejected": 0,
+  "splits": {
+   "train": 265,
+   "validation": 33,
+   "test": 42,
+   "hard_holdout": 25
+  }
+ },
+ "AI-ku_superprogrammer_agent_ops|write": {
+  "dataset": "AI-ku_superprogrammer_agent_ops",
+  "kind": "write",
+  "staged": 642,
+  "kept": 603,
+  "dupes_removed": 39,
+  "family_capped": 0,
+  "schema_rejected": 0,
+  "splits": {
+   "train": 450,
+   "validation": 69,
+   "test": 38,
+   "hard_holdout": 46
+  }
+ }
+}

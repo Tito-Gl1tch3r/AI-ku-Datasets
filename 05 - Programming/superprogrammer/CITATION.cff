@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: AI-ku_superprogrammer
+type: dataset
+message: >-
+  If you use this dataset, please cite it using the metadata from this file.
+authors:
+  - alias: Tito-Gl1tch3r
+version: 2.1.0
+date-released: "2026-10-11"
+license: MIT
+repository-code: "https://github.com/Tito-Gl1tch3r/AI-ku_superprogrammer"
+abstract: >-
+  A fully synthetic, execution-verified training curriculum for code-generating
+  LLMs. 25,491 records across 112 families and six datasets: code comprehension
+  and writing (14 languages), generative TypeScript video (Three.js/Remotion
+  style, deterministic renders), games and modding mixes, reverse engineering
+  on real ELF binaries, and agent persistence over real long-running jobs.
+  Every record passes GENERAR -> EJECUTAR -> COMPROBAR -> FILTRAR -> CONSERVAR:
+  code is really compiled and executed in the sandbox, ground truth is measured
+  (never asserted), adversarial duplicates are filtered, and anything not
+  verified is quarantined. Splits are contamination-safe with an expert
+  hard_holdout. MIT licensed; no third-party copyrighted content.
+keywords:
+  - synthetic-data
+  - dataset
+  - llm-training
+  - code-generation
+  - program-synthesis
+  - reverse-engineering
+  - typescript
+  - agent-persistence

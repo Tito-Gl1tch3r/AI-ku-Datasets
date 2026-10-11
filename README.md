@@ -120,6 +120,8 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 - 🟢 `Red Teaming/build/frozen_v1.0.parquet` (212) y `frozen_v1.1.parquet` (305) — snapshots congelados.
 - 🔧 `Red Teaming/{docs,quality,scripts}` — metodología, informes y generadores.
 
+- MIXTO URT `Red Teaming/URT/` (30 topicos, 970.719 filas) — **corpus de codigo ofensivo real con licencias limpias** (CTF, exploits, pentest, OSINT, reversing, malware): solo filas MIT/Apache/BSD/ISC/CC0/comerciales, por licencia de fila O del repo original en GitHub (autorizado por el README de TanDev). Esquema final: content/lang/stargazers. Atribucion en URT_ATTRIBUTION.json. SIN saneamiento de contenido.
+
 ### 12 - COT 🟢
 - 🟢 `cot_unified` (943.902 filas en 36 shards — filtradas 175.731 vacías) — problemas con razonamiento encadenado (mates, lógica…).
 

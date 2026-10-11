@@ -120,7 +120,7 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 - 🟢 `Red Teaming/build/frozen_v1.0.parquet` (212) y `frozen_v1.1.parquet` (305) — snapshots congelados.
 - 🔧 `Red Teaming/{docs,quality,scripts}` — metodología, informes y generadores.
 
-- XXXXX `Red Teaming/hf_offsec/` (30 topicos, 1,76M filas) — **corpus de codigo ofensivo real** (CTF, exploits, pentest, OSINT, reversing, malware): fija patrones de como opera un hacker para formar pirata etica. Seleccion por shard (stars + codigo real, configs fuera), SIN saneamiento; 13 ficheros partidos mecanicamente; 1 shard descartado entero por API key viva de terceros. Ver hf_offsec_SELECTION.md.
+- 🟠 `Red Teaming/hf_offsec/` (30 topicos, 1,76M filas) — **corpus de codigo ofensivo real** (CTF, exploits, pentest, OSINT, reversing, malware): fija patrones de como opera un hacker para formar pirata etica. Seleccion por shard (stars + codigo real, configs fuera), SIN saneamiento; 13 ficheros partidos mecanicamente; 1 shard descartado entero por API key viva de terceros. Ver hf_offsec_SELECTION.md.
 
 ### 12 - COT 🟢
 - 🟢 `cot_unified` (943.902 filas en 36 shards — filtradas 175.731 vacías) — problemas con razonamiento encadenado (mates, lógica…).

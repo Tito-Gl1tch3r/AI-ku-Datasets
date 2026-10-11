@@ -31,7 +31,7 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 | 02.5.5 | `02.5.5 - Computer_Use` | 🟢 🔄 | **Usar un ordenador** (552 trayectorias, escalera basic→extreme). |
 | 03 | `03 - Agentic` · `03 - Tool_Calling` | 🟢 | **Comportamiento agéntico** (trayectorias + tool calls; mezcla de agentic y CoT). |
 | 04 | `04 - Oro` | 🟢 | **Bloque oro: primero se entrena Fable 5 en Cursor y después Fable 5.1 en Claude Code** (el trajectory es lo último; aprender a actuar como Fable). |
-| 05 | `05 - Programming` | 🟠 🔄 | **Programar y entender QUÉ programa** (V0.1 → base 290 → superprogrammer último — retirado temporalmente, se actualizará). |
+| 05 | `05 - Programming` | 🟠 🔄 | **Programar y entender QUÉ programa** (V0.1 → base 290 → superprogrammer V2.1.0 último: 00 entender → 01 escribir → 02/03 crear + agent_ops/reverse). |
 | 07 | `07 - Maths` | 🟠 🔄 | **Razonamiento científico** (las trazas enseñan a derivar y verificar). |
 | 08 | `08 - Audit` | 🟠 | **Auditoría**: el fichero unificado fija hechos CVE (🟡); la técnica vive en Red Teaming. |
 | 09 | `09 - Frontier-Intelligence` | 🟠 🔄🏆 | **Capacidades frontier + thinking adaptativo** (función dificultad→presupuesto). |

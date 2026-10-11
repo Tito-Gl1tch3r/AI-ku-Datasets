@@ -56,7 +56,7 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 - 🟢 `02 - Lenguaje/multilingual.parquet` (202.364, **70 idiomas**, pares inputs→targets estilo Aya) — traducir/responder entre lenguas.
 - 🟢 `02 - Conversation/conversation_unified.parquet` (1.005.432) — saber conversar.
 - 🟢 `02 - Long_Context/long_context_unified.parquet` (36.074) — gestionar contexto largo.
-- 🟢 `02 - Context/context_unified.parquet` (225.642) — diálogos expertos (p. ej. metodología zero-day, crisis antibióticos con razonamiento): responder con criterio.
+- 🟢 `02 - Context/context_unified` (225.642 en 2 shards) — diálogos expertos (p. ej. metodología zero-day, crisis antibióticos con razonamiento): responder con criterio.
 
 ### 02.5 - Events 🟡
 - 🟡 `events_unified.parquet` (36.175) — hechos noticiosos (Gaza, New Orleans…). **Va primero.**

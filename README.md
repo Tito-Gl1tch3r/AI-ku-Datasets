@@ -89,14 +89,14 @@ se repiten en 04 → 10 → 13 como repetición espaciada.
 
 ### 05 - Programming 🟠 🔄
 
-> ⚠️ `superprogrammer/` retirado temporalmente del repo; se actualizará y repondrá en su sitio [3º].
+> ⚠️ `superprogrammer/` V2.1.0 repuesto: 00 entender (3.476) → 01 escribir (9.294) → 02 vídeo + 03 juegos (3.341) + agent_ops (580) + reverse_engineering (1.117); `hard_holdout` (1.122) nunca entrena; replay anti-olvido.
 - 🟢 `dataset-comprension-codigoV0.1.json` (5: py/php/c/cpp/java, truncado reparado) — [1º] comprensión.
 - 🟢 `data/AI-ku_programming.parquet` (290: implementation/debugging/review/testing…; 8 lenguajes; dificultad medium→extreme; con `verification`) — [2º] oficio verificado. + 🔧 `docs/` y `pipeline/`.
-- 🟢 `superprogrammer/datasets/write` (13.402, 14 lenguajes, 74% verificado por ejecución real) — **[01] escribir** código.
+- 🟢 `superprogrammer/datasets/write` (9.294 curados V2.1.0, 14 lenguajes, verificado por ejecución) — **[01] escribir** código.
 - 🟢 `superprogrammer/datasets/understand` (3.476: explicación, trazas, debugging con traceback real, testing, traducción, seguridad…) — **[00] entender** el código.
-- 🟢 `superprogrammer/datasets/media` (1.307) + `datasets/game_engineering` (2.023) — **[02+03] crear como Opus 5.5** (vídeo generativo determinista, mixes y modding con seguridad en el ground truth).
+- 🟢 `superprogrammer/datasets/media` (1.907) + `datasets/game_engineering` (1.434) + `datasets/agent_ops` (580) + `datasets/reverse_engineering` (1.117) — **[02+03] crear como Opus 5.5** (vídeo generativo determinista, mixes y modding con seguridad en el ground truth).
 - 🔧 `superprogrammer/datasets/_quarantine` — registro de fallos (`verify_failed`/`gen_none`), no entrena.
-- 🔧 `superprogrammer/datasets/hard_holdout` (952) — gate de evaluación entre etapas, nunca entrena.`n- 🔧 `superprogrammer/datasets/_quarantine` — registro de fallos, no entrena.`n- 🔧 `superprogrammer/docs/CURRICULUM.md` (+ OPUS_STYLE, ROADMAP) — orden pedagógico con replay anti-olvido; resto de pipeline (el `.py` no se sube).
+- 🔧 `superprogrammer/datasets/hard_holdout` (1.122, +variantes ops/re) — gate de evaluación entre etapas, nunca entrena.`n- 🔧 `superprogrammer/datasets/_quarantine` — registro de fallos, no entrena.`n- 🔧 `superprogrammer/docs/CURRICULUM.md` (+ OPUS_STYLE, ROADMAP) — orden pedagógico con replay anti-olvido; resto de pipeline (el `.py` no se sube).
 
 ### 07 - Maths 🟠 🔄
 - 🟢🔄 `ai-ku-advanced-maths.parquet` (1.527: train 1.374/val 82/test 71) — electronics/physics/quantum/maths/bio/ingeniería; problem_solving/simulation/derivation/diagnosis con `verification` y ejecución; dificultad hard→**frontier**. Las trazas enseñan a razonar (los hechos viajan dentro del razonamiento).
